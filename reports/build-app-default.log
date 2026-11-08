@@ -12,7 +12,7 @@
 > hvigor [32mFinished :entry:default@ProcessIntegratedHsp... after 1 ms [39m
 > hvigor [32mFinished :entry:default@BuildNativeWithCmake... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:default@MakePackInfo...  [39m
-> hvigor [32mFinished :entry:default@SyscapTransform... after 5 ms [39m
+> hvigor [32mFinished :entry:default@SyscapTransform... after 6 ms [39m
 > hvigor [32mUP-TO-DATE :entry:default@ProcessProfile...  [39m
 > hvigor [32mUP-TO-DATE :entry:default@ProcessRouterMap...  [39m
 > hvigor [32mUP-TO-DATE :entry:default@ProcessShareConfig...  [39m
@@ -29,19 +29,19 @@
 > hvigor [32mUP-TO-DATE :entry:default@GeneratePkgModuleJson...  [39m
 > hvigor [32mFinished :entry:default@ProcessCompiledResources... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:default@PackageHap...  [39m
-> hvigor [32mFinished :entry:default@PackingCheck... after 3 ms [39m
+> hvigor [32mFinished :entry:default@PackingCheck... after 4 ms [39m
 > hvigor [33mWARN: No signingConfig found for product default[39m
 > hvigor [32mFinished :entry:default@SignHap... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:default@CollectDebugSymbol...  [39m
 > hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
-> hvigor [32mFinished ::MakeProjectPackInfo... after 2 ms [39m
-> hvigor [32mFinished ::ProcessProjectPrivacyProfile... after 2 ms [39m
+> hvigor [32mFinished ::MakeProjectPackInfo... after 4 ms [39m
+> hvigor [32mFinished ::ProcessProjectPrivacyProfile... after 3 ms [39m
 > hvigor [32mFinished ::GeneratePackRes... after 1 ms [39m
-> hvigor [32mFinished ::PackageApp... after 275 ms [39m
+> hvigor [32mFinished ::PackageApp... after 321 ms [39m
 > hvigor [32mFinished ::SignPackagesFromApp... after 1 ms [39m
 > hvigor [33mWARN: No signingConfig found for product default[39m
 > hvigor [32mFinished ::SignApp... after 1 ms [39m
 > hvigor [32mFinished ::assembleApp... after 1 ms [39m
-> hvigor [32mBUILD SUCCESSFUL in 1 s 169 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 1 s 607 ms [39m
 
 42 tasks in total: 23 executed, 19 up-to-date

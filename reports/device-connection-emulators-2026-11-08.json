@@ -1,0 +1,8 @@
+{
+  "server": "existing server reused",
+  "address": "127.0.0.1:8710",
+  "query": "list targets -v",
+  "targetsEmpty": false,
+  "output": "127.0.0.1:12001\t\tTCP\tConnected\tlocalhost\thdc\n127.0.0.1:12002\t\tTCP\tConnected\tlocalhost\thdc\n127.0.0.1:12003\t\tTCP\tOffline\tlocalhost\thdc\n127.0.0.1:12004\t\tTCP\tOffline\tlocalhost\thdc\n127.0.0.1:12005\t\tTCP\tOffline\tlocalhost\thdc\n127.0.0.1:12006\t\tTCP\tConnected\tlocalhost\thdc",
+  "note": "No device installation, signing, or authorization is performed."
+}

@@ -1,0 +1,16 @@
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:26.973
+Total sensor:9, Sensor list:
+deviceIndex:-1 | sensorType:ACCELEROMETER |sensorId:       1  |sensorIndex:0  | sensorName:accelerometer | vendorName:STMicroelectronics| maxRange:78.453201| fifoMaxEventCount:0 | minSamplePeriodNs:5000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:GYROSCOPE |sensorId:       2  |sensorIndex:0  | sensorName:gyroscope | vendorName:huawei| maxRange:34.906586| fifoMaxEventCount:0 | minSamplePeriodNs:5000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5  |sensorIndex:0  | sensorName:light | vendorName:Taos| maxRange:10000.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false
+deviceIndex:-1 | sensorType:MAGNETIC FIELD |sensorId:       6  |sensorIndex:0  | sensorName:magnetic field | vendorName:huawei| maxRange:2000.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:HALL |sensorId:      10  |sensorIndex:0  | sensorName:hall sensor | vendorName:huawei| maxRange:1.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false
+deviceIndex:-1 | sensorType:ORIENTATION |sensorId:     256  |sensorIndex:0  | sensorName:orientation | vendorName:huawei| maxRange:360.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:GRAVITY |sensorId:     257  |sensorIndex:0  | sensorName:gravity | vendorName:huawei| maxRange:9.806650| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:ROTATION VECTOR |sensorId:     259  |sensorIndex:0  | sensorName:rotation vector | vendorName:huawei| maxRange:1.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:PEDOMETER |sensorId:     266  |sensorIndex:0  | sensorName:step counter | vendorName:huawei| maxRange:2147483648.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false

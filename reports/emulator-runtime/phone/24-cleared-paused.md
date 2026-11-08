@@ -1,0 +1,34 @@
+# Phone emulator runtime: 24-cleared-paused
+
+This is an API 26 virtual device; no physical sensor verification is claimed.
+
+- Scroll  [[0,137][1280,2734]] clickable=false enabled=true checked=false description=
+- Text SENSOR / LOCAL [[70,234][513,283]] clickable=false enabled=true checked=false description=
+- Text 传感器观测 [[70,311][630,442]] clickable=false enabled=true checked=false description=
+- Text 本机 · 前台采集 · 数据不上传 [[70,470][711,527]] clickable=false enabled=true checked=false description=
+- Button 继续采集 [[70,611][379,765]] clickable=true enabled=true checked=false description=
+- Select 1 Hz · 省电 [[414,611][843,765]] clickable=true enabled=true checked=false description=
+- Button 刷新设备 [[70,800][379,954]] clickable=true enabled=true checked=false description=
+- Button 清空曲线 [[414,800][723,954]] clickable=true enabled=true checked=false description=
+- Button 授权运动 [[758,800][1067,954]] clickable=true enabled=true checked=false description=
+- Text 频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，保留最近 60 秒，最多 240 点。 [[70,1073][1210,1187]] clickable=false enabled=true checked=false description=
+- Text 本机硬件 · 9 项 [[70,1307][901,1389]] clickable=false enabled=true checked=false description=
+- Button 硬件详情 [[901,1271][1210,1425]] clickable=true enabled=true checked=false description=
+- Text 加速度 [[143,1582][961,1664]] clickable=false enabled=true checked=false description=
+- Text 已暂停 [[989,1595][1137,1652]] clickable=false enabled=true checked=false description=
+- Text m/s² [[143,1699][1137,1756]] clickable=false enabled=true checked=false description=
+- Text X [[143,1791][171,1840]] clickable=false enabled=true checked=false description=
+- Text 0.000 [[143,1851][359,1949]] clickable=false enabled=true checked=false description=
+- Text Y [[415,1791][441,1840]] clickable=false enabled=true checked=false description=
+- Text 9.800 [[415,1851][631,1949]] clickable=false enabled=true checked=false description=
+- Text Z [[687,1791][712,1840]] clickable=false enabled=true checked=false description=
+- Text 0.000 [[687,1851][903,1949]] clickable=false enabled=true checked=false description=
+- Select X [[143,2005][381,2145]] clickable=true enabled=true checked=false description=
+- Canvas  [[143,2180][1137,2614]] clickable=false enabled=true checked=false description=
+- Text 已暂停；保留的是暂停前的数值 [[143,2649][1137,2706]] clickable=false enabled=true checked=false description=
+- __Common__  [[0,0][1280,136]] clickable=true enabled=true checked=false description=
+- Row 09, :, 49 [[56,26][195,110]] clickable=false enabled=true checked=false description=Touch & hold the time to show the seconds counter
+- Text 09 [[56,37][118,99]] clickable=false enabled=true checked=false description=
+- Text : [[118,42][133,95]] clickable=false enabled=true checked=false description=
+- Text 49 [[133,37][195,99]] clickable=false enabled=true checked=false description=
+- Text 100 [[1135,46][1205,91]] clickable=false enabled=true checked=false description=

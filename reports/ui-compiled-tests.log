@@ -4,4 +4,7 @@ PASS flat selected component keeps finite bounds and excludes other units
 PASS continuous chart leaves long sampling gaps unconnected
 PASS event chart uses points without suggesting continuous measurements
 PASS optional field disappearance clamps previously selected component
-Compiled UI host tests: 6/6 passed. No layout/device verification claimed.
+PASS frequency menu update avoids live sensor snapshot dependency
+PASS component menu update avoids live row dependency
+PASS TV activation consumes supported key down once and preserves other keys
+Compiled UI host tests: 9/9 passed. No layout/device verification claimed.

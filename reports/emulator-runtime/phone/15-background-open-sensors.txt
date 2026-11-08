@@ -1,0 +1,8 @@
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:26.662
+Opening sensors:
+deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | channelSize: 1

@@ -37,11 +37,11 @@
 > hvigor [32mFinished ::MakeProjectPackInfo... after 2 ms [39m
 > hvigor [32mFinished ::ProcessProjectPrivacyProfile... after 1 ms [39m
 > hvigor [32mFinished ::GeneratePackRes... after 1 ms [39m
-> hvigor [32mFinished ::PackageApp... after 291 ms [39m
+> hvigor [32mFinished ::PackageApp... after 263 ms [39m
 > hvigor [32mFinished ::SignPackagesFromApp... after 1 ms [39m
 > hvigor [33mWARN: No signingConfig found for product tv[39m
 > hvigor [32mFinished ::SignApp... after 1 ms [39m
 > hvigor [32mFinished ::assembleApp... after 1 ms [39m
-> hvigor [32mBUILD SUCCESSFUL in 1 s 230 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 1 s 202 ms [39m
 
 42 tasks in total: 23 executed, 19 up-to-date

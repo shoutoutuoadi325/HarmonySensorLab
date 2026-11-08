@@ -1,0 +1,423 @@
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 640 1590
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/02-dashboard.json
+FileTransfer finish, Size:53549, File count = 1, time:15ms rate:3569.93kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/02-dashboard.png
+FileTransfer finish, Size:294534, File count = 1, time:26ms rate:11328.23kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 900 870
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/03-motion-permission-dialog.json
+FileTransfer finish, Size:46769, File count = 1, time:14ms rate:3340.64kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/03-motion-permission-dialog.png
+FileTransfer finish, Size:430922, File count = 1, time:21ms rate:20520.10kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 360 1690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/04-motion-denied.json
+FileTransfer finish, Size:53785, File count = 1, time:21ms rate:2561.19kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/04-motion-denied.png
+FileTransfer finish, Size:430922, File count = 1, time:38ms rate:11340.05kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput swipe 600 2350 600 850
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/05-sensors-after-denial.json
+FileTransfer finish, Size:58329, File count = 1, time:19ms rate:3069.95kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/05-sensors-after-denial.png
+FileTransfer finish, Size:430922, File count = 1, time:26ms rate:16573.92kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput swipe 600 700 600 2350
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/06-return-controls.json
+FileTransfer finish, Size:53785, File count = 1, time:17ms rate:3163.82kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/06-return-controls.png
+FileTransfer finish, Size:430922, File count = 1, time:20ms rate:21546.10kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/07-resumed.json
+FileTransfer finish, Size:53723, File count = 1, time:21ms rate:2558.24kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/07-resumed.png
+FileTransfer finish, Size:430922, File count = 1, time:45ms rate:9576.04kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 900 870
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/08-motion-second-dialog.json
+FileTransfer finish, Size:53723, File count = 1, time:51ms rate:1053.39kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/08-motion-second-dialog.png
+FileTransfer finish, Size:430922, File count = 1, time:33ms rate:13058.24kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 1030 1350
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/09-hardware-details.json
+FileTransfer finish, Size:53723, File count = 1, time:19ms rate:2827.53kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/09-hardware-details.png
+FileTransfer finish, Size:430922, File count = 1, time:55ms rate:7834.95kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 620 680
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/10-frequency-menu.json
+FileTransfer finish, Size:65527, File count = 1, time:18ms rate:3640.39kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/10-frequency-menu.png
+FileTransfer finish, Size:430922, File count = 1, time:46ms rate:9367.87kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 620 890
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/11-frequency-1hz.json
+FileTransfer finish, Size:53723, File count = 1, time:16ms rate:3357.69kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/11-frequency-1hz.png
+FileTransfer finish, Size:430922, File count = 1, time:14ms rate:30780.14kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/12-paused.json
+FileTransfer finish, Size:53785, File count = 1, time:14ms rate:3841.79kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/12-paused.png
+FileTransfer finish, Size:430922, File count = 1, time:37ms rate:11646.54kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 570 870
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/13-cleared-while-paused.json
+FileTransfer finish, Size:53723, File count = 1, time:23ms rate:2335.78kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/13-cleared-while-paused.png
+FileTransfer finish, Size:430922, File count = 1, time:28ms rate:15390.07kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/14-pause-isolation.json
+FileTransfer finish, Size:53723, File count = 1, time:44ms rate:1220.98kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/14-pause-isolation.png
+FileTransfer finish, Size:430922, File count = 1, time:16ms rate:26932.62kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput keyEvent Home
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/15-home-background.json
+FileTransfer finish, Size:57058, File count = 1, time:20ms rate:2852.90kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/15-home-background.png
+FileTransfer finish, Size:1246324, File count = 1, time:24ms rate:51930.17kB/s
+
+$ hdc -t 127.0.0.1:12001 shell hidumper -s SensorService -a -o
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:26.662
+Opening sensors:
+deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | channelSize: 1
+
+$ hdc -t 127.0.0.1:12001 shell hidumper -s SensorService -a -c
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:26.898
+Sensor channel info:
+uid:5528 | packageName: | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:100000000| fifoCount:0
+
+$ hdc -t 127.0.0.1:12001 shell hidumper -s SensorService -a -l
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:26.973
+Total sensor:9, Sensor list:
+deviceIndex:-1 | sensorType:ACCELEROMETER |sensorId:       1  |sensorIndex:0  | sensorName:accelerometer | vendorName:STMicroelectronics| maxRange:78.453201| fifoMaxEventCount:0 | minSamplePeriodNs:5000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:GYROSCOPE |sensorId:       2  |sensorIndex:0  | sensorName:gyroscope | vendorName:huawei| maxRange:34.906586| fifoMaxEventCount:0 | minSamplePeriodNs:5000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5  |sensorIndex:0  | sensorName:light | vendorName:Taos| maxRange:10000.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false
+deviceIndex:-1 | sensorType:MAGNETIC FIELD |sensorId:       6  |sensorIndex:0  | sensorName:magnetic field | vendorName:huawei| maxRange:2000.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:200000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:HALL |sensorId:      10  |sensorIndex:0  | sensorName:hall sensor | vendorName:huawei| maxRange:1.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false
+deviceIndex:-1 | sensorType:ORIENTATION |sensorId:     256  |sensorIndex:0  | sensorName:orientation | vendorName:huawei| maxRange:360.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:GRAVITY |sensorId:     257  |sensorIndex:0  | sensorName:gravity | vendorName:huawei| maxRange:9.806650| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:ROTATION VECTOR |sensorId:     259  |sensorIndex:0  | sensorName:rotation vector | vendorName:huawei| maxRange:1.000000| fifoMaxEventCount:0 | minSamplePeriodNs:10000000| maxSamplePeriodNs:20000000 | isMockSensor:false
+deviceIndex:-1 | sensorType:PEDOMETER |sensorId:     266  |sensorIndex:0  | sensorName:step counter | vendorName:huawei| maxRange:2147483648.000000| fifoMaxEventCount:0 | minSamplePeriodNs:0| maxSamplePeriodNs:0 | isMockSensor:false
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 490 370
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/16-foreground-return.json
+FileTransfer finish, Size:53723, File count = 1, time:29ms rate:1852.52kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/16-foreground-return.png
+FileTransfer finish, Size:1246324, File count = 1, time:22ms rate:56651.09kB/s
+
+$ hdc -t 127.0.0.1:12001 shell hidumper -s SensorService -a -c
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:40.339
+Sensor channel info:
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ROTATION VECTOR |sensorId:     259 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:MAGNETIC FIELD |sensorId:       6 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:GRAVITY |sensorId:     257 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:GYROSCOPE |sensorId:       2 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:HALL |sensorId:      10 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ACCELEROMETER |sensorId:       1 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ORIENTATION |sensorId:     256 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:5528 | packageName: | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:100000000| fifoCount:0
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell hidumper -s SensorService -a -c
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 21:47:40.844
+Sensor channel info:
+uid:5528 | packageName: | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:100000000| fifoCount:0
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/17-pause-confirm.json
+FileTransfer finish, Size:53785, File count = 1, time:37ms rate:1453.65kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/17-pause-confirm.png
+FileTransfer finish, Size:1246324, File count = 1, time:54ms rate:23080.07kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 620 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/18-frequency-menu-paused.json
+FileTransfer finish, Size:59628, File count = 1, time:29ms rate:2056.14kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/18-frequency-menu-paused.png
+FileTransfer finish, Size:1246324, File count = 1, time:28ms rate:44511.57kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/19-current-state.json
+FileTransfer finish, Size:36310, File count = 1, time:22ms rate:1650.45kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/19-current-state.png
+FileTransfer finish, Size:1246324, File count = 1, time:25ms rate:49852.96kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 640 1590
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/20-restarted-dashboard.json
+FileTransfer finish, Size:53654, File count = 1, time:47ms rate:1141.57kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/20-restarted-dashboard.png
+FileTransfer finish, Size:1246324, File count = 1, time:33ms rate:37767.39kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/21-restarted-paused.json
+FileTransfer finish, Size:53890, File count = 1, time:18ms rate:2993.89kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/21-restarted-paused.png
+FileTransfer finish, Size:1246324, File count = 1, time:44ms rate:28325.55kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 620 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/22-paused-frequency-menu.json
+FileTransfer finish, Size:65619, File count = 1, time:27ms rate:2430.33kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/22-paused-frequency-menu.png
+FileTransfer finish, Size:1246324, File count = 1, time:40ms rate:31158.10kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 620 890
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/23-frequency-1hz-paused.json
+FileTransfer finish, Size:53890, File count = 1, time:28ms rate:1924.64kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/23-frequency-1hz-paused.png
+FileTransfer finish, Size:1246324, File count = 1, time:17ms rate:73313.18kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 570 870
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/24-cleared-paused.json
+FileTransfer finish, Size:53890, File count = 1, time:16ms rate:3368.12kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/24-cleared-paused.png
+FileTransfer finish, Size:1246324, File count = 1, time:20ms rate:62316.20kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest uiInput click 220 690
+No Error
+
+$ hdc -t 127.0.0.1:12001 shell uitest dumpLayout -p /data/local/tmp/harmony-phone-layout.json -a
+DumpLayout saved to:/data/local/tmp/harmony-phone-layout.json
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-layout.json /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/25-1hz-resume.json
+FileTransfer finish, Size:53828, File count = 1, time:43ms rate:1251.81kB/s
+
+$ hdc -t 127.0.0.1:12001 shell uitest screenCap -p /data/local/tmp/harmony-phone-screen.png
+ScreenCap saved to /data/local/tmp/harmony-phone-screen.png
+
+$ hdc -t 127.0.0.1:12001 file recv /data/local/tmp/harmony-phone-screen.png /Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/phone/25-1hz-resume.png
+FileTransfer finish, Size:1246324, File count = 1, time:28ms rate:44511.57kB/s
+

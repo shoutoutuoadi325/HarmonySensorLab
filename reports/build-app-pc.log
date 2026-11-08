@@ -12,7 +12,7 @@
 > hvigor [32mFinished :entry:pc@ProcessIntegratedHsp... after 1 ms [39m
 > hvigor [32mFinished :entry:pc@BuildNativeWithCmake... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@MakePackInfo...  [39m
-> hvigor [32mFinished :entry:pc@SyscapTransform... after 5 ms [39m
+> hvigor [32mFinished :entry:pc@SyscapTransform... after 6 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessProfile...  [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessRouterMap...  [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessShareConfig...  [39m
@@ -34,14 +34,14 @@
 > hvigor [32mFinished :entry:pc@SignHap... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@CollectDebugSymbol...  [39m
 > hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
-> hvigor [32mFinished ::MakeProjectPackInfo... after 2 ms [39m
+> hvigor [32mFinished ::MakeProjectPackInfo... after 3 ms [39m
 > hvigor [32mFinished ::ProcessProjectPrivacyProfile... after 2 ms [39m
 > hvigor [32mFinished ::GeneratePackRes... after 1 ms [39m
-> hvigor [32mFinished ::PackageApp... after 312 ms [39m
+> hvigor [32mFinished ::PackageApp... after 288 ms [39m
 > hvigor [32mFinished ::SignPackagesFromApp... after 1 ms [39m
 > hvigor [33mWARN: No signingConfig found for product pc[39m
 > hvigor [32mFinished ::SignApp... after 1 ms [39m
 > hvigor [32mFinished ::assembleApp... after 1 ms [39m
-> hvigor [32mBUILD SUCCESSFUL in 1 s 260 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 1 s 231 ms [39m
 
 42 tasks in total: 23 executed, 19 up-to-date

@@ -1,0 +1,17 @@
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 22:06:41.875
+Sensor channel info:
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ROTATION VECTOR |sensorId:     259 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:MAGNETIC FIELD |sensorId:       6 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:PEDOMETER |sensorId:     266 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:GRAVITY |sensorId:     257 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:GYROSCOPE |sensorId:       2 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:HALL |sensorId:      10 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ACCELEROMETER |sensorId:       1 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:ORIENTATION |sensorId:     256 |sensorIndex:0 | samplingPeriodNs:20000000| fifoCount:0
+uid:20020074 | packageName:com.personal.harmonysensorlab | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:200000000| fifoCount:0
+uid:5528 | packageName: | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:100000000| fifoCount:0

@@ -85,4 +85,39 @@ test('optional field disappearance clamps previously selected component', () => 
   plot([{ timeMs: 1000, values: [1] }], { axis: 5, row: { history: [{ timeMs: 1000, values: [1] }],
     labels: ['lux'], eventDriven: false, requestedIntervalNs: 200000000 } });
 });
+function selectUpdate(tree) {
+  const node = find(tree, n => ts.isArrowFunction(n) && n.parameters.length === 2 &&
+    n.parameters[1].name.getText(tree) === 'isInitialRender' &&
+    ts.isBlock(n.body) && n.body.statements[0]?.getText(tree).startsWith('Select.create('));
+  assert.ok(node);
+  const commands = [];
+  const Select = new Proxy({}, { get(_target, name) { return (...args) => commands.push([name, ...args]); } });
+  return { update: runnable('(function(' + node.parameters.map(p => p.getText(tree)).join(',') + ') ' + node.body.getText(tree) + ')', { Select }), commands };
+}
+test('frequency menu update avoids live sensor snapshot dependency', () => {
+  const { update, commands } = selectUpdate(index);
+  update.call({ get snapshot() { throw Error('Live snapshot would dismiss menu'); },
+    selectedIntervalMs: 50, textSize: () => 14, buttonSize: () => 44 }, 1, false);
+  assert.ok(commands.some(c => c[0] === 'selected' && c[1] === 3));
+});
+test('component menu update avoids live row dependency', () => {
+  const card = source('components/SensorCardView.ts');
+  const { update, commands } = selectUpdate(card);
+  const safe = find(card, n => ts.isMethodDeclaration(n) && n.name.getText(card) === 'safeAxis');
+  const safeAxis = runnable('(function ' + safe.getText(card).replace(/^private\s+/, '') + ')');
+  update.call({ get row() { throw Error('Live row would dismiss menu'); }, axisLabels: ['X', 'Y'],
+    selectedAxis: 1, safeAxis, curveDescription: '加速度曲线分量', textSize: () => 14 }, 1, false);
+  assert.ok(commands.some(c => c[0] === 'value' && c[1] === 'Y'));
+});
+test('TV activation consumes supported key down once and preserves other keys', () => {
+  const method = find(index, n => ts.isMethodDeclaration(n) && n.name.getText(index) === 'activateKey');
+  const activate = runnable('(function ' + method.getText(index).replace(/^private\s+/, '') + ')', { KeyType: { Down: 0, Up: 1 } });
+  let calls = 0;
+  for (const keyCode of [2016, 2054, 2050]) assert.equal(activate.call({ television: true }, { type: 0, keyCode }, () => calls++), true);
+  assert.equal(calls, 3);
+  assert.equal(activate.call({ television: true }, { type: 1, keyCode: 2054 }, () => calls++), false);
+  assert.equal(activate.call({ television: true }, { type: 0, keyCode: 2013 }, () => calls++), false);
+  assert.equal(activate.call({ television: false }, { type: 0, keyCode: 2054 }, () => calls++), false);
+  assert.equal(calls, 3);
+});
 console.log('Compiled UI host tests: ' + count + '/' + count + ' passed. No layout/device verification claimed.');

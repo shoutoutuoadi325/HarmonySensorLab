@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "phone",
+    "package": "dist/packages/sensor-default-debug-signed.hap",
+    "currentSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "testedSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "match": true
+  },
+  {
+    "kind": "foldable",
+    "package": "dist/packages/sensor-default-debug-signed.hap",
+    "currentSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "testedSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "match": true
+  },
+  {
+    "kind": "tablet",
+    "package": "dist/packages/sensor-default-debug-signed.hap",
+    "currentSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "testedSha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+    "match": true
+  },
+  {
+    "kind": "pc",
+    "package": "dist/packages/sensor-pc-debug-signed.hap",
+    "currentSha256": "f8565f0228314f225e103809011a2e2916b791f9cbb46b4bb6e307141dd47348",
+    "testedSha256": "f8565f0228314f225e103809011a2e2916b791f9cbb46b4bb6e307141dd47348",
+    "match": true
+  },
+  {
+    "kind": "tv",
+    "package": "dist/packages/sensor-tv-debug-signed.hap",
+    "currentSha256": "52f4bad9f9280397ca264620acf5ddcde21d27695c5fd4bfc621381cabaf07a5",
+    "testedSha256": "52f4bad9f9280397ca264620acf5ddcde21d27695c5fd4bfc621381cabaf07a5",
+    "match": true
+  },
+  {
+    "kind": "wearable",
+    "package": "dist/packages/sensor-wearable-debug-signed.hap",
+    "currentSha256": "cd10718c224b59de8e5ee14b5915814329d7e17cc39a76d4808383ef18e71640",
+    "testedSha256": "cd10718c224b59de8e5ee14b5915814329d7e17cc39a76d4808383ef18e71640",
+    "match": true
+  }
+]

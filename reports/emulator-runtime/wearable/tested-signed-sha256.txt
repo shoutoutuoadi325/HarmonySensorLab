@@ -1,0 +1,1 @@
+33ee8f8aa8b546f6bc142ceda419f258f41818150998cb39ff934f02524e547d  dist/packages/sensor-wearable-debug-signed.hap

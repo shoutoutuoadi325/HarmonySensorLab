@@ -1,0 +1,7 @@
+11-08 21:47:38.426  INFO - Start verify-app
+11-08 21:47:38.480  INFO - profile type is: debug
+11-08 21:47:38.491  INFO - verify codesign success
+11-08 21:47:38.504  INFO - Digest verify result: true, DigestAlgorithm: SHA-256
+11-08 21:47:38.533  INFO - verify permission sign success.
+11-08 21:47:38.536  INFO - verify: Verify success
+11-08 21:47:38.536  INFO - verify-app success

@@ -1,0 +1,8 @@
+
+-------------------------------[ability]-------------------------------
+
+
+----------------------------------SensorService----------------------------------
+Current time: 22:07:38.782
+Sensor channel info:
+uid:5528 | packageName: | deviceIndex:-1 | sensorType:AMBIENT LIGHT |sensorId:       5 |sensorIndex:0 | samplingPeriodNs:100000000| fifoCount:0

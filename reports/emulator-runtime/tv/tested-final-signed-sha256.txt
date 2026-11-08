@@ -1,0 +1,1 @@
+52f4bad9f9280397ca264620acf5ddcde21d27695c5fd4bfc621381cabaf07a5  dist/packages/sensor-tv-debug-signed.hap

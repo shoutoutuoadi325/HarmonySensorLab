@@ -1,0 +1,3 @@
+d7ff84525451ded0cf65ca03d6e6974f160976350a9861789843dfcabe448bef  dist/packages/sensor-default-debug-unsigned.hap
+259a1bea900aff6f7abd532340d8621b869a93f4f7aa5a57a09fd3995a92f3ac  dist/packages/sensor-pc-debug-unsigned.hap
+428e44499e4cd4ce19a8d744486813e5b0ded6dc9ffd0e501b921d6d36ba41e2  dist/packages/sensor-wearable-debug-unsigned.hap

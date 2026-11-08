@@ -1,0 +1,1 @@
+f8565f0228314f225e103809011a2e2916b791f9cbb46b4bb6e307141dd47348  dist/packages/sensor-pc-debug-signed.hap

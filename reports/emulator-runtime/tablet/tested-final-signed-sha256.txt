@@ -1,0 +1,1 @@
+1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988  dist/packages/sensor-default-debug-signed.hap

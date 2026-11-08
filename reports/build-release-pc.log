@@ -10,8 +10,8 @@
 > hvigor [32mFinished :entry:pc@ProcessIntegratedHsp... after 1 ms [39m
 > hvigor [32mFinished :entry:pc@BuildNativeWithCmake... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@MakePackInfo...  [39m
-> hvigor [32mFinished :entry:pc@SyscapTransform... after 5 ms [39m
-> hvigor [32mFinished :entry:pc@ProcessProfile... after 107 ms [39m
+> hvigor [32mFinished :entry:pc@SyscapTransform... after 6 ms [39m
+> hvigor [32mFinished :entry:pc@ProcessProfile... after 137 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessRouterMap...  [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessShareConfig...  [39m
 > hvigor [32mFinished :entry:pc@ProcessStartupConfig... after 1 ms [39m
@@ -19,7 +19,7 @@
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessResource...  [39m
 > hvigor [32mUP-TO-DATE :entry:pc@GenerateLoaderJson...  [39m
 > hvigor [32mUP-TO-DATE :entry:pc@ProcessLibs...  [39m
-> hvigor [32mFinished :entry:pc@CompileResource... after 103 ms [39m
+> hvigor [32mFinished :entry:pc@CompileResource... after 118 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@DoNativeStrip...  [39m
 > hvigor [32mFinished :entry:pc@BuildJS... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:pc@CacheNativeLibs...  [39m
@@ -95,15 +95,15 @@
  Function may throw exceptions. Special handling is required.
 [39m[39m
 [39m
-> hvigor [32mFinished :entry:pc@CompileArkTS... after 1 s 867 ms [39m
-> hvigor [32mFinished :entry:pc@GeneratePkgModuleJson... after 2 ms [39m
+> hvigor [32mFinished :entry:pc@CompileArkTS... after 1 s 907 ms [39m
+> hvigor [32mFinished :entry:pc@GeneratePkgModuleJson... after 1 ms [39m
 > hvigor [32mFinished :entry:pc@ProcessCompiledResources... after 1 ms [39m
-> hvigor [32mFinished :entry:pc@PackageHap... after 225 ms [39m
-> hvigor [32mFinished :entry:pc@PackingCheck... after 5 ms [39m
+> hvigor [32mFinished :entry:pc@PackageHap... after 217 ms [39m
+> hvigor [32mFinished :entry:pc@PackingCheck... after 4 ms [39m
 > hvigor [33mWARN: No signingConfig found for product pc[39m
 > hvigor [32mFinished :entry:pc@SignHap... after 1 ms [39m
 > hvigor [32mFinished :entry:pc@CollectDebugSymbol... after 2 ms [39m
 > hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
-> hvigor [32mBUILD SUCCESSFUL in 4 s 610 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 5 s 260 ms [39m
 
 33 tasks in total: 22 executed, 11 up-to-date

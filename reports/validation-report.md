@@ -2,60 +2,76 @@
 
 日期：2026-11-08（Asia/Shanghai）。应用：传感器观测 1.0.0，包名 com.personal.harmonysensorlab。
 
-**阶段结果：源码、四产品构建与未签名包已交付；可安装签名包、鸿蒙运行时验证和各端真机验收仍未完成。** 不能把本报告中的宿主测试或编译成功作为实际硬件支持结论。
+交付包含 ArkTS/ArkUI 源码、四产品 Debug 签名 HAP、未签名 Release HAP/APP、隐私政策草稿、发布材料和官方模拟器证据。用户已登录 DevEco，并指定本轮使用模拟器测试。模拟器记录虚拟驱动通过本机公开 API 的回调，不代表物理硬件、功耗或上架审核结果。
 
-## 实际构建
+## 构建、签名与包核验
 
-环境：macOS Apple Silicon；DevEco Studio 26.0.0 Release，HarmonyOS SDK 26.0.0.105，Hvigor 6.26.9，IDE 内置 Node 24.14.1。工程为 ArkTS/ArkUI Stage，运行依赖为空。
+环境：macOS Apple Silicon；DevEco Studio 26.0.0 Release，HarmonyOS SDK 26.0.0.105，Hvigor 6.26.9，IDE 内置 Node 24.14.1。Stage 工程没有第三方运行依赖。
 
-| 产品 | Debug HAP | Release HAP | Release APP 容器 | 目标/最低 API | 包内设备类型 |
-| --- | --- | --- | --- | --- | --- |
-| default | 成功 | 成功 | 成功 | 26 / 12 | phone、tablet |
-| pc | 成功 | 成功 | 成功 | 26 / 13 | 2in1 |
-| wearable | 成功 | 成功 | 成功 | 26 / 18 | wearable |
-| tv | 成功 | 成功 | 成功 | 26 / 19 | tv |
+| 产品 | Debug HAP | Release HAP / APP | 最低 / 目标 API | 包内设备类型 |
+| --- | --- | --- | --- | --- |
+| default | 成功，官方调试签名 | 成功，未签名 | 12 / 26 | phone、tablet |
+| pc | 成功，官方调试签名 | 成功，未签名 | 13 / 26 | 2in1 |
+| wearable | 成功，官方调试签名 | 成功，未签名 | 18 / 26 | wearable |
+| tv | 成功，官方调试签名 | 成功，未签名 | 19 / 26 | tv |
 
-共 12 个真实构建文件位于 dist/packages/，均未签名。解包核验通过：目标及最低 API、设备类型、Debug 标记、权限集合、ets/modules.abc 和资源索引；APP 容器含 pack.info 与 HAP。SHA-256、大小及逐文件结果见 package-verification.json。
+dist/packages/ 共 16 个文件：4 个 Debug 签名 HAP、8 个未签名 HAP、4 个未签名 APP。逐文件大小、SHA-256 和结果见 [package-verification.json](package-verification.json)。官方 hap-sign-tool verify-app 校验 Debug 的代码签名、权限签名、摘要及 debug Profile，证书链来自 Huawei CBG。未签名包亦用官方工具确认不存在 Signing Block。APP 内 HAP 的代码、资源和 manifest 与对应 Release HAP 相同，容器装配会改写 pack.info。
 
-构建日志：build-debug-产品.log、build-release-产品.log、build-app-产品.log。编译无错误。日志仍包含 native on/off 可能抛异常的静态提示，调用方控制器在订阅和退订处捕获并显示失败；另有 signingConfig 为空提示。没有通过忽略类型错误完成构建。
+首次在手机模拟器安装签名包时，已有未签名测试包造成 install sign info inconsistent。移除本应用的旧测试安装后签名 HAP 安装成功。该操作仅影响本任务创建的模拟器测试应用。Debug Profile 不等于发布签名，也不保证未登记真机能够安装。
 
-## 实际自动化验证
+凭据保留在本机忽略目录及 DevEco 管理目录。build-debug-signed.py 只在构建期间注入配置，结束后恢复便携 profile。源码 ZIP 去除签名配置并排除凭据，导出时扫描本机签名密码误入文件的情况。
 
-- 采集核心：20/20 通过，日志 host-tests.log。执行真实生产控制器经 TypeScript 转译的逻辑，注入确定的平台替身。覆盖启动/前后台、暂停/恢复新样本、同毫秒恢复边界、每项开关、显式运动授权、拒绝与撤销、授权异步竞争、非法数据、公开光照可选字段、频率纳秒换算/硬件钳制、抽样与内存上限、超时及事件型无回调、清空与快照隔离、API19 本机索引/远端及 mock 排除、API12 路径、服务/订阅失败及退订重试。
-- 兼容编译：测试使用真实 SDK 的 apiAvailable 转换器，确认旧系统对象不具备 apiAvailable 原生函数时，编译后的守卫比较 sdkApiVersion。此项证明编译转换行为，未证明旧系统安装和运行。
-- UI 编译函数：6/6 通过，日志 ui-compiled-tests.log。执行 DevEco SDK 实际生成的卡片更新函数和 Canvas 绘图函数；验证稳定硬件键仍读取最新快照、空曲线清除、常值坐标有限、单分量纵轴、缺失时段不连线、事件点、可选分量消失后安全选择。此项不是 ArkUI 设备渲染或交互测试。
-- 包结构：8 个 HAP、4 个 APP 校验通过。权限仅 ACCELEROMETER、GYROSCOPE、ACTIVITY_MOTION；没有 INTERNET、READ_HEALTH_DATA、后台任务或分布式传感器路径。
+日志见 build-debug-产品.log、build-release-产品.log、build-app-产品.log、build-debug-产品-signed.log。编译无错误。Native on/off 可能抛异常的静态提示由控制器捕获处理，未签名构建会提示没有 signingConfig。
 
-代码复核已修复稳定 ForEach 键捕获旧快照导致数值不刷新的问题：卡片为独立响应式组件，更新闭包通过父级最新 snapshot 取得同键数据，保留键盘焦点和分量选择。不同单位曲线已改为单分量选择。
+## 自动化验证
 
-## 各端实际验证状态
+- **采集核心 20/20**：[host-tests.log](host-tests.log)。执行转译后的生产控制器，覆盖前后台、暂停恢复、同毫秒新样本边界、开关、授权拒绝/撤销及异步竞争、非法值、可选光照字段、纳秒换算与钳制、抽样、内存上限、超时、事件型传感器、清空与快照隔离、本机索引、远端/mock 排除、API12 路径和服务/退订失败。
+- **SDK 生成 UI 函数 9/9**：[ui-compiled-tests.log](ui-compiled-tests.log)。覆盖稳定键更新、单分量曲线、空数据/常值/缺失时段/事件点/可选字段消失，新增频率及分量 Select 避免依赖实时快照的回归验证，以及 TV 确认键只处理 key-down 的规则。
+- **兼容编译**：真实 SDK 的 apiAvailable 转换器生成 sdkApiVersion 判断，旧系统无需具备同名原生函数。这证明编译行为；最低 API12/13/18/19 系统运行未实测。TV API24 镜像提供了低于编译 API26 的实际运行证据。
+- **权限与包内容**：仅 ACCELEROMETER、GYROSCOPE、ACTIVITY_MOTION。没有 INTERNET、READ_HEALTH_DATA、后台任务或分布式传感器路径。
 
-| 设备 | 工程适配实现 | 安装/真机状态 | 实测传感器项目 |
+宿主测试使用平台替身，不替代以下 HarmonyOS 运行时证据。
+
+## 官方模拟器运行
+
+使用 DevEco 官方 Emulator CLI 创建、启动镜像，SDK hdc 和 uitest 安装、读取原生 UI 树、截图和注入测试输入。没有修改系统以绕过签名验证。旧包在这些镜像上曾可未签名安装，该现象仅适用于已测试镜像。
+
+| 设备镜像 | 系统/API | 实际枚举 | 已观察布局和运行 |
 | --- | --- | --- | --- |
-| 手机 | 单列、前后台、权限、数值与曲线 | 待签名和设备授权 | 未验证 |
-| 折叠屏 | 按窗口宽度响应并重排 | 折叠/展开/旋转待真机 | 未验证 |
-| 平板 | 中宽窗口双列、大窗口三列 | 待真机 | 未验证 |
-| PC/二合一 | 窗口重排、键盘可聚焦控件、空列表 | 待真机 | 未验证 |
-| 智慧屏 | TV 类型独立包，大字号/按钮、默认焦点 | 遥控、焦点滚动与登记备案待核验 | 未验证 |
-| 智能手表 | Wearable 独立包，单列、圆屏边距、小屏字号 | 圆/方屏、触控/旋钮、功耗待真机 | 未验证 |
+| Phone，1280×2832 | HarmonyOS 7.0.0 / 26 | 9 项虚拟传感器 | 单列；数值/曲线、权限、暂停恢复、频率、清空、隐私 |
+| Foldable，Mate X7 | HarmonyOS 7.0.0 / 26 | 11 项虚拟传感器 | 展开 2210×2416 双列；折叠 1080×2444 单列；持续回调 |
+| Tablet，2880×1920 | HarmonyOS 7.0.0 / 26 | 9 项虚拟传感器 | 横屏三列，关闭镜像旋转锁后竖屏 1920×2880 两列 |
+| 2in1，3120×2080 | HarmonyOS 7.0.0 / 26 | 7 项虚拟传感器 | 浮动窗口两列，最大化三列；暂停保留数值 |
+| Wearable，466×466 圆屏 | HarmonyOS 7.0.0 / 26 | 9 项虚拟传感器 | 单列可滚动；开始按钮可滚动到达；数值/曲线 |
+| TV | HarmonyOS 6.1.1 / 24 | 1 项光照传感器 | 启动与光照回调；方向键和确认键选择频率、曲线分量及采集开关 |
 
-没有连接任何目标真机，没有真实枚举清单、数值样本或运行截图。PC/TV 空列表是已处理状态，不能断言某设备确为空。尚未在鸿蒙模拟器运行：官方 Device Manager 显示无本地模拟器，Install 返回无法找到 emulator 组件。后续已解决 hdc 自动服务启动连接失败：显式运行官方前台服务，确认本地端口监听并成功查询，返回 [Empty]，当前无在线调试目标。证据见 device-connection-check-2026-11-08.json，复核脚本为 scripts/device-status.py。
+逐端安装日志、截图、JSON/Markdown UI 树、镜像信息和观察记录在 [emulator-runtime](emulator-runtime/)。本轮修复：高密度屏 Canvas 刻度过小（font 改用 vp）、手表 Select 对比度不足、实时快照使 Select 菜单消失、折叠展开窗口未达到双列阈值。分量菜单使用稳定标签及描述状态。TV 增加 Enter/Space/DPAD_CENTER key-down 处理，实机遥控与旋钮仍须验收。
 
-实际设备验收后，应按 device-verification-plan.md 分别记录“有读数 / 未授权 / 本机不支持 / 无回调 / 未验证”，包含型号、API、传感器名称及索引、回调分量、请求/实际间隔、授权/暂停/背景验证。不能把测试夹具称为硬件证据。
+最后一轮另修复 TV 深色按钮的默认黑字，并在 API20+ 使用公开 SymbolGlyphModifier 设置深色下拉箭头。较低 API 走守卫内的旧 Select 分支。TV 使用显式频率及分量按钮，开始后转移焦点；最终包的 DPAD_CENTER 可启动，方向键及确认键可将 5 Hz 改为 10 Hz、选择红外分量、关闭并重新开启单项采集。证据见 tv/observations.md、final-choices-layout.json、final-frequency-button-layout.json、final-axis-selected-layout.json 和 final-toggle-layout.json。早期 native Select 确认键问题不代表最终按钮实现。
+
+最新签名包在 Phone 的 61-final-delivery-start 与 Foldable 的 21-final-delivery-start 中安装、启动并持续显示实时回调，哈希记录已刷新。逐端测试文件哈希与交付包的对应关系见 [final-tested-package-manifest.json](emulator-runtime/final-tested-package-manifest.json)。
+
+Phone 具体证据：
+
+- 30-final-start、31-live-frequency-menu、32-live-frequency-20：实时数值和曲线，采集中菜单保持打开，20 Hz 生效。34-20hz-native-channels.txt 中加速度/陀螺仪等请求间隔 50,000,000 ns；融合传感器受镜像周期限制为 20 ms。请求值不等于每项实际回调频率。
+- 33-motion-dialog、35-motion-allow 及早期拒绝记录：未授权时不显示步数；允许后 43-step-23000 显示官方镜像注入的 23000。
+- 37-bottom-sensors、40-light-injection-observed：光照注入后读取到 100 lx；色温等附加字段提示驱动支持未核实。20.3 注入的即时断言未通过，不把那次尝试记为成功。
+- 16-foreground-channels.txt 对比 17-paused-channels.txt、15-background-channels.txt：暂停及 Home 后 SensorService 没有本应用订阅，返回前台恢复。
+- 45-privacy：原生隐私弹窗正常显示。
+- 最终签名包复测 50-final-launch、51-final-axis-menu、52-final-axis-y：启动、实时分量菜单与 Y 曲线选择正常；54-final-paused、55-final-clear、56-final-paused-return、59-final-live-return：暂停、清空及前后台恢复正常。最终 SensorService 的 53-final-foreground-channels.txt 有本应用订阅，54-final-paused-channels.txt 与 58-final-background-channels.txt 均无本应用订阅。最终测试包 SHA-256 见 final-tested-package.json。
+
+镜像的 isMockSensor=false 不代表物理硬件。镜像厂商名称、零值、静止重力、色温和步数均作为虚拟 API 行为记录。早期并行重启使部分树和截图不一致；01–29 保留探索记录，以本报告明确引用场景和逐端最终记录为准。
 
 ## 资格与数据边界
 
-已先阅读用户指定基线审计，另核验本机 SDK 和官方开放用户权限正文。普通权限面向所有应用；健康本机心率运行权限公开，但个人账号健康类发布要求未获确认，首版不订阅心率、不声明健康权限。Health Service Kit/Wear Engine 受限功能未接入。
+已先读取指定基线审计 harmony-sensor-api-audit-2026-11-08.md，再复核本机 SDK 与官方权限正文。普通公开权限按已核验个人开发者范围实现。心率运行权限公开，但个人账号健康类发布资格仍未确认：当前可列出心率能力，**不订阅心率、不申请健康权限**。Health Service Kit / Wear Engine 受限功能未接入。
 
-轻量穿戴有独立 FA/JS 官方模板，机型安装路径与个人发布资格未确认，未加入本工程。API26 SDK 新增 car API23 元数据线索，更新了原审计的信息边界；个人车机部署与 OEM 路径仍未确认，未加入包内设备类型。详见 docs/qualification-review.md。
+轻量穿戴 FA/JS 模板与当前 Stage/ArkTS 路径不同，机型安装及个人发布路径未确认。API26 SDK 有 car API23 元数据线索，补充了原审计边界；个人车机部署和 OEM 路径仍未确认。两者未加入包内 deviceTypes。详见 [qualification-review.md](../docs/qualification-review.md)。
 
-数据默认在当前进程内存处理，关闭进程丢弃；最近 60 秒和最多 240 点是上限，高频时实际历史时长可能更短。图表时间轴使用回调接收时间，不宣称采样硬件时钟已校准。请求采集频率不保证硬件实际频率；驱动可选光照字段可能为占位值并有界面说明。退订异常时回调被屏蔽并记录错误，但原生清理的实际效果仍须设备验证。
+样本仅保留当前进程内存，最近 60 秒且最多 240 点；高频时覆盖时长可能更短。曲线使用回调接收时间，不宣称硬件时钟已校准。无回调、非法值、权限不足、暂停、超时和服务错误分别显示，不合成替代读数。后台退订，恢复保持手动暂停选择。退订异常由屏蔽晚到回调和重试处理，罕见真机故障效果仍须验证。
 
-## 仍需完成
+## 发布前验收事项
 
-1. 用户登录个人开发者账号，连接并授权至少一台目标设备，配置合法调试签名；再生成及验证可安装包。
-2. 各端真实安装、读数/权限/暂停/前后台/频率、动态窗口与输入适配验收；采集运行截图，检查功耗及传感器服务差异。
-3. 用户提供发布所需真实开发者展示名称、联系邮箱、地区、政策公开 URL 与适用备案信息，按 AGC 可用类目确认设备发布资格。
-4. 生成合法发布签名包，完成发布材料最终核验。当前未发布、未提交审核，也没有宣称健康功能获准。
+本轮按用户指定使用模拟器测试并交付。正式上架前仍须真实硬件、权限撤销、功耗、遥控器/旋钮、最低 API 系统验收；个人账号 AGC 类目及 TV 备案条件；真实展示名称、邮箱、地区、隐私政策 URL；合法发布 Profile 和 Release 签名。见 [device-verification-plan.md](../docs/device-verification-plan.md) 和 [release-materials.md](../docs/release-materials.md)。
 
-请求用户配合是因为账号身份、签名证书/Profile 和设备端授权尚不可用。源码、测试和打包这些可独立完成的工作均已完成后才进入这一阶段。
+没有提交商店审核，也未声称健康、轻量穿戴或车机资格获准。

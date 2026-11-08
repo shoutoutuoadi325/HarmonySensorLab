@@ -10,3 +10,6 @@ local.properties
 *.cer
 *.keystore
 .signing/
+__pycache__/
+*.pyc
+.DS_Store

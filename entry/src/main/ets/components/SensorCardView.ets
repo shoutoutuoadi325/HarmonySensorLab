@@ -1,19 +1,40 @@
 import { SensorRow } from '../model/SensorModels';
+import { deviceInfo } from '@kit.BasicServicesKit';
+import { SymbolGlyphModifier } from '@ohos.arkui.modifier';
 import { SensorController } from '../services/SensorController';
 import { SensorChart } from './SensorChart';
 
 @Component
 export struct SensorCardView {
-  @Prop row: SensorRow;
+  @Prop @Watch('syncAxisLabels') row: SensorRow;
   @Prop compact: boolean = false;
   @Prop television: boolean = false;
   @Prop cardWidth: number = 320;
   @Prop showDetails: boolean = false;
   @State selectedAxis: number = 0;
+  @State axisLabels: string[] = [];
+  @State curveDescription: string = '';
   private controller: SensorController = SensorController.shared();
+  private arrowStyle: SymbolGlyphModifier = new SymbolGlyphModifier().fontColor(['#102C41']);
   private colors: string[] = ['#087F8C', '#B64A34', '#7356AF', '#A57205', '#386AAB', '#A44579'];
   private textSize(): number { return this.television ? 20 : (this.compact ? 12 : 14); }
-  private safeAxis(): number { return Math.max(0, Math.min(this.selectedAxis, this.row.labels.length - 1)); }
+  aboutToAppear(): void { this.syncAxisLabels(); }
+  private syncAxisLabels(): void {
+    const description: string = this.row.title + '曲线分量';
+    if (this.curveDescription !== description) { this.curveDescription = description; }
+    if (this.axisLabels.length !== this.row.labels.length ||
+      this.axisLabels.some((label: string, index: number) => label !== this.row.labels[index])) {
+      this.axisLabels = this.row.labels.slice();
+      this.selectedAxis = Math.max(0, Math.min(this.selectedAxis, this.axisLabels.length - 1));
+    }
+  }
+  private safeAxis(): number { return Math.max(0, Math.min(this.selectedAxis, this.axisLabels.length - 1)); }
+  private activateKey(event: KeyEvent, action: () => void): boolean {
+    if (this.television && event.type === KeyType.Down && [2016, 2054, 2050].includes(event.keyCode)) {
+      action(); return true;
+    }
+    return false;
+  }
   private stateLabel(status: string): string {
     switch (status) {
       case 'live': return '实时'; case 'waiting': return '等待样本'; case 'stale': return '数据超时';
@@ -50,9 +71,29 @@ export struct SensorCardView {
       }.width('100%')
       if (this.row.labels.length > 0 && this.row.status !== 'qualification') {
         if (this.row.labels.length > 1) {
-          Select(this.row.labels.map((label: string): SelectOption => { return { value: label }; }))
-            .selected(this.safeAxis()).value(this.row.labels[this.safeAxis()]).font({ size: this.textSize() })
-            .onSelect((axis: number) => this.selectedAxis = axis).accessibilityText(this.row.title + '曲线分量')
+          if (this.television) {
+            Flex({ wrap: FlexWrap.Wrap }) {
+              ForEach(this.axisLabels, (label: string, axis: number) => {
+                Button(label.split(' (')[0]).fontSize(this.textSize()).height(56).focusable(true)
+                  .margin({ right: 8, bottom: 8 })
+                  .backgroundColor(this.safeAxis() === axis ? '#102C41' : '#E5EEF5')
+                  .fontColor(this.safeAxis() === axis ? Color.White : '#102C41')
+                  .onClick(() => this.selectedAxis = axis)
+                  .onKeyEvent((event: KeyEvent) => this.activateKey(event, () => this.selectedAxis = axis))
+                  .accessibilityText(this.curveDescription + '：' + label)
+              }, (label: string) => label)
+            }.width('100%')
+          } else if (deviceInfo.apiAvailable(20)) {
+            Select(this.axisLabels.map((label: string): SelectOption => { return { value: label }; }))
+              .selected(this.safeAxis()).value(this.axisLabels[this.safeAxis()]).font({ size: this.textSize() })
+              .fontColor('#102C41').backgroundColor('#E5EEF5').arrowModifier(this.arrowStyle)
+              .onSelect((axis: number) => this.selectedAxis = axis).accessibilityText(this.curveDescription)
+          } else {
+            Select(this.axisLabels.map((label: string): SelectOption => { return { value: label }; }))
+            .selected(this.safeAxis()).value(this.axisLabels[this.safeAxis()]).font({ size: this.textSize() })
+            .fontColor('#102C41').backgroundColor('#E5EEF5')
+            .onSelect((axis: number) => this.selectedAxis = axis).accessibilityText(this.curveDescription)
+          }
         }
         SensorChart({ row: this.row, axis: this.safeAxis(), compact: this.compact })
       }
@@ -70,6 +111,7 @@ export struct SensorCardView {
           Text(this.row.enabled ? '采集已开启' : '采集已关闭').fontSize(this.textSize()).fontColor('#526679').layoutWeight(1)
           Toggle({ type: ToggleType.Switch, isOn: this.row.enabled }).selectedColor('#087F8C')
             .onChange((enabled: boolean) => this.controller.setEnabled(this.row.key, enabled)).accessibilityText(this.row.title + '的采集开关')
+            .onKeyEvent((event: KeyEvent) => this.activateKey(event, () => this.controller.setEnabled(this.row.key, !this.row.enabled)))
         }.width('100%')
       }
     }.padding(this.compact ? 14 : 20).width(this.cardWidth).backgroundColor(Color.White)

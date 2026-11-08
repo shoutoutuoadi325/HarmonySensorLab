@@ -1,0 +1,899 @@
+11-08 21:37:42.892  2143  2143 E A0001B/com.ohos.sceneboard/AA: [a92ab17b26bc3dc 19e3dfa 31d8f3c]FormZoomViewManager --> deleteFormZoomSnapshot mFormZoomSnapshot is empty
+11-08 21:37:42.895  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [a92ab17b26bc3dc 333d034 eeb4cb][HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:42.919  2315  2315 E A03D00/com.ohos.contactsdataability/JSAPP: [a92ab17b26bc3dc 61eb7e 3ca7244][ContactsData:]BackUpBigPhotoService bigPhotoFromFile backUpBigPhotoFormDistribute :handleBigPhotoToGroupSandbox fail
+11-08 21:37:42.927  2143  2143 E A0001B/com.ohos.sceneboard/AA: CommonDao --> getAccount account empty
+11-08 21:37:42.928  2143  2143 E A0001B/com.ohos.sceneboard/AA: SearchViewController --> searchHintsPreloadIcon end hints data is empty
+11-08 21:37:42.928  2143  2143 E A0001B/com.ohos.sceneboard/AA: GridServiceController --> gridServicePreloadIcon end gridServiceView is null
+11-08 21:37:42.930  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.930  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.930  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.941  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.943  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.943  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.943  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.943  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.944  2143  2143 E A0001B/com.ohos.sceneboard/AA: IntelligentCloudConfigDao --> get4HCloudConfigByKey, localConfigOfJsonStr is null
+11-08 21:37:42.954  2143  2143 E A0001B/com.ohos.sceneboard/AA: ExplorationCardsModel --> getIntelligentCardsFromDeskTop deskTopCardList empty
+11-08 21:37:42.954  2143  2143 E A04200/com.ohos.sceneboard/WMS: [a92ab17b26bc3dc 3685770 87e07][SCBMission]SCBSceneMissionManager --> findMainSessionGlobalById error, not exist.
+11-08 21:37:42.954  2143  2143 E A04222/com.ohos.sceneboard/WMSMission: [a92ab17b26bc3dc 3685770 87e07][Screen:0][Panel:1] invalid persistentId
+11-08 21:37:42.954  2143  2143 E A04222/com.ohos.sceneboard/WMSMission: [a92ab17b26bc3dc 3685770 87e07][Screen:0][Panel:2] invalid persistentId
+11-08 21:37:42.956  2143  2143 E A04222/com.ohos.sceneboard/WMSMission: [a92ab17b26bc3dc 3685770 87e07][Screen:0][Panel:1] invalid persistentId
+11-08 21:37:42.956  2143  2143 E A04222/com.ohos.sceneboard/WMSMission: [a92ab17b26bc3dc 3685770 87e07][Screen:0][Panel:2] invalid persistentId
+11-08 21:37:42.957  2143  2143 E A04200/com.ohos.sceneboard/WMS: [a92ab17b26bc3dc 3685770 87e07][SCBMission]SCBSceneMissionManager --> findMainSessionGlobalById error, not exist.
+11-08 21:37:42.978  2143  2143 E A01B01/com.ohos.sceneboard/HOME: [a92ab17b26bc3dc 3685770 87e07]SCBSPVM: overlayCardInfo is invalid
+11-08 21:37:42.980  2143  2143 E A0421D/com.ohos.sceneboard/WMSRotation: [a92ab17b26bc3dc 3685770 87e07][needRotateWithFlowLight] no need add rotation
+11-08 21:37:42.983  2143  2143 E A04200/com.ohos.sceneboard/WMS: [a92ab17b26bc3dc 3685770 87e07][SCBMission]SCBSceneMissionManager --> findMainSessionGlobalById error, not exist.
+11-08 21:37:43.019  3533  3533 E A06666/com.huawei.hmos.calendardata/PafLog_TS: initConfig error cppConfig is undefined
+11-08 21:37:43.039  2143  2143 E A01A00/com.ohos.sceneboard/SYS_UI: [a92ab17b26bc3dc 3685770 87e07]OverlayStartAnimHelper: overlayCardInfo is invalid
+11-08 21:37:43.046  2143  2143 E A0421D/com.ohos.sceneboard/WMSRotation: [a92ab17b26bc3dc 3685770 87e07][needRotateWithFlowLight] no need add rotation
+11-08 21:37:43.059  3533  3533 E A06666/com.huawei.hmos.calendardata/PafLog_TS: failed to initialize PAF Log, result=-1
+11-08 21:37:43.155  3533  3872 E A06666/com.huawei.hmos.calendardata/PafLog_TS: initConfig error cppConfig is undefined
+11-08 21:37:43.198  3859  3914 E A00500/com.huawei.hmos.settings/Settings: BaseUtils --> getEsimSupport failed. error: undefined Cannot read property isSupported of undefined
+11-08 21:37:43.413  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:43.413  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:43.490  3859  3921 E A00500/com.huawei.hmos.settings/Settings: DisplayPreferencesUtils: taskDisPlaySwitch catch error. code:undefined message:Cannot read property getSupported of undefined
+11-08 21:37:43.917  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:44.424  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:44.426  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:44.426  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], create more than 3 times
+11-08 21:37:44.433  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:44.937  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:45.426  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:45.441  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:45.946  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], createDataShareHelper err, { code: 15700010, msg: The DataShareHelper is not initialized successfully. }
+11-08 21:37:45.946  2143  2143 E A0FF00/com.ohos.sceneboard/SEARCH: [HiSearch]: [BaseSilenceController], create more than 3 times
+11-08 21:37:46.429  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:47.433  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:48.437  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:49.455  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:50.462  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:51.478  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:52.498  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:53.517  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:54.529  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:55.570  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:56.576  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:57.602  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:58.605  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:37:59.629  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:00.019  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:38:00.019  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:38:00.641  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:01.681  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:02.728  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:02.993  4051  4203 E A00500/com.huawei.hmos.settings/Settings: BaseUtils --> getEsimSupport failed. error: undefined Cannot read property isSupported of undefined
+11-08 21:38:03.195  4051  4215 E A00500/com.huawei.hmos.settings/Settings: DisplayPreferencesUtils: taskDisPlaySwitch catch error. code:undefined message:Cannot read property getSupported of undefined
+11-08 21:38:03.742  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:04.761  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:05.824  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:06.853  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:07.859  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:08.876  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:09.917  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:10.952  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:11.988  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:13.024  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:14.033  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:15.090  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:16.126  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:17.137  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:17.204  2143  2143 E A01B04/com.ohos.sceneboard/CC: Model.EBookToggleController --> EBook Failed to getSupportedResult, error: Cannot read property getSupported of undefined
+11-08 21:38:18.161  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:19.235  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:19.687  2143  2143 E A01B04/com.ohos.sceneboard/CC: Model.EBookToggleController --> EBook Failed to getSupportedResult, error: Cannot read property getSupported of undefined
+11-08 21:38:20.341  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:21.385  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:22.451  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:23.475  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:24.512  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:25.518  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:26.563  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:27.579  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:28.637  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:29.646  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:30.677  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:31.703  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:32.731  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:33.768  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:34.816  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:35.832  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:36.836  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:37.855  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:38.875  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:39.886  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:40.909  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:41.915  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:42.920  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:43.951  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:44.954  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:45.978  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:46.987  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:47.997  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:49.003  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:50.060  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:51.078  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:52.090  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:53.097  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:54.131  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:55.143  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:56.165  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:57.194  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:58.231  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:38:59.254  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:00.028  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:39:00.028  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:39:00.277  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:01.282  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:02.306  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:03.314  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:04.327  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:05.332  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:06.349  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:07.353  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:08.369  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:09.377  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:10.419  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:11.439  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:12.493  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:13.521  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:14.574  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:15.598  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:16.630  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:17.636  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:18.665  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:19.686  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:20.690  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:21.731  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:22.738  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:23.755  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:24.830  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:25.855  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:26.881  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:27.945  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:28.992  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:30.010  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:31.078  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:32.126  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:33.147  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:34.196  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:35.227  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:36.258  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:37.267  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:38.295  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:39.310  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:40.319  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:41.363  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:42.417  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:43.459  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:44.513  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:45.537  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:46.546  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:47.573  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:48.582  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:49.596  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:50.601  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:51.641  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:52.672  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:53.692  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:54.699  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:55.732  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:56.748  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:57.775  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:58.799  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:39:59.820  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:00.013  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:40:00.013  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:40:00.844  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:01.898  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:02.905  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:03.920  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:04.977  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:05.984  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:07.006  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:08.012  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:09.075  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:10.089  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:11.109  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:12.118  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:13.144  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:14.164  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:15.205  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:16.208  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:17.228  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:18.262  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:19.283  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:20.313  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:21.329  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:22.378  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:23.392  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:24.422  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:25.431  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:26.437  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:27.455  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:28.471  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:29.477  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:30.526  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:31.541  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:32.558  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:33.568  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:34.572  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:35.606  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:36.619  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:37.650  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:38.662  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:39.681  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:40.706  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:41.716  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:42.724  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:43.750  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:44.756  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:45.772  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:46.806  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:47.814  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:48.826  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:49.844  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:50.849  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:51.872  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:52.909  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:53.918  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:54.923  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:55.964  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:57.002  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:58.047  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:40:59.094  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:00.032  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:41:00.032  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:41:00.101  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:01.105  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:02.120  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:03.124  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:04.131  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:05.177  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:06.184  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:07.197  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:08.201  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:09.214  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:10.247  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:11.273  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:12.304  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:13.347  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:14.419  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:15.424  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:16.433  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:17.443  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:18.484  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:19.491  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:20.497  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:21.502  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:22.506  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:23.536  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:24.541  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:25.569  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:26.573  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:27.618  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:28.622  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:29.706  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:30.738  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:31.748  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:32.755  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:33.766  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:34.774  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:35.788  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:36.795  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:37.800  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:38.832  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:39.837  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:40.842  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:41.852  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:42.863  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:43.876  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:44.881  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:45.917  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:46.946  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:48.006  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:49.016  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:50.025  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:51.038  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:52.042  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:53.046  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:54.079  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:55.117  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:56.139  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:57.152  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:58.189  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:41:59.197  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:00.008  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:42:00.008  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:42:00.209  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:01.218  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:02.265  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:03.268  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:04.279  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:05.286  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:06.290  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:07.306  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:08.323  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:09.327  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:10.334  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:11.372  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:12.384  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:13.393  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:14.408  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:15.418  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:16.427  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:17.471  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:18.478  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:19.493  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:20.506  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:21.511  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:22.514  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:23.517  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:24.532  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:25.542  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:26.545  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:27.558  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:28.563  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:29.570  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:30.584  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:31.617  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:32.637  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:33.669  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:34.676  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:35.686  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:36.691  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:37.702  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:38.759  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:39.771  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:40.784  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:41.801  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:42.841  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:43.582  2143  2143 E A04200/com.ohos.sceneboard/WMS: SCBSSM --> [collaboration] collaborateFromScene callback map not exist
+11-08 21:42:43.850  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:44.909  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:45.922  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:46.927  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:47.947  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:48.952  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:49.956  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:50.960  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:51.979  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:52.984  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:53.990  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:54.226  4194  4194 E A05612/commonUI/ASP: [SPC][PermissionDialog][Ability]: setNonSystemFloatingWindows failed, shouldHide: false, 1300002, This window state is abnormal.[window][hideNonSystemFloatingWindows]msg: invalid window.
+11-08 21:42:54.233  4194  4194 E A05612/commonUI/ASP: [SPC][PermissionDialog][Ability]: fail to call off window event: code: 1300002, message: This window state is abnormal.[window][off]msg: The window is not created or destroyed..
+11-08 21:42:54.238  4194  4194 E A05612/commonUI/ASP: [SPC][PermissionDialog][Ability]: setNonSystemFloatingWindows failed, shouldHide: false, 1300002, This window state is abnormal.[window][hideNonSystemFloatingWindows]msg: invalid window.
+11-08 21:42:54.238  4194  4194 E A05612/commonUI/ASP: [SPC][PermissionDialog][Ability]: destroy window failed, code: 1300002, message: This window state is abnormal.[window][destroyWindow]msg: The window is not created or destroyed..
+11-08 21:42:55.008  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:56.015  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:57.022  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:58.035  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:42:59.041  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:00.002  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:43:00.002  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:43:00.049  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:01.060  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:02.067  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:03.083  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:04.089  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:05.112  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:06.119  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:07.129  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:08.133  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:09.138  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:10.149  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:11.166  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:12.169  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:13.197  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:14.202  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:15.209  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:16.243  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:17.246  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:18.251  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:19.312  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:20.389  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:21.392  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:22.402  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:23.429  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:24.448  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:25.451  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:26.485  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:27.513  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:28.529  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:29.554  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:30.560  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:31.584  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:32.590  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:33.596  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:34.602  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:35.622  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:36.633  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:37.687  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:38.702  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:39.774  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:40.779  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:41.790  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:42.799  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:43.833  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:44.888  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:45.906  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:46.939  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:47.944  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:48.952  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:49.955  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:50.988  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:51.996  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:53.007  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:54.020  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:55.029  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:56.041  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:57.055  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:58.060  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:43:59.066  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:00.017  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:44:00.017  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:44:00.087  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:01.096  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:02.110  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:03.130  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:04.140  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:05.150  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:06.160  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:07.174  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:08.185  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:09.203  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:10.230  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:11.241  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:12.249  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:13.254  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:14.261  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:15.309  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:16.331  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:17.432  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:18.437  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:19.507  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:20.522  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:21.573  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:22.587  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:23.594  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:24.605  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:25.612  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:26.623  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:27.640  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:28.656  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:29.687  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:30.725  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:31.750  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:32.767  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:33.780  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:34.789  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:35.796  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:36.817  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:37.828  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:38.847  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:39.875  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:40.882  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:41.892  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:42.899  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:43.920  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:44.948  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:45.953  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:46.965  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:48.015  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:49.057  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:50.066  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:51.073  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:52.099  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:53.107  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:54.117  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:55.155  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:56.162  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:57.167  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:58.174  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:44:59.253  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:00.006  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> backgroundImage resource error
+11-08 21:45:00.006  2143  2143 E A01C06/com.ohos.sceneboard/ICON: AppIconCalendarCache --> calendarForegroundBuilder is null
+11-08 21:45:00.322  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:01.332  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:02.341  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:03.377  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:04.387  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:05.394  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:06.400  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:07.411  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:08.420  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:09.447  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:10.453  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:11.467  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:12.475  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:13.488  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:14.497  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:15.526  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:16.553  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:17.564  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:18.576  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:19.585  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:20.589  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:21.600  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:22.633  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:23.688  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:24.705  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:25.721  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:26.736  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:27.743  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:28.791  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:29.795  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:30.812  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:31.850  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:32.856  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:33.866  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:34.876  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:35.879  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:36.890  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:37.894  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:38.918  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:39.922  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:40.926  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:41.932  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:42.016   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 7621890 speed 7167k/s API_num 12127
+11-08 21:45:42.019  8723  8723 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:42.019  8723  8723 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:42.019  8723  8723 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:42.019  8723  8723 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:42.024  8725  8725 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:42.024  8725  8725 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:42.024  8725  8725 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:42.024  8725  8725 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:42.029  8726  8726 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:42.029  8726  8726 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:42.029  8726  8726 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:42.029  8726  8726 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:42.208  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:42.209  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:42.211  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:42.215  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:42.216  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:42.217  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:42.325   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1044 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:42.925   794   807 E C01336/foundation/AMS: [a92ab97d06e0a0f 12f0109 0][SAU314]extensionInfo empty
+11-08 21:45:42.925   794   807 E C01342/foundation/ServiceExt: [a92ab97d06e0a0f 12f0109 0][ABMS6278]generate request error
+11-08 21:45:42.926  1227  8502 E C02300/locationhub/FenceExtension: [(DoConnect:153)]CONNECT_ABILITY_FAILED,ret:2097152
+11-08 21:45:42.930   794   807 E C01336/foundation/AMS: [a92aba7d06e232a 1d6e09d 0][SAU314]extensionInfo empty
+11-08 21:45:42.930   794   807 E C01342/foundation/ServiceExt: [a92aba7d06e232a 1d6e09d 0][ABMS6278]generate request error
+11-08 21:45:42.932  1227  8502 E C02300/locationhub/FenceExtension: [(DoConnect:153)]CONNECT_ABILITY_FAILED,ret:2097152
+11-08 21:45:42.937   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:42.937   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:42.938   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:42.938   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:42.938   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:42.938   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:42.938   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:42.938  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:42.998  8728  8728 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:42.998  8728  8728 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:42.998  8728  8728 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:42.998  8728  8728 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.012  8728  8728 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.012  8728  8728 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.012  8728  8728 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.012  8728  8728 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.028   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 8053090 speed 7773k/s API_num 12743
+11-08 21:45:43.156   900   937 E C01810/aps_manager/SA_CLIENT: GetSaWrap SA:65962 not start
+11-08 21:45:43.335  8730  8730 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.335  8730  8730 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.335  8730  8730 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.335  8730  8730 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.339  8734  8734 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.339  8734  8734 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.339  8734  8734 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.339  8734  8734 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.340  8732  8732 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.340  8732  8732 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.340  8732  8732 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.340  8732  8732 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.340  8733  8733 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.340  8733  8733 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.340  8733  8733 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.340  8733  8733 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.345  8735  8735 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.345  8735  8735 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.345  8735  8735 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.345  8735  8735 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.345  8736  8736 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.345  8736  8736 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.345  8736  8736 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.345  8736  8736 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.426   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1101 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:43.731  1421  1421 E C02C11/nwebspawn/APPSPAWN: [appspawn_kickdog.c:29]open /sys/kernel/hungtask/userlist fail,errno:2
+11-08 21:45:43.820  8737  8737 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.820  8737  8737 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.820  8737  8737 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.820  8737  8737 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.825  8739  8739 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.825  8739  8739 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.825  8739  8739 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.825  8739  8739 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.830  8740  8740 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:43.830  8740  8740 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:43.830  8740  8740 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:43.830  8740  8740 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:43.943   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:43.943   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:43.943   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:43.943   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:43.943   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:43.943   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:43.943   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:43.943  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:44.053   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 6773994 speed 6452k/s API_num 10668
+11-08 21:45:44.457  8742  8742 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:44.457  8742  8742 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:44.457  8742  8742 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:44.457  8742  8742 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:44.461  8744  8744 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:44.461  8744  8744 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:44.461  8744  8744 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:44.462  8744  8744 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:44.489   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1062 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:44.893   129  1232 E C02D66/hiview/XPerf: [InquiryOhImpl::ExtractStringValue] Canonical FilePath: /sys/class/ithermal/lpm/lpm_freq failed.
+11-08 21:45:44.893   129  1232 E C02D66/hiview/XPerf: [InquiryOhImpl::ExtractStringValue] Canonical FilePath: /sys/class/power_supply/Battery/status failed.
+11-08 21:45:44.951   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:44.951   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:44.951   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:44.951   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:44.951   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:44.951   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:44.951   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:44.952  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:45.137  8750  8750 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.137  8750  8750 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.137  8750  8750 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.137  8750  8750 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.141  8750  8750 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.141  8750  8750 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.141  8750  8750 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.141  8750  8750 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.292   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 10634194 speed 8384k/s API_num 16678
+11-08 21:45:45.493  8752  8752 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.493  8752  8752 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.493  8752  8752 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.493  8752  8752 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.498  8754  8754 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.498  8754  8754 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.498  8754  8754 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.498  8754  8754 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.498  8756  8756 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.498  8756  8756 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.498  8756  8756 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.498  8756  8756 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.499  8755  8755 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.499  8755  8755 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.499  8755  8755 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.499  8755  8755 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.504  8757  8757 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.504  8757  8757 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.504  8757  8757 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.504  8757  8757 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.505  8758  8758 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.505  8758  8758 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.505  8758  8758 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.505  8758  8758 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.611   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1121 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:45.957   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:45.957   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:45.958   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:45.958   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:45.958   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:45.958   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:45.958   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:45.958  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:45.987  8759  8759 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.987  8759  8759 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.987  8759  8759 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.987  8759  8759 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.992  8761  8761 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.992  8761  8761 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.992  8761  8761 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.992  8761  8761 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:45.997  8762  8762 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:45.997  8762  8762 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:45.997  8762  8762 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:45.997  8762  8762 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:46.359   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 9394295 speed 8592k/s API_num 14659
+11-08 21:45:46.419   900   937 E C01810/aps_manager/SA_CLIENT: GetSaWrap SA:65962 not start
+11-08 21:45:46.534  8763  8763 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:46.534  8763  8763 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:46.534  8763  8763 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:46.534  8763  8763 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:46.688   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1077 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:46.974   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:46.974   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:46.974   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:46.974   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:46.974   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:46.974   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:46.974   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:46.975  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:47.003   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.003   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.007   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.007   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.011   481  1624 E C01707/distributeddata/CONCUR: [Interface] task 1624 apply qos failed, errno = 4
+11-08 21:45:47.011   481  1624 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.013   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.013   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.018   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.018   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.021   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.021   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.023   681   743 E C02906/powermgr/PowerWakeup: not setting awake or inactive, return
+11-08 21:45:47.037  8768  8768 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.037  8768  8768 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.037  8768  8768 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.037  8768  8768 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.042  8768  8768 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.042  8768  8768 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.042  8768  8768 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.042  8768  8768 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.143  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:47.145  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:47.146  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:47.148  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:47.149  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:47.151  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:47.384  8770  8770 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.384  8770  8770 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.384  8770  8770 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.384  8770  8770 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.389  8774  8774 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.389  8774  8774 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.390  8774  8774 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.390  8774  8774 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.390  8772  8772 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.390  8772  8772 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.390  8773  8773 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.390  8773  8773 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.390  8772  8772 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.390  8772  8772 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.390  8773  8773 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.390  8773  8773 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.395  8775  8775 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.395  8776  8776 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.395  8776  8776 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.395  8776  8776 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.395  8776  8776 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.395  8775  8775 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.395  8775  8775 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.395  8775  8775 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.546   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 9864698 speed 8115k/s API_num 15331
+11-08 21:45:47.857   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1168 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:47.870  8777  8777 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.870  8777  8777 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.870  8777  8777 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.870  8777  8777 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.874  8779  8779 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.874  8779  8779 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.874  8779  8779 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.874  8779  8779 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.879  8780  8780 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:47.879  8780  8780 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:47.879  8780  8780 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:47.879  8780  8780 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:47.982   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:47.982   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:47.982   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:47.982   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:47.982   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:47.982   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:47.982   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:47.982  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:48.364   134   134 E C02C11/appspawn/APPSPAWN: [appspawn_kickdog.c:29]open /sys/kernel/hungtask/userlist fail,errno:2
+11-08 21:45:48.692  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2176 apply qos failed, errno = 4
+11-08 21:45:48.693  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2177 apply qos failed, errno = 4
+11-08 21:45:48.694  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2179 apply qos failed, errno = 4
+11-08 21:45:48.696  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2178 apply qos failed, errno = 4
+11-08 21:45:48.714  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2176 apply qos failed, errno = 4
+11-08 21:45:48.716  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2177 apply qos failed, errno = 4
+11-08 21:45:48.717  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2179 apply qos failed, errno = 4
+11-08 21:45:48.718  2143  2176 E C01707/com.ohos.sceneboard/CONCUR: [Interface] task 2178 apply qos failed, errno = 4
+11-08 21:45:48.806   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 10290300 speed 7980k/s API_num 15939
+11-08 21:45:48.888   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1031 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:49.026   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:49.026   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:49.026   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:49.026   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:49.026   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:49.026   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:49.026   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:49.026  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:49.033  8781  8781 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.033  8781  8781 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.033  8781  8781 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.033  8781  8781 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.040  8781  8781 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.040  8781  8781 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.040  8781  8781 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.040  8781  8781 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.426  8783  8783 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.426  8783  8783 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.426  8783  8783 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.426  8783  8783 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.431  8786  8786 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.431  8786  8786 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.431  8786  8786 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.431  8786  8786 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.431  8785  8785 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.431  8785  8785 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.431  8785  8785 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.431  8785  8785 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.432  8787  8787 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.432  8787  8787 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.432  8787  8787 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.432  8787  8787 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.436  8788  8788 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.436  8788  8788 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.436  8788  8788 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.436  8788  8788 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.437  8789  8789 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.437  8789  8789 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.437  8789  8789 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.437  8789  8789 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.672   900   937 E C01810/aps_manager/SA_CLIENT: GetSaWrap SA:65962 not start
+11-08 21:45:49.887  8790  8790 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.887  8790  8790 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.887  8790  8790 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.887  8790  8790 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.892  8792  8792 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.892  8792  8792 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.892  8792  8792 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.892  8792  8792 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.898  8793  8793 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:49.898  8793  8793 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:49.898  8793  8793 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:49.898  8793  8793 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:49.903   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 10727100 speed 9543k/s API_num 16563
+11-08 21:45:49.933   484  8794 E C01562/wifi_manager_service/ScanStateMachine: invalid scan style.
+11-08 21:45:49.936   484  8794 E C01560/wifi_manager_service/OHWIFI_STATE_MACHINE: SwitchState, Switch to targetState: CommonScanning.
+11-08 21:45:49.965   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1076 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:50.033   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:50.033   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:50.034   129  8541 E C02D66/hiview/XPerf: [InquiryOhImpl::ExtractStringValue] Canonical FilePath: /sys/class/ithermal/lpm/lpm_freq failed.
+11-08 21:45:50.034   129  8541 E C02D66/hiview/XPerf: [InquiryOhImpl::ExtractStringValue] Canonical FilePath: /sys/class/power_supply/Battery/status failed.
+11-08 21:45:50.034   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:50.034   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:50.034   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:50.034   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:50.034   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:50.034  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:50.621   310  8490 E C01F04/telephony/TelephonySubsystem: GetSimAccountInfo fail!
+11-08 21:45:50.690  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:50.691  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:50.692  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:50.695  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3956 apply qos failed, errno = 4
+11-08 21:45:50.696  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3958 apply qos failed, errno = 4
+11-08 21:45:50.697  3893  3893 E C01707/com.personal.harmonysensorlab/CONCUR: [Interface] task 3957 apply qos failed, errno = 4
+11-08 21:45:50.989   791   897 E C02515/render_service/DGLES: [d_eglSwapBuffers_special@egl_gpu.cpp:733] thread output size 8893601 speed 8000k/s API_num 13696
+11-08 21:45:50.995  8801  8801 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:50.995  8801  8801 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:50.995  8801  8801 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:50.995  8801  8801 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:51.000  8801  8801 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:51.000  8801  8801 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:51.000  8801  8801 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:51.000  8801  8801 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:51.041   481  1659 E C01707/distributeddata/CONCUR: [Interface] task 1659 apply qos failed, errno = 4
+11-08 21:45:51.041   481  1659 E C01611/distributeddata/QosManager: QosManager: Failed to set thread QoS to QOS_USER_INTERACTIVE, ret: -1
+11-08 21:45:51.041   794   807 E C01121/foundation/BMSQuery: query bundle_ext code 8521480
+11-08 21:45:51.041   481  1659 E C01651/distributeddata/BundleMgrProxy: GetBundleInfoFromBMS: GetBundleInfo failed!bundleName is com.huawei.hmsapp.totemweather, userId is 100
+11-08 21:45:51.041   481  1659 E C01651/distributeddata/DataProviderConfig: GetFromProxyData: Get bundleInfo failed! bundleName:com.huawei.hmsapp.totemweather, userId:100, visitedId:100, uri:******clockForms
+11-08 21:45:51.041   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetBMSAndMetaDataStatus: CalledInfo failed! token:0x200f2a8a,ret:1001,uri:******clockForms
+11-08 21:45:51.041   481  1659 E C01651/distributeddata/DataShareServiceImpl: GetSilentProxyStatus: BMS or metaData not ready to complete, token:0x200f2a8a, uri:******clockForms
+11-08 21:45:51.041  2143  2143 E A01C06/com.ohos.sceneboard/ICON: PageDesktopOneShotManager: get weather info failed, code: 15700010, message: The DataShareHelper is not initialized successfully.
+11-08 21:45:51.077   507   544 E C02516/sensor_host/cb: [nodict]PrintCount: {-1,259,0,1} duration 1112 durationCount 6 perSecondCount 6 targetCount is more than 45 samplingInterval 20
+11-08 21:45:51.138  8803  8803 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:51.138  8803  8803 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:51.138  8803  8803 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:51.138  8803  8803 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on
+11-08 21:45:51.142  8803  8803 E C02C02/PARAM: Forbid to read parameter hilog.debug.on
+11-08 21:45:51.142  8803  8803 E C02C02/PARAM: Forbid to access parameter hilog.debug.on
+11-08 21:45:51.142  8803  8803 E C02C02/PARAM: Forbid to read parameter persist.sys.hilog.debug.on
+11-08 21:45:51.142  8803  8803 E C02C02/PARAM: Forbid to access parameter persist.sys.hilog.debug.on

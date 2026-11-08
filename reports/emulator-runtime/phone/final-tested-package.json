@@ -1,0 +1,9 @@
+{
+  "file": "dist/packages/sensor-default-debug-signed.hap",
+  "sha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+  "signed": true,
+  "profileType": "debug",
+  "runtime": "official HarmonyOS API26 emulator",
+  "testKind": "virtual sensor callbacks, not physical hardware",
+  "finalSmokeScenario": "61-final-delivery-start"
+}

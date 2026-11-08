@@ -13,4 +13,4 @@ for product in default pc wearable tv; do
 done
 node tests/host/run.cjs > reports/host-tests.log
 node tests/host/ui-compiled.cjs > reports/ui-compiled-tests.log
-python3 scripts/verify-packages.py > reports/package-verification.json
+python3 scripts/verify-packages.py --unsigned-only > reports/package-verification.json

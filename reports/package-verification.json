@@ -2,8 +2,8 @@
   "packages": [
     {
       "file": "dist/packages/sensor-default-debug-unsigned.hap",
-      "bytes": 201677,
-      "sha256": "eb7dde3e42f4df166a2339bc48eefe19eaf6b0037d7f91640a106f6d40537f76",
+      "bytes": 238190,
+      "sha256": "32c2693be7e66af98dc9d54007e1d343c5c66d3387ce814e3e922329484bdfbd",
       "mode": "debug",
       "devices": [
         "phone",
@@ -11,12 +11,13 @@
       ],
       "minimumApi": 50000012,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-default-release-unsigned.hap",
-      "bytes": 83685,
-      "sha256": "972c1149bd1970a75da9f23c59c7b4727d78d3f2fc84c1c5eb4481aef0158a30",
+      "bytes": 99077,
+      "sha256": "8a79acfb626a8307e906209185cd23e46a150ba1e6e65b81d83114f44374e0a1",
       "mode": "release",
       "devices": [
         "phone",
@@ -24,108 +25,151 @@
       ],
       "minimumApi": 50000012,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-default-release-unsigned.app",
-      "bytes": 43042,
-      "sha256": "1a2cc25fce34bf712fdf87147ce515a8aa6dcc4bd2494efe50bc66673569572e",
+      "bytes": 49177,
+      "sha256": "21eca4d6b7fbe4c8b2ea8adc8171063f604811b3b07e7a14f587c40458b55fd3",
       "signed": false,
-      "checks": "container passed"
+      "checks": "container and embedded Release HAP passed"
+    },
+    {
+      "file": "dist/packages/sensor-default-debug-signed.hap",
+      "bytes": 278271,
+      "sha256": "1261991a054b4487e7ff25b32d2cb93b752c2abb25f172c2791e272a3c5fe988",
+      "signed": true,
+      "profileType": "debug",
+      "signatureCheck": "official debug signature verified",
+      "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-pc-debug-unsigned.hap",
-      "bytes": 202378,
-      "sha256": "9d6c76eb39d3ffa304e1c51cef38afc1e3f18161bb7556dab28e861ac1d993ad",
+      "bytes": 238987,
+      "sha256": "ccaa2237e0b9d0b4f693d52feb371999370f9ee9f7be242b70cf97071820bf3c",
       "mode": "debug",
       "devices": [
         "2in1"
       ],
       "minimumApi": 50001013,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-pc-release-unsigned.hap",
-      "bytes": 84666,
-      "sha256": "7b719bbc3af2d15b925a213ae0c63c410883ede18361207351b7dc10e276be2d",
+      "bytes": 100186,
+      "sha256": "d720a9ffaaff323d69b53b3ca8b79dc6e3c05ec48e1f094919cae03351aeb1a1",
       "mode": "release",
       "devices": [
         "2in1"
       ],
       "minimumApi": 50001013,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-pc-release-unsigned.app",
-      "bytes": 42104,
-      "sha256": "fae94ed6b6cdc7563821f1035e6b043df175d5fb951221553fc571342f50a8a4",
+      "bytes": 48054,
+      "sha256": "873442f0084e95e0aebc63068a6a8525ad36092b8ae94c2f3c1c2bee7b4c294d",
       "signed": false,
-      "checks": "container passed"
+      "checks": "container and embedded Release HAP passed"
+    },
+    {
+      "file": "dist/packages/sensor-pc-debug-signed.hap",
+      "bytes": 277416,
+      "sha256": "f8565f0228314f225e103809011a2e2916b791f9cbb46b4bb6e307141dd47348",
+      "signed": true,
+      "profileType": "debug",
+      "signatureCheck": "official debug signature verified",
+      "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-wearable-debug-unsigned.hap",
-      "bytes": 201976,
-      "sha256": "28bc56f5ae0e5eea75e69d1f65868769e862ea202f33545f0f89f8337234690a",
+      "bytes": 238445,
+      "sha256": "9a11b33ae8f60e584b6107d3290e93bf18893f16f90d81a529de0923eae30508",
       "mode": "debug",
       "devices": [
         "wearable"
       ],
       "minimumApi": 50100018,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-wearable-release-unsigned.hap",
-      "bytes": 84316,
-      "sha256": "672a753fbcff0fddc611e282a07e3f76212f6d198cffad1cc2c81fa11c9fd46b",
+      "bytes": 99640,
+      "sha256": "dcbc3459b4a3b137b9298e613ca0b9718a137f7c163cc2dabb5a8f058b07e762",
       "mode": "release",
       "devices": [
         "wearable"
       ],
       "minimumApi": 50100018,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-wearable-release-unsigned.app",
-      "bytes": 41850,
-      "sha256": "865f7d6c1e63689ec86d5d55ea9586ca7c7d415a7b1c9983899021596900693e",
+      "bytes": 47734,
+      "sha256": "a5840e0f42920a9f230edcbc7645b820ae8756babbd8ef13096c0fd8cfc982df",
       "signed": false,
-      "checks": "container passed"
+      "checks": "container and embedded Release HAP passed"
+    },
+    {
+      "file": "dist/packages/sensor-wearable-debug-signed.hap",
+      "bytes": 278002,
+      "sha256": "cd10718c224b59de8e5ee14b5915814329d7e17cc39a76d4808383ef18e71640",
+      "signed": true,
+      "profileType": "debug",
+      "signatureCheck": "official debug signature verified",
+      "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-tv-debug-unsigned.hap",
-      "bytes": 201916,
-      "sha256": "f28046c5b6dab06e51534c34816b173814c9a64fdfdad452b5f5934b522cee73",
+      "bytes": 238385,
+      "sha256": "078616a8ad6f8d6e5d2460ecc80736d50ab32ccbefcff7c043159de7cf889485",
       "mode": "debug",
       "devices": [
         "tv"
       ],
       "minimumApi": 50101019,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-tv-release-unsigned.hap",
-      "bytes": 84280,
-      "sha256": "5f3c878e891026eb60875e1678f1798a291c1c05be5daebbb6771feef629bb4b",
+      "bytes": 99604,
+      "sha256": "212f2164a03b5b1819f93f5c561388af58ed31edc7cd92fdd7a421825c95c159",
       "mode": "release",
       "devices": [
         "tv"
       ],
       "minimumApi": 50101019,
       "signed": false,
+      "signatureCheck": "absence of signing block verified",
       "checks": "passed"
     },
     {
       "file": "dist/packages/sensor-tv-release-unsigned.app",
-      "bytes": 41820,
-      "sha256": "6318ce15891c0fa8384d424af40d8fa26296a769958e050e71abeec4002634ba",
+      "bytes": 47696,
+      "sha256": "9fb66d0f3ff25c5cf03cd6beea5b6d545128c9f7c1871702c889b747c4429850",
       "signed": false,
-      "checks": "container passed"
+      "checks": "container and embedded Release HAP passed"
+    },
+    {
+      "file": "dist/packages/sensor-tv-debug-signed.hap",
+      "bytes": 278018,
+      "sha256": "52f4bad9f9280397ca264620acf5ddcde21d27695c5fd4bfc621381cabaf07a5",
+      "signed": true,
+      "profileType": "debug",
+      "signatureCheck": "official debug signature verified",
+      "checks": "passed"
     }
   ],
-  "note": "Unsigned archives; package checks do not establish installation or device support."
+  "note": "Debug-signed HAPs are for authorized debugging. Release HAP/APP remain unsigned; emulator results do not establish physical hardware support or store approval."
 }

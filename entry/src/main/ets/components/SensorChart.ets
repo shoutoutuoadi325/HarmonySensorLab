@@ -24,7 +24,7 @@ export struct SensorChart {
     }
     const points: SamplePoint[] = this.row.history;
     if (points.length === 0) {
-      c.fillStyle = '#64748B'; c.font = '12px sans-serif'; c.textAlign = 'center';
+      c.fillStyle = '#64748B'; c.font = '12vp sans-serif'; c.textAlign = 'center';
       c.fillText('等待真实样本', w / 2, h / 2); return;
     }
     let lo: number = Number.POSITIVE_INFINITY;
@@ -42,7 +42,7 @@ export struct SensorChart {
     const begin: number = end - 60000;
     const xFor = (time: number): number => 44 + Math.max(0, (time - begin) / 60000) * (w - 52);
     const yFor = (value: number): number => 10 + (hi - value) / (hi - lo) * (h - 28);
-    c.fillStyle = '#64748B'; c.font = '10px sans-serif'; c.textAlign = 'right';
+    c.fillStyle = '#64748B'; c.font = '10vp sans-serif'; c.textAlign = 'right';
     c.fillText(hi.toFixed(1), 39, 13); c.fillText(lo.toFixed(1), 39, h - 18);
     c.textAlign = 'left'; c.fillText('-60s', 44, h - 2);
     c.textAlign = 'right'; c.fillText('最新样本', w - 8, h - 2);
