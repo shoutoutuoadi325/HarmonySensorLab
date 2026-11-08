@@ -1,0 +1,113 @@
+Installing pnpm@10.28.2...
+
+added 1 package, and audited 2 packages in 5s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Pnpm install success.
+> hvigor [91mERROR: [31m00303038 Configuration Error
+[31mError Message: Schema validate failed, at file: /Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5
+[31m
+* Try the following:
+  > Please check the following fields. 
+ {
+  instancePath: 'app.products[0].compatibleSdkVersion',
+  keyword: 'type',
+  params: { type: 'string' },
+  message: 'must be string',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:8:35'
+} 
+{
+  instancePath: 'app.products[0]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:5:8'
+} 
+{
+  instancePath: 'app.products[0]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:5:8'
+} 
+{
+  instancePath: 'app.products[1].compatibleSdkVersion',
+  keyword: 'type',
+  params: { type: 'string' },
+  message: 'must be string',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:20:35'
+} 
+{
+  instancePath: 'app.products[1]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:17:8'
+} 
+{
+  instancePath: 'app.products[1]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:17:8'
+} 
+{
+  instancePath: 'app.products[2].compatibleSdkVersion',
+  keyword: 'type',
+  params: { type: 'string' },
+  message: 'must be string',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:32:35'
+} 
+{
+  instancePath: 'app.products[2]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:29:8'
+} 
+{
+  instancePath: 'app.products[2]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:29:8'
+} 
+{
+  instancePath: 'app.products[3].compatibleSdkVersion',
+  keyword: 'type',
+  params: { type: 'string' },
+  message: 'must be string',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:44:35'
+} 
+{
+  instancePath: 'app.products[3]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:41:8'
+} 
+{
+  instancePath: 'app.products[3]',
+  keyword: 'if',
+  params: { failingKeyword: 'then' },
+  message: 'must match "then" schema',
+  location: '/Users/I783203/PersonalDevelop/HarmonySensorLab/build-profile.json5:41:8'
+} 
+
+[39m
+
+[31m* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+[39m
+> hvigor [91mERROR: BUILD FAILED in 7 s 202 ms [39m
+
+0 task in total: 0 executed, 0 up-to-date.

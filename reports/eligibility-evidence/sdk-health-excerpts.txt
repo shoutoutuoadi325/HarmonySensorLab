@@ -1,0 +1,18 @@
+核验日期：2026-11-08（Asia/Shanghai）
+来源：本机 DevEco Studio SDK 声明。SDK OpenHarmony ETS 26.0.0.105 / API 26。
+这证明 SDK 公开声明的接口、权限和返回类型，不能证明特定 HarmonyOS 机型提供该传感器，也不能证明 AGC 应用审核资格。
+
+/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/@ohos.sensor.d.ts
+  line 362: @permission ohos.permission.READ_HEALTH_DATA
+  line 376: function on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>, options?: Options): void;
+  line 4068: interface HeartRateResponse extends Response
+  line 4070: Heart rate, in beats per minute (bpm).
+  line 4075: heartRate: number;
+
+/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/@system.sensor.d.ts
+  lines 458-464: SubscribeHeartRateOptions, SystemCapability.Sensors.Sensor.Lite, @famodelonly, @reserved [liteWearable]
+  line 468: Callback invoked when the heart rate sensor data changes. This callback is invoked every five seconds.
+  line 1044: static subscribeHeartRate(options: SubscribeHeartRateOptions): void;
+  lines 1035-1041: READ_HEALTH_DATA, @famodelonly, deprecated since 8, reserved liteWearable.
+
+备注：SDK 的 @since 9 等标注不替代华为 HarmonyOS 文档的设备支持起始 API。@system.sensor 标注 @famodelonly，不能将 Stage ArkTS/ArkUI HAP 自动当作轻量穿戴工程。

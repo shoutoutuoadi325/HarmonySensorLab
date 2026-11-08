@@ -1,0 +1,109 @@
+> hvigor [32mUP-TO-DATE :entry:tv@PreBuild...  [39m
+> hvigor [32mFinished :entry:tv@CreateModuleInfo... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@GenerateMetadata...  [39m
+> hvigor [32mFinished :entry:tv@ConfigureCmake... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@MergeProfile... after 13 ms [39m
+> hvigor [32mFinished :entry:tv@CreateBuildProfile... after 2 ms [39m
+> hvigor [32mFinished :entry:tv@PreCheckSyscap... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@GeneratePkgContextInfo...  [39m
+> hvigor [32mFinished :entry:tv@GeneratePkgSdkInfo... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessIntegratedHsp... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@BuildNativeWithCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@MakePackInfo...  [39m
+> hvigor [32mFinished :entry:tv@SyscapTransform... after 5 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessProfile... after 135 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@ProcessRouterMap...  [39m
+> hvigor [32mUP-TO-DATE :entry:tv@ProcessShareConfig...  [39m
+> hvigor [32mFinished :entry:tv@ProcessStartupConfig... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@BuildNativeWithNinja... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@ProcessResource...  [39m
+> hvigor [32mUP-TO-DATE :entry:tv@GenerateLoaderJson...  [39m
+> hvigor [32mUP-TO-DATE :entry:tv@ProcessLibs...  [39m
+> hvigor [32mFinished :entry:tv@CompileResource... after 98 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@DoNativeStrip...  [39m
+> hvigor [32mFinished :entry:tv@BuildJS... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@CacheNativeLibs...  [39m
+> hvigor [33mWARN: [33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:17:12
+ The 'on' API is supported since SDK version 22. However, the current compatible SDK version is 5.1.1(19).
+ It is recommended to use apiAvailable to safeguard API compatibility.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:17:12
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:17:31
+ The 'FUSION_PRESSURE' API is supported since SDK version 22. However, the current compatible SDK version is 5.1.1(19).
+ It is recommended to use apiAvailable to safeguard API compatibility.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:29:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:42:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:66:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:79:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:92:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:105:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:118:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:131:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:144:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:157:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:170:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:183:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:196:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:209:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:222:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:235:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:248:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:261:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:274:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:287:14
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[39m
+> hvigor [32mFinished :entry:tv@CompileArkTS... after 2 s 7 ms [39m
+> hvigor [32mFinished :entry:tv@GeneratePkgModuleJson... after 2 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessCompiledResources... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@PackageHap... after 228 ms [39m
+> hvigor [32mFinished :entry:tv@PackingCheck... after 4 ms [39m
+> hvigor [33mWARN: No signingConfig found for product tv[39m
+> hvigor [32mFinished :entry:tv@SignHap... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@CollectDebugSymbol... after 1 ms [39m
+> hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 4 s 744 ms [39m
+
+33 tasks in total: 22 executed, 11 up-to-date

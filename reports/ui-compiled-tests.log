@@ -1,0 +1,7 @@
+PASS stable hardware key update reads newest snapshot and retains card component
+PASS empty chart clears old pixels and reports waiting
+PASS flat selected component keeps finite bounds and excludes other units
+PASS continuous chart leaves long sampling gaps unconnected
+PASS event chart uses points without suggesting continuous measurements
+PASS optional field disappearance clamps previously selected component
+Compiled UI host tests: 6/6 passed. No layout/device verification claimed.

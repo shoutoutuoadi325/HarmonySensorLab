@@ -1,0 +1,8 @@
+{
+  "modelVersion": "6.0.0",
+  "name": "harmony-sensor-lab",
+  "version": "1.0.0",
+  "description": "Local foreground sensor dashboard for HarmonyOS",
+  "dependencies": {},
+  "devDependencies": {}
+}

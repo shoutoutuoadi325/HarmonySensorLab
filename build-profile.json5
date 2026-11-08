@@ -1,0 +1,99 @@
+{
+  "app": {
+    "signingConfigs": [],
+    "products": [
+      {
+        "name": "default",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "compileSdkVersion": "26.0.0"
+      },
+      {
+        "name": "pc",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "compileSdkVersion": "26.0.0"
+      },
+      {
+        "name": "wearable",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "5.1.0(18)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "compileSdkVersion": "26.0.0"
+      },
+      {
+        "name": "tv",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "5.1.1(19)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "compileSdkVersion": "26.0.0"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "pc",
+          "applyToProducts": [
+            "pc"
+          ]
+        },
+        {
+          "name": "wearable",
+          "applyToProducts": [
+            "wearable"
+          ]
+        },
+        {
+          "name": "tv",
+          "applyToProducts": [
+            "tv"
+          ]
+        }
+      ]
+    }
+  ]
+}

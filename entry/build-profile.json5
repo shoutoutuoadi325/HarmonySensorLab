@@ -1,0 +1,45 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "resOptions": {
+      "copyCodeResource": {
+        "enable": false
+      }
+    }
+  },
+  "targets": [
+    {
+      "name": "default",
+      "config": {
+        "deviceType": [
+          "phone",
+          "tablet"
+        ]
+      }
+    },
+    {
+      "name": "pc",
+      "config": {
+        "deviceType": [
+          "2in1"
+        ]
+      }
+    },
+    {
+      "name": "wearable",
+      "config": {
+        "deviceType": [
+          "wearable"
+        ]
+      }
+    },
+    {
+      "name": "tv",
+      "config": {
+        "deviceType": [
+          "tv"
+        ]
+      }
+    }
+  ]
+}

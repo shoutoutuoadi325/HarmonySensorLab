@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "source": "/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets/api/device-define/api-version/SensorServiceKit.json",
+  "scope": "SDK metadata only, not individual developer access or device test",
+  "entries": [
+    {
+      "apiText": "@ohos.sensor.d.ts",
+      "apiType": "file",
+      "file": "api/@ohos.sensor.d.ts",
+      "className": "uname",
+      "isSystemApi": "false",
+      "syscap": "SystemCapability.Sensors.Sensor",
+      "OS": "HarmonyOS",
+      "kit": "SensorServiceKit",
+      "kitEnName": "Sensor Service Kit",
+      "deviceTypes": [
+        {
+          "deviceType": "phone",
+          "since": "12"
+        },
+        {
+          "deviceType": "tablet",
+          "since": "12"
+        },
+        {
+          "deviceType": "2in1",
+          "since": "13"
+        },
+        {
+          "deviceType": "tv",
+          "since": "19"
+        },
+        {
+          "deviceType": "car",
+          "since": "23"
+        },
+        {
+          "deviceType": "wearable",
+          "since": "18"
+        }
+      ],
+      "since": "8"
+    },
+    {
+      "apiText": "@system.sensor.d.ts",
+      "apiType": "file",
+      "file": "api/@system.sensor.d.ts",
+      "className": "uname",
+      "isSystemApi": "false",
+      "syscap": "SystemCapability.Sensors.Sensor.Lite",
+      "OS": "HarmonyOS",
+      "kit": "SensorServiceKit",
+      "kitEnName": "Sensor Service Kit",
+      "deviceTypes": [
+        {
+          "deviceType": "wearable",
+          "since": "18"
+        },
+        {
+          "deviceType": "liteWearable",
+          "since": "12"
+        }
+      ],
+      "since": "3"
+    }
+  ]
+}

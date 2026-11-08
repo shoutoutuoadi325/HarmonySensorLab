@@ -1,0 +1,47 @@
+> hvigor [32mFinished ::PreBuildApp... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@PreBuild...  [39m
+> hvigor [32mFinished ::DuplicateDependencyCheck... after 1 ms [39m
+> hvigor [32mFinished :entry:pc@CreateModuleInfo... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@GenerateMetadata...  [39m
+> hvigor [32mFinished :entry:pc@ConfigureCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@MergeProfile...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@CreateBuildProfile...  [39m
+> hvigor [32mFinished :entry:pc@PreCheckSyscap... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@GeneratePkgContextInfo...  [39m
+> hvigor [32mFinished :entry:pc@GeneratePkgSdkInfo... after 1 ms [39m
+> hvigor [32mFinished :entry:pc@ProcessIntegratedHsp... after 1 ms [39m
+> hvigor [32mFinished :entry:pc@BuildNativeWithCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@MakePackInfo...  [39m
+> hvigor [32mFinished :entry:pc@SyscapTransform... after 5 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@ProcessProfile...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@ProcessRouterMap...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@ProcessShareConfig...  [39m
+> hvigor [32mFinished :entry:pc@ProcessStartupConfig... after 1 ms [39m
+> hvigor [32mFinished :entry:pc@BuildNativeWithNinja... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@ProcessResource...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@GenerateLoaderJson...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@ProcessLibs...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@CompileResource...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@DoNativeStrip...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@CompileArkTS...  [39m
+> hvigor [32mFinished :entry:pc@BuildJS... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@CacheNativeLibs...  [39m
+> hvigor [32mUP-TO-DATE :entry:pc@GeneratePkgModuleJson...  [39m
+> hvigor [32mFinished :entry:pc@ProcessCompiledResources... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@PackageHap...  [39m
+> hvigor [32mFinished :entry:pc@PackingCheck... after 3 ms [39m
+> hvigor [33mWARN: No signingConfig found for product pc[39m
+> hvigor [32mFinished :entry:pc@SignHap... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:pc@CollectDebugSymbol...  [39m
+> hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
+> hvigor [32mFinished ::MakeProjectPackInfo... after 2 ms [39m
+> hvigor [32mFinished ::ProcessProjectPrivacyProfile... after 2 ms [39m
+> hvigor [32mFinished ::GeneratePackRes... after 1 ms [39m
+> hvigor [32mFinished ::PackageApp... after 312 ms [39m
+> hvigor [32mFinished ::SignPackagesFromApp... after 1 ms [39m
+> hvigor [33mWARN: No signingConfig found for product pc[39m
+> hvigor [32mFinished ::SignApp... after 1 ms [39m
+> hvigor [32mFinished ::assembleApp... after 1 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 1 s 260 ms [39m
+
+42 tasks in total: 23 executed, 19 up-to-date

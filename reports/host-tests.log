@@ -1,0 +1,22 @@
+PASS SDK26 apiAvailable lowering runs on old objects with no native apiAvailable method
+PASS launch enumerates local hardware but neither prompts nor subscribes before foreground
+PASS foreground subscribes only public sensors with granted necessary permissions
+PASS motion permission prompt is explicit and denied permission never produces a subscription
+PASS late permission result cannot restart collection after background or disposal
+PASS pause unsubscribes exact callback and rejects late callback; resume needs new data
+PASS resume within the same millisecond still requires a new sample for live status
+PASS disabled sensors stop and preserve cached history, re-enabled sensor resumes
+PASS revoked system permission is detected before ingesting a callback
+PASS missing, NaN and infinite samples are excluded; valid later sample recovers
+PASS optional light fields are returned with units and an explicit unverified-hardware note
+PASS frequency is nanoseconds, clamps to hardware, and unsupported choices are ignored
+PASS display history decimates real callbacks and bounds both count and age
+PASS continuous data becomes stale; event sensors remain waiting without fabricated zero
+PASS snapshot is detached and clearHistory only clears graph data
+PASS API19 indexes are addressed independently; mock, remote and duplicate metadata are excluded
+PASS API12 uses legacy local enumeration and callback unsubscribe without newer metadata calls
+PASS empty local enumeration is valid; service failure has retryable status and no stale list
+PASS native subscription failures map permission and unsupported error codes
+PASS failed native cleanup rejects late data and does not overwrite its stop callback
+
+Host logic tests: 20/20 passed. No device verification claimed.
