@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "hdcVersion": "3.2.0f",
+  "automaticServerQuery": "Connect server failed",
+  "foregroundServer": "Verified listening on 127.0.0.1:8710",
+  "foregroundServerQuery": "[Empty]",
+  "connectedDebugTargets": [],
+  "signingConfigs": [],
+  "installationVerified": false,
+  "nextRequiredEvidence": "User account signing configuration and an authorized connected target device"
+}

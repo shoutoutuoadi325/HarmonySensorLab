@@ -19,4 +19,6 @@ hdc -t CONNECT_KEY shell aa start -a EntryAbility -b com.personal.harmonysensorl
 
 IDE 自动签名可能把凭据相关字段写入本地 build-profile.json5。后续源码归档前必须清理敏感字段，证书/Profile/私钥不得随源码公开。当前源代码归档时 signingConfigs 为空。
 
-本次环境事实：官方 Device Manager 显示无本地模拟器，Install 报无法找到 emulator 组件；hdc 目标查询未建立有效连接。没有据此推断用户没有设备。接入用户设备并合法签名后可以继续验证。
+本次环境事实：官方 Device Manager 显示无本地模拟器，Install 报无法找到 emulator 组件。hdc 自动启动服务时连接失败；改用官方 -m 前台服务后已能正常查询，当前返回 [Empty]，表示没有在线调试目标。
+
+可运行 python3 scripts/device-status.py 复核连接。脚本复用现有本地服务；没有服务时创建受控前台进程，查询后只清理自己创建的进程，不停止 IDE 的服务。脚本不执行签名、安装或设备授权。接入用户设备并合法签名后可以继续验证。

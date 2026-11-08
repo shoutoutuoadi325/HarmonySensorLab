@@ -1,0 +1,8 @@
+{
+  "server": "managed foreground server",
+  "address": "127.0.0.1:8710",
+  "query": "list targets -v",
+  "targetsEmpty": true,
+  "output": "[Empty]\n\thdc",
+  "note": "No device installation, signing, or authorization is performed."
+}

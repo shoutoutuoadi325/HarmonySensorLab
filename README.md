@@ -46,9 +46,13 @@
 node tests/host/run.cjs
 node tests/host/ui-compiled.cjs
 python3 scripts/verify-packages.py
+python3 scripts/device-status.py
+python3 scripts/export-delivery.py
 ~~~
 
 采集测试转译真实生产控制器并注入平台替身；UI 测试执行 SDK 实际生成的响应式更新与 Canvas 绘图函数。均不代替鸿蒙运行时或真机验收。UI 测试需先构建 default debug。构建和包结构记录见 reports/。
+
+device-status.py 可用受控 hdc 前台服务查询实际在线目标，复用现有服务并只清理自己创建的进程。export-delivery.py 重建源码及交付 ZIP；当前导出仅用于签名配置为空的开发阶段，避免将签名凭据带入源码。
 
 - [验证报告](reports/validation-report.md)
 - [隐私政策草稿](docs/privacy-policy-draft.md)
