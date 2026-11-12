@@ -1,0 +1,132 @@
+{
+  "atUtc": "2026-11-10T05:33:47.743846+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/online-policy-settled.png",
+  "screenshotSha256": "ec85fc396a11918cb76a3a8e46c86002a2428a2b89206c84c46060f7e4ebd179",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "传感器观测隐私政策",
+      "bounds": "[694,363][1174,401]",
+      "type": "Row"
+    },
+    {
+      "text": "传感器观测隐私政策",
+      "bounds": "[740,365][980,400]",
+      "type": "Text"
+    },
+    {
+      "text": "harmonysensorlab-privacy.netlify.app",
+      "bounds": "[1015,435][2319,503]",
+      "type": "TextInput"
+    },
+    {
+      "text": "Add bookmarks here for quick access",
+      "bounds": "[599,527][1051,562]",
+      "type": "Text"
+    },
+    {
+      "text": "English",
+      "bounds": "[816,645][917,681]",
+      "type": "link"
+    },
+    {
+      "text": "English",
+      "bounds": "[816,645][917,681]",
+      "type": "staticText"
+    },
+    {
+      "text": "传感器观测隐私政策",
+      "bounds": "[816,730][2432,838]",
+      "type": "heading"
+    },
+    {
+      "text": "版本：1.0.0。更新日期：2026-11-10。本政策自应用首次公开发布之日起生效。\n开发者：张之麒。联系邮箱：zhiqizhangg@gmail.com。\n应用包名：com.personal.harmonysensorlab。",
+      "bounds": "[816,877][2432,1038]",
+      "type": "paragraph"
+    },
+    {
+      "text": "本应用用于查看当前设备公开传感器接口实际提供的数值与近期曲线。各设备的硬件和系统能力不同，可能只提供少量传感器或没有可用数据。",
+      "bounds": "[816,1067][2432,1175]",
+      "type": "paragraph"
+    },
+    {
+      "text": "数据和用途",
+      "bounds": "[816,1212][2432,1292]",
+      "type": "heading"
+    },
+    {
+      "text": "应用读取本机传感器列表、传感器名称和能力，以及采集时系统返回的运动、磁场、方向、光照、气压、接近等普通传感器数值和回调接收时间，仅用于在当前设备绘制数值与曲线。您主动开启计步并给予运动权限后，应用可读取设备系统提供的计步值。累计口径由系统决定，本应用不将它标为当天步数。",
+      "bounds": "[816,1329][2432,1490]",
+      "type": "paragraph"
+    },
+    {
+      "text": "首版不读取心率、血氧、心电、皮温或其他健康测量，不访问华为运动健康数据库，不通过手机获取外部手表的健康或运动传感器。应用不申请位置、相机、麦克风、通讯录或网络访问权限，不收集账号、广告标识符或设备序列号。",
+      "bounds": "[816,1519][2432,1627]",
+      "type": "paragraph"
+    },
+    {
+      "text": "位置、期限和共享",
+      "bounds": "[816,1663][2432,1738]",
+      "type": "heading"
+    },
+    {
+      "text": "Chinese (Simplified)",
+      "bounds": "[1626,564][1907,604]",
+      "type": "Text"
+    },
+    {
+      "text": "English",
+      "bounds": "[2052,565][2154,605]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2512,1991][2565,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2779,1991][2832,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2855,1999][2894,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "1:33 PM",
+      "bounds": "[2901,1987][2998,2019]",
+      "type": "Text"
+    },
+    {
+      "text": "Nov 10",
+      "bounds": "[2910,2019][2998,2051]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[612,298][764,334]",
+      "type": "Text"
+    }
+  ]
+}

@@ -1,9 +1,11 @@
 import { deviceInfo } from '@kit.BasicServicesKit';
+import { common } from '@kit.AbilityKit';
 import { SymbolGlyphModifier } from '@ohos.arkui.modifier';
 import { SensorRow, SensorSnapshot } from '../model/SensorModels';
 import { SensorController } from '../services/SensorController';
 import { SensorCardView } from '../components/SensorCardView';
 import { PRIVACY_TEXT } from '../model/PrivacyText';
+import { hasPrivacyPolicyUrl, openPrivacyPolicy, PRIVACY_POLICY_URL } from '../model/PrivacyPolicyLink';
 
 
 @Entry
@@ -20,7 +22,10 @@ struct Index {
   private television: boolean = deviceInfo.deviceType === 'tv';
   private colors: string[] = ['#087F8C', '#B64A34', '#7356AF', '#A57205', '#386AAB', '#A44579'];
   private arrowStyle: SymbolGlyphModifier = new SymbolGlyphModifier().fontColor(['#102C41']);
+  private privacyOpening: boolean = false;
+  private pageActive: boolean = false;
   aboutToAppear(): void {
+    this.pageActive = true;
     this.controller.onChange = () => {
       this.snapshot = this.controller.snapshot();
       if (this.selectedIntervalMs !== this.snapshot.intervalMs) {
@@ -30,7 +35,23 @@ struct Index {
     this.snapshot = this.controller.snapshot();
     this.selectedIntervalMs = this.snapshot.intervalMs;
   }
-  aboutToDisappear(): void { this.controller.onChange = undefined; }
+  aboutToDisappear(): void {
+    this.pageActive = false;
+    this.controller.onChange = undefined;
+    this.controller.setPaused(true);
+  }
+  onPageHide(): void {
+    this.pageActive = false;
+    // A router-cached page may hide without disappearing. Returning requires an explicit resume.
+    this.controller.setPaused(true);
+  }
+  onPageShow(): void {
+    this.pageActive = true;
+  }
+  private deviceSummary(): string {
+    return (this.television ? '手机 / 平板 / PC / 智慧屏 / 智能手表' : '手机 / 平板 / PC / 智能手表') +
+      '\n各设备以实际公开硬件能力为准';
+  }
   private textSize(): number { return this.television ? 20 : (this.wearable ? 12 : 14); }
   private buttonSize(): number { return this.television ? 56 : 44; }
   private cardWidth(): number {
@@ -77,8 +98,40 @@ struct Index {
     this.focusForTv('frequency-control');
   }
   private showPrivacy(): void {
-    this.getUIContext().showAlertDialog({ title: '本机数据与隐私', message: PRIVACY_TEXT,
-      autoCancel: true, primaryButton: { value: '知道了', action: () => {} } });
+    if (hasPrivacyPolicyUrl()) {
+      this.getUIContext().showAlertDialog({ title: '本机数据与隐私', message: PRIVACY_TEXT,
+        autoCancel: true,
+        primaryButton: { value: '知道了', defaultFocus: true, action: () => this.focusForTv('privacy-entry') },
+        secondaryButton: { value: '在线隐私政策', action: () => { this.openOnlinePrivacy(); } } });
+    } else {
+      this.getUIContext().showAlertDialog({ title: '本机数据与隐私', message: PRIVACY_TEXT,
+        autoCancel: true,
+        confirm: { value: '知道了', defaultFocus: true, action: () => this.focusForTv('privacy-entry') } });
+    }
+  }
+  private async openOnlinePrivacy(): Promise<void> {
+    if (this.privacyOpening) { return; }
+    this.privacyOpening = true;
+    try {
+      const context: common.UIAbilityContext | undefined =
+        this.getUIContext().getHostContext() as common.UIAbilityContext | undefined;
+      if (!await openPrivacyPolicy(context)) { this.showPrivacyLinkError(); }
+    } catch (_) {
+      this.showPrivacyLinkError();
+    } finally {
+      this.privacyOpening = false;
+    }
+  }
+  private showPrivacyLinkError(): void {
+    if (!this.pageActive) { return; }
+    try {
+      this.getUIContext().showAlertDialog({ title: '暂时无法打开在线政策',
+        message: '无法打开系统浏览器。完整政策仍可在“本机数据与隐私”阅读，也可在其他设备访问：\n' + PRIVACY_POLICY_URL,
+        autoCancel: true,
+        confirm: { value: '知道了', defaultFocus: true, action: () => this.focusForTv('privacy-entry') } });
+    } catch (_) {
+      // A released window cannot display a dialog and must not reject the click action.
+    }
   }
   @Builder
   Controls() {
@@ -139,7 +192,7 @@ struct Index {
         }.width('100%')
       }.padding(16).width('100%').backgroundColor(Color.White).borderRadius(16)
     }
-    Text('频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，保留最近 60 秒，最多 240 点。')
+    Text('频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，最多240点，时间跨度不超过60秒；暂停时保留曲线。')
       .fontSize(this.textSize()).fontColor('#526679').width('100%')
   }
   build() {
@@ -191,9 +244,10 @@ struct Index {
           }
         }
         Button('本机数据与隐私').fontSize(this.textSize()).height(this.buttonSize()).backgroundColor('#E5EEF5').fontColor('#102C41')
+          .id('privacy-entry').focusable(true)
           .onClick(() => this.showPrivacy())
           .onKeyEvent((event: KeyEvent) => this.activateKey(event, () => this.showPrivacy()))
-        Text('手机 / 平板 / PC / 智慧屏 / 智能手表\n各设备以实际公开硬件能力为准')
+        Text(this.deviceSummary())
           .fontSize(this.wearable ? 10 : 12).fontColor('#64748B').textAlign(TextAlign.Center)
       }.width('100%').padding({ left: this.wearable ? 24 : 20, right: this.wearable ? 24 : 20,
         top: this.wearable ? 42 : 28, bottom: this.wearable ? 42 : 32 })

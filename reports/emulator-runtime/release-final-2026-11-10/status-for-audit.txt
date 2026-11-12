@@ -1,0 +1,38 @@
+Current verified Release evidence (2026-11-10)
+
+Phone target 127.0.0.1:5555, API 26 emulator. Current Release default HAP SHA-256: 5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee.
+Passed: genuine virtual callbacks for 9 public instances; pause preserves values; explicit resume; Home return remains paused; complete in-app local policy; policy dismissal; online policy launched in system browser and actual policy page loaded; returning from policy browser remains paused.
+Best app screenshot originals: phone/live.png, phone/paused.png, phone/privacy.png.
+Additional test evidence: phone/resume-evidence.json, phone/home-verified-evidence.json, phone/return-from-background-evidence.json, phone/online-policy-settled-evidence.json, phone/return-from-online-policy-evidence.json, phone/privacy-dismissed-evidence.json. Browser / launcher screenshots are not store app screenshots.
+
+PC target 127.0.0.1:12002, API 26 official emulator, now offline after root moved to tablet. Current Release PC HAP SHA-256: 27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562.
+Passed: genuine virtual callbacks for 7 public instances, pause preserves values, hardware details expands, complete in-app local policy, online policy launched in system browser and actual policy page loaded.
+Best originals: pc/live.png, pc/paused.png, pc/privacy.png. PC resume and return-from-browser remain untested.
+
+Tablet 127.0.0.1:12003 identity confirmed tablet emulator / API 26. Old package debug=true and appProvisionType=debug was verified and recorded; after signer mismatch, only this old test bundle was removed. Same current default Release HAP installed successfully and initial/live UI shows 9 public instances. Pause/privacy are being captured.
+
+Watch not connected yet; no current Release runtime result. Verified wearable HAP SHA-256: 522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f.
+
+Declared permissions are ACCELEROMETER, GYROSCOPE, ACTIVITY_MOTION. Do not claim Release runtime grant / refusal testing yet from policy text alone. All runtime captures are official virtual-emulator results, not real hardware sensor accuracy, crown testing, or AppGallery approval.
+
+Package versions all: bundle com.personal.harmonysensorlab, module entry, versionName 1.0.0, versionCode 1000000, targetAPIVersion 260000026.
+Default minAPIVersion 50000012, deviceTypes phone/tablet; PC minAPIVersion 50001013, deviceTypes 2in1; wearable minAPIVersion 50100018, deviceTypes wearable.
+Official package metadata: reports/store-submission/release-build-2026-11-10.json and release-independent-verification-2026-11-10.json.
+
+Every selected screenshot has paired *-evidence.json containing installed HAP and original PNG hash. runtime-candidate-manifest.json records assessed results and candidate paths.
+
+Update 05:40 UTC: Tablet pause and full local policy passed; tablet/live.png, tablet/paused.png and tablet/privacy.png ready with paired evidence JSON. Watch official API 26 wearable at 127.0.0.1:12004 now connected; installation in progress after recorded old-debug signer mismatch. Phone now offline; its supplemental bundle-permission query failed Device not found and is not a permission verification result.
+
+Update 05:41 UTC: Tablet online policy loaded actual correct page in system browser; tablet/online-policy-settled-evidence.json and online-policy-ability-dump.json. Return-from-online-policy-evidence.json proves tablet stays paused. Wearable current Release installed after verified Debug cleanup; launch page captured and starting observation.
+
+Update 05:43 UTC: Tablet explicit resume passed; Home launcher verified; relaunch stays paused, with resume-evidence.json, home-verified-evidence.json, return-from-background-evidence.json. Watch system motion prompt captured and Deny clicked; bundle permission state is being recorded.
+
+Update 05:45 UTC: Watch system motion request/Deny actually tested. motion-denied-bundle-dump.json records ACTIVITY_MOTION=-1; live-evidence.json shows real accelerometer callbacks afterward. Allow path not tested, second authorization click did not display prompt again. Native desktop apps remain untouched. Tablet and watch bm metadata show debug=false. Emulator bm reports appProvisionType=debug/fingerprint empty, while independent official HAP signature/Profile verification reports release; retain that observed metadata and use official package signature report for Profile evidence.
+
+Update 05:46 UTC: Watch Home attempt returned No Error but screenshot still showed live app; home-attempt-ability-dump.json proves app FOREGROUND. This is not a passed wearable background test. Explicit pause UI testing is underway; do not call home-verified.png a launcher or app screenshot for store selection.
+
+Update 05:48 UTC: Watch live.png and paused.png ready, both genuine 466x466 Release originals with paired evidence. Pause actually clicked; button becomes 继续采集. Retained values were not separately reread in the paused state. Watch resume is being recorded. Policy capture follows after intentional test-process termination/relaunch to reach its initial-page privacy entry.
+
+Final candidate update: All 12 live/paused/privacy originals across phone, PC, tablet, watch exist and their hashes and current Release package associations verified. Watch resume passed. Watch full local policy captured and can reopen after online attempt. Online-watch page/fallback is NOT verified: stable UI remains app, no browser mission or error dialog observed. Do not call this a successful online fallback.
+
+Final: Wearable local policy message actually scrolled to later developer/contact lines; 知道了 dismissal passed. Candidates unchanged. HDC server 8710/PID 11387 retained; tablet 12003 and wearable 12004 connected. No pending capture sessions.

@@ -1,0 +1,42 @@
+{
+  "atUtc": "2026-11-10T05:42:31.661916+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:40:01.433717+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12004",
+    "device": "watch",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "wearable",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "installedPackage": "dist/packages/sensor-wearable-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/motion-request.png",
+  "screenshotSha256": "9980ffbddfeaa569b8f674de7fc109287f091b71068691eef8ad0b832a122434",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "Allow 传感器观测 to access your physical activity data?",
+      "bounds": "[59,140][407,266]",
+      "type": "Text"
+    },
+    {
+      "text": "仅在你启用运动传感器时，在本机前台展示计步和运动状态。",
+      "bounds": "[53,270][413,375]",
+      "type": "Text"
+    },
+    {
+      "text": "Allow",
+      "bounds": "[195,422][272,457]",
+      "type": "Text"
+    }
+  ]
+}

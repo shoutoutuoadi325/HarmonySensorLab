@@ -1,0 +1,117 @@
+{
+  "atUtc": "2026-11-10T05:33:20.213800+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-scroll-06.png",
+  "screenshotSha256": "52290eb574e1a4e97a9174f54be384bc8ec863cf8d8951c31eeaf5b134adb680",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[143,432][1137,489]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 26 秒前",
+      "bounds": "[143,524][1137,573]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[143,629][999,686]",
+      "type": "Text"
+    },
+    {
+      "text": "累计步数",
+      "bounds": "[143,908][961,990]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[989,921][1137,978]",
+      "type": "Text"
+    },
+    {
+      "text": "步",
+      "bounds": "[143,1025][1137,1082]",
+      "type": "Text"
+    },
+    {
+      "text": "累计步数",
+      "bounds": "[143,1117][312,1166]",
+      "type": "Text"
+    },
+    {
+      "text": "—",
+      "bounds": "[143,1177][228,1275]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[143,1800][1137,1857]",
+      "type": "Text"
+    },
+    {
+      "text": "尚未收到样本",
+      "bounds": "[143,1892][1137,1941]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[143,1997][999,2054]",
+      "type": "Text"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[412,2287][868,2441]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[346,2525][935,2623]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 33",
+      "bounds": "[56,26][195,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[56,37][118,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[118,42][133,95]",
+      "type": "Text"
+    },
+    {
+      "text": "33",
+      "bounds": "[133,37][195,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "atUtc": "2026-11-10T05:19:30.058368+00:00",
+  "server": "127.0.0.1:8710",
+  "target": "127.0.0.1:5555",
+  "device": "phone",
+  "testEmulator": true,
+  "declaredByCaller": true,
+  "properties": {
+    "const.product.devicetype": "phone",
+    "const.product.model": "emulator",
+    "const.product.name": "emulator",
+    "const.ohos.apiversion": "26",
+    "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+    "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+  }
+}

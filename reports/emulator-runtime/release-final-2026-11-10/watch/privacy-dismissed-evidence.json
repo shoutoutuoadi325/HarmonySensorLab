@@ -1,0 +1,47 @@
+{
+  "atUtc": "2026-11-10T05:54:35.910684+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:40:01.433717+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12004",
+    "device": "watch",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "wearable",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "installedPackage": "dist/packages/sensor-wearable-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-dismissed.png",
+  "screenshotSha256": "b45335e5a795b17f88b9e13befe15407f2c788fd1a8bfb50d0616c5f19243d21",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "仅展示公开 API 的真实回调。样本只保存在内存，退到后台即停止采集；健康数据暂不采集。",
+      "bounds": "[89,0][377,28]",
+      "type": "Text"
+    },
+    {
+      "text": "开始观测",
+      "bounds": "[153,56][313,144]",
+      "type": "Button"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[117,216][349,304]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[93,336][373,382]",
+      "type": "Text"
+    }
+  ]
+}

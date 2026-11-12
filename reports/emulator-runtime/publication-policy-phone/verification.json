@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-09",
+  "emulator": "HarmonySensorLab_Phone",
+  "connection": "127.0.0.1:5555",
+  "package": "dist/packages/sensor-default-debug-signed.hap",
+  "packageSha256": "b585788880c9851b02ba7998b37251b6d81f853f12908dd05476895330e15074",
+  "checks": {
+    "officialDebugInstall": "passed",
+    "abilityStart": "passed",
+    "localPolicyTopReadable": "visually verified",
+    "policyScrollThroughPermissions": "observed",
+    "policyBrowserDisclosureAndComplaintDeadlineAtBottom": "visually verified",
+    "dismissReturnsToWelcome": "passed"
+  },
+  "policyUrlConfigured": false,
+  "onlinePolicyRuntime": "not tested; no real public URL yet",
+  "scope": "Current full-policy Debug package on an official phone emulator; no physical sensor or Release install claim."
+}

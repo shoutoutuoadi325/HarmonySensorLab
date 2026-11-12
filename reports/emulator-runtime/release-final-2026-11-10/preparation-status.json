@@ -1,0 +1,19 @@
+{
+  "atUtc": "2026-11-10T05:08:03.378202+00:00",
+  "status": "prepared; no emulator targets connected, no installation or runtime capture yet",
+  "workflow": "reports/emulator-runtime/release-final-2026-11-10/hdc_release_capture.py",
+  "workflowSha256": "69992341c39505c4673a711501177acfb3a06d1fbeb0068771562c6ad703655c",
+  "syntaxCheck": "python3 -m py_compile: passed",
+  "server": {
+    "address": "127.0.0.1:8710",
+    "pid": 11387,
+    "sessionId": 57591,
+    "listeningConfirmed": true
+  },
+  "lastTargetQuery": "[Empty]",
+  "notes": [
+    "Reuse the live HDC server; no restart on timeout.",
+    "Native desktop and browser are operated only by root.",
+    "All later captures must record successfully installed current Release HAP hashes and original PNG hashes."
+  ]
+}

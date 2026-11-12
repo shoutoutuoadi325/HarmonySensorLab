@@ -1,0 +1,147 @@
+{
+  "atUtc": "2026-11-10T05:33:22.808313+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/online-policy-result.png",
+  "screenshotSha256": "90240f11cb366326e7db20600dcfe20ccd6f720c8835163288b83991975a6bd8",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "  ",
+      "bounds": "[2512,1991][2565,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2779,1991][2832,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2855,1999][2894,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "1:33 PM",
+      "bounds": "[2901,1987][2998,2019]",
+      "type": "Text"
+    },
+    {
+      "text": "Nov 10",
+      "bounds": "[2910,2019][2998,2051]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[612,298][764,334]",
+      "type": "Text"
+    },
+    {
+      "text": "旋转矢量",
+      "bounds": "[592,433][1411,478]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[1426,440][1506,471]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[592,497][1506,528]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[592,547][698,574]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[592,580][709,633]",
+      "type": "Text"
+    },
+    {
+      "text": "Y (无量纲)",
+      "bounds": "[739,547][843,574]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[739,580][856,633]",
+      "type": "Text"
+    },
+    {
+      "text": "Z (无量纲)",
+      "bounds": "[886,547][990,574]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[886,580][1003,633]",
+      "type": "Text"
+    },
+    {
+      "text": "W (rad)",
+      "bounds": "[1033,547][1111,574]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1033,580][1150,633]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[592,663][797,739]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[592,1012][1506,1043]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[592,1062][1506,1089]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：rotation vector\n厂商：huawei\n类型 / 实例：259:0\n请求间隔：20.0 ms",
+      "bounds": "[592,1108][1506,1232]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[592,1269][1425,1300]",
+      "type": "Text"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[1437,1432][1684,1516]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[1400,1561][1720,1615]",
+      "type": "Text"
+    }
+  ]
+}

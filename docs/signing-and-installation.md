@@ -22,3 +22,11 @@ hdc -t CONNECT_KEY shell aa start -a EntryAbility -b com.personal.harmonysensorl
 本次已解决早期模拟器组件不可用与 hdc 自动服务启动失败，安装官方镜像并开展多端模拟器验证。各端实际安装、布局、回调和输入覆盖以 reports/validation-report.md 为准，不能统称所有测试通过。TV 遥控与手表旋钮真机测试仍需设备。
 
 可运行 python3 scripts/device-status.py 复核当前连接。脚本复用现有服务；没有服务时创建受控前台进程，查询后只清理自己创建的进程，不停止 IDE 的服务。脚本不执行签名、安装或设备授权。
+
+## 2026-11-09 发布签名准备
+
+正式发布证书 harmonysensorlab-release 已取得。下载文件包含三张证书，叶证书与本机公开 CSR 的公钥一致，叶证书到期日为2029-11-09。Release Profile 已确认生效并下载到私有目录，官方 verify-profile 已通过，Release 类型、包名、APP ID、有效期及分发证书公钥均匹配本项目；目前仍没有最终 Release 签名包或商店审核提交。
+
+正式流程使用 scripts/build-release-signed.py，可通过 --certificate 和 --profile 指定已下载到 .signing/release 的官方文件。--check-material-only 只核验材料，不构建。--products选择本次构建的产品，当前默认default、pc、wearable，对应用户已批准的无智慧屏首发。脚本先核验官方 Profile 签名、Release 类型、包名、APP ID、有效期和证书公钥；构建前强制运行真实政策 URL 检查，再临时注入私有签名配置，结束或正常中断后恢复原配置。本次选中的全部HAP/APP通过官方验签和执行内容一致性核对后，才复制到dist/packages。智慧屏保留为后续产品，取得电视登记批准后再发布。
+
+可用 python3 scripts/verify-release-packages.py --products default pc wearable 独立复核首发Release包；不传参数时也默认上述三个产品。该检查与旧的Debug/unsigned基线分开，防止把Debug Profile作为发布证明。当前脚本已完成语法、Debug Profile拒绝检查和实际官方Release证书/Profile核验；实际Release构建、安装及验签须在配置真实政策URL后完成。

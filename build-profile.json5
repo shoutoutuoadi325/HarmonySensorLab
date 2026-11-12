@@ -53,6 +53,19 @@
           }
         },
         "compileSdkVersion": "26.0.0"
+      },
+      {
+        "name": "multidevice",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "5.1.0(18)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "compileSdkVersion": "26.0.0"
       }
     ],
     "buildModeSet": [
@@ -91,6 +104,12 @@
           "name": "tv",
           "applyToProducts": [
             "tv"
+          ]
+        },
+        {
+          "name": "multidevice",
+          "applyToProducts": [
+            "multidevice"
           ]
         }
       ]

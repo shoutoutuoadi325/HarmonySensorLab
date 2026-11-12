@@ -1,0 +1,257 @@
+{
+  "atUtc": "2026-11-10T05:31:06.019602+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/privacy-scroll-02.png",
+  "screenshotSha256": "c98b7eb59968aad7a85f9815e655987695728ea32a99ec758263829ebd153a57",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "传感器观测",
+      "bounds": "[612,298][764,334]",
+      "type": "Text"
+    },
+    {
+      "text": "方向",
+      "bounds": "[592,351][1411,373]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[1426,351][1506,366]",
+      "type": "Text"
+    },
+    {
+      "text": "°",
+      "bounds": "[592,392][1506,423]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[592,442][681,469]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[592,475][709,528]",
+      "type": "Text"
+    },
+    {
+      "text": "俯仰角 β",
+      "bounds": "[739,442][828,469]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[739,475][856,528]",
+      "type": "Text"
+    },
+    {
+      "text": "翻滚角 γ",
+      "bounds": "[886,442][973,469]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[886,475][1003,528]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[592,558][777,634]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[592,907][1506,938]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[592,957][1506,984]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：orientation\n厂商：huawei\n类型 / 实例：256:0\n请求间隔：20.0 ms",
+      "bounds": "[592,1003][1506,1127]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[592,1164][1425,1195]",
+      "type": "Text"
+    },
+    {
+      "text": "重力",
+      "bounds": "[1614,351][2433,373]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[2448,351][2528,366]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[1614,392][2528,423]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1614,442][1630,469]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1614,475][1731,528]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[1761,442][1776,469]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[1761,475][1878,528]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[1908,442][1922,469]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1908,475][2025,528]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1614,558][1743,634]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1614,907][2528,938]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[1614,957][2528,984]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：gravity\n厂商：huawei\n类型 / 实例：257:0\n请求间隔：20.0 ms",
+      "bounds": "[1614,1003][2528,1127]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1614,1164][2447,1195]",
+      "type": "Text"
+    },
+    {
+      "text": "旋转矢量",
+      "bounds": "[592,1320][1411,1365]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[1426,1327][1506,1358]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[592,1384][1506,1415]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[592,1434][698,1461]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[592,1467][709,1520]",
+      "type": "Text"
+    },
+    {
+      "text": "Y (无量纲)",
+      "bounds": "[739,1434][843,1461]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[739,1467][856,1520]",
+      "type": "Text"
+    },
+    {
+      "text": "Z (无量纲)",
+      "bounds": "[886,1434][990,1461]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[886,1467][1003,1520]",
+      "type": "Text"
+    },
+    {
+      "text": "W (rad)",
+      "bounds": "[1033,1434][1111,1461]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1033,1467][1150,1520]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[592,1550][797,1626]",
+      "type": "Select"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2512,1991][2565,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2779,1991][2832,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2855,1999][2894,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "1:30 PM",
+      "bounds": "[2901,1987][2998,2019]",
+      "type": "Text"
+    },
+    {
+      "text": "Nov 10",
+      "bounds": "[2910,2019][2998,2051]",
+      "type": "Text"
+    }
+  ]
+}

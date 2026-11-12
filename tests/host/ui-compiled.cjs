@@ -1,5 +1,5 @@
 'use strict';
-// Tests real SDK-generated update and draw functions. No HarmonyOS runtime or device is simulated as evidence.
+// Tests real SDK-generated UI functions and lifecycle handlers. No device behavior is claimed.
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
@@ -7,7 +7,9 @@ const assert = require('node:assert/strict');
 const studio = process.env.DEVECO_STUDIO_HOME || '/Applications/DevEco-Studio.app/Contents';
 const ts = require(path.join(studio, 'tools/hvigor/hvigor/node_modules/typescript/lib/typescript.js'));
 const root = path.resolve(__dirname, '../..');
-const compiled = path.join(root, 'entry/build/default/cache/default/default@CompileArkTS/esmodule/debug/entry/src/main/ets');
+const buildMode = process.env.HARMONY_UI_BUILD_MODE || 'debug';
+assert.ok(['debug', 'release'].includes(buildMode), 'UI test build mode must be debug or release');
+const compiled = path.join(root, 'entry/build/default/cache/default/default@CompileArkTS/esmodule', buildMode, 'entry/src/main/ets');
 function source(name) { return ts.createSourceFile(name, fs.readFileSync(path.join(compiled, name), 'utf8'), ts.ScriptTarget.Latest, true); }
 function find(node, predicate) {
   if (predicate(node)) return node;
@@ -19,22 +21,29 @@ function runnable(text, globals = {}) {
   const code = ts.transpileModule(text, { compilerOptions: { target: ts.ScriptTarget.ES2021 } }).outputText;
   return vm.runInNewContext(code, globals);
 }
+function pageMethod(name) {
+  const method = find(index, n => ts.isMethodDeclaration(n) && n.name.getText(index) === name);
+  assert.ok(method, 'rebuild the entry page before testing ' + name);
+  return runnable('(function ' + method.getText(index).replace(/^private\s+/, '') + ')');
+}
 let count = 0;
 function test(label, callback) { callback(); count++; console.log('PASS ' + label); }
 const index = source('pages/Index.ts');
 const binding = find(index, n => ts.isArrowFunction(n) && n.parameters.length === 2 &&
-  n.parameters[1].name.getText(index) === 'isInitialRender' &&
   ts.isBlock(n.body) && ts.isIfStatement(n.body.statements[0]) &&
-  n.body.statements[0].expression.getText(index) === 'isInitialRender' &&
+  n.body.statements[0].expression.getText(index) === n.parameters[1].name.getText(index) &&
   n.getText(index).includes('new SensorCardView('));
 assert.ok(binding, 'compile with scripts/build.sh before testing generated UI');
+const rowArgument = find(binding, n => ts.isCallExpression(n) && ts.isPropertyAccessExpression(n.expression) &&
+  n.expression.name.getText(index) === 'currentRow').arguments[0];
+assert.ok(ts.isIdentifier(rowArgument), 'card update must capture the hardware row');
 const currentRowMethod = find(index, n => ts.isMethodDeclaration(n) && n.name.getText(index) === 'currentRow');
 const currentRow = runnable('(function ' + currentRowMethod.getText(index).replace(/^private\s+/, '') + ')');
 test('stable hardware key update reads newest snapshot and retains card component', () => {
   const oldRow = { key: '1:0', values: [1], status: 'live' };
   const newRow = { key: '1:0', values: [9], status: 'paused' };
   let creates = 0; let child; let updated;
-  const update = runnable('(function(' + binding.parameters.map(p => p.getText(index)).join(',') + ') ' + binding.body.getText(index) + ')', { row: oldRow,
+  const update = runnable('(function(' + binding.parameters.map(p => p.getText(index)).join(',') + ') ' + binding.body.getText(index) + ')', { [rowArgument.getText(index)]: oldRow,
     SensorCardView: class { constructor(parent, props) { creates++; child = this; this.props = props; } },
     ViewPU: { create() {} } });
   const view = { snapshot: { rows: [oldRow] }, currentRow, wearable: false, television: false,
@@ -87,7 +96,6 @@ test('optional field disappearance clamps previously selected component', () => 
 });
 function selectUpdate(tree) {
   const node = find(tree, n => ts.isArrowFunction(n) && n.parameters.length === 2 &&
-    n.parameters[1].name.getText(tree) === 'isInitialRender' &&
     ts.isBlock(n.body) && n.body.statements[0]?.getText(tree).startsWith('Select.create('));
   assert.ok(node);
   const commands = [];
@@ -120,4 +128,37 @@ test('TV activation consumes supported key down once and preserves other keys', 
   assert.equal(activate.call({ television: false }, { type: 0, keyCode: 2054 }, () => calls++), false);
   assert.equal(calls, 3);
 });
-console.log('Compiled UI host tests: ' + count + '/' + count + ' passed. No layout/device verification claimed.');
+test('hidden cached page pauses and returns without restarting collection', () => {
+  const controller = { paused: false, foreground: true, onChange: undefined,
+    snapshot() { return { paused: this.paused, intervalMs: 200 }; },
+    setPaused(value) { this.paused = value; this.onChange?.(); },
+    setForeground() { throw Error('page lifecycle must not assert ability foreground'); } };
+  const view = { controller, pageActive: false, selectedIntervalMs: 200, started: true, focusForTv() {} };
+  pageMethod('aboutToAppear').call(view);
+  assert.equal(controller.paused, false);
+  pageMethod('onPageHide').call(view);
+  assert.equal(controller.paused, true); assert.equal(view.snapshot.paused, true); assert.equal(view.pageActive, false);
+  pageMethod('onPageShow').call(view);
+  assert.equal(view.pageActive, true); assert.equal(controller.paused, true);
+  pageMethod('startObservation').call(view); assert.equal(controller.paused, false);
+});
+test('destroyed page removes its listener before pausing the collector', () => {
+  const controller = { paused: false, onChange: undefined, snapshot() { return { paused: this.paused, intervalMs: 200 }; },
+    setPaused(value) { this.paused = value; this.onChange?.(); },
+    setForeground() { throw Error('page lifecycle must not assert ability foreground'); } };
+  let closing = false; let snapshot;
+  const view = { controller, pageActive: false, selectedIntervalMs: 200 };
+  Object.defineProperty(view, 'snapshot', { get: () => snapshot, set(value) {
+    assert.equal(closing, false, 'destroyed page must not receive state updates'); snapshot = value; } });
+  pageMethod('aboutToAppear').call(view); closing = true;
+  pageMethod('aboutToDisappear').call(view);
+  assert.equal(controller.paused, true); assert.equal(controller.onChange, undefined); assert.equal(view.pageActive, false);
+});
+test('first release footer excludes TV while preserving the deferred TV branch', () => {
+  const summary = pageMethod('deviceSummary');
+  const firstRelease = summary.call({ television: false });
+  assert.ok(!firstRelease.includes('智慧屏'));
+  for (const device of ['手机', '平板', 'PC', '智能手表']) assert.ok(firstRelease.includes(device));
+  assert.ok(summary.call({ television: true }).includes('智慧屏'));
+});
+console.log('UI host tests: ' + count + '/' + count + ' passed. No layout/device verification claimed.');

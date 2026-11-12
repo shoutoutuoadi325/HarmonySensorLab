@@ -1,0 +1,102 @@
+{
+  "atUtc": "2026-11-10T05:36:27.583112+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/online-policy-settled.png",
+  "screenshotSha256": "2df8c67ae74e0d3bc9efbb1c7e93bc7adb1c6c552b26756753c10b70b0fa2753",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "English",
+      "bounds": "[77,460][262,526]",
+      "type": "link"
+    },
+    {
+      "text": "English",
+      "bounds": "[77,460][262,526]",
+      "type": "staticText"
+    },
+    {
+      "text": "传感器观测隐私政策",
+      "bounds": "[77,617][1204,814]",
+      "type": "heading"
+    },
+    {
+      "text": "版本：1.0.0。更新日期：2026-11-10。本政策自应用首次公开发布之日起生效。\n开发者：张之麒。联系邮箱：zhiqizhangg@gmail.com。\n应用包名：com.personal.harmonysensorlab。",
+      "bounds": "[77,888][1204,1477]",
+      "type": "paragraph"
+    },
+    {
+      "text": "本应用用于查看当前设备公开传感器接口实际提供的数值与近期曲线。各设备的硬件和系统能力不同，可能只提供少量传感器或没有可用数据。",
+      "bounds": "[77,1532][1204,1925]",
+      "type": "paragraph"
+    },
+    {
+      "text": "数据和用途",
+      "bounds": "[77,1993][1204,2141]",
+      "type": "heading"
+    },
+    {
+      "text": "应用读取本机传感器列表、传感器名称和能力，以及采集时系统返回的运动、磁场、方向、光照、气压、接近等普通传感器数值和回调接收时间，仅用于在当前设备绘制数值与曲线。您主动开启计步并给予运动权限后，应用可读取设备系统提供的计步值。累计口径由系统决定，本应用不将它标为当天步数。",
+      "bounds": "[77,2210][1204,2566]",
+      "type": "paragraph"
+    },
+    {
+      "text": "monysensorlab-privacy.netlify.app",
+      "bounds": "[200,197][1094,271]",
+      "type": "Text"
+    },
+    {
+      "text": "2",
+      "bounds": "[884,2622][909,2678]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[98,40][309,96]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 36",
+      "bounds": "[280,26][419,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[280,37][342,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[342,42][357,95]",
+      "type": "Text"
+    },
+    {
+      "text": "36",
+      "bounds": "[357,37][419,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

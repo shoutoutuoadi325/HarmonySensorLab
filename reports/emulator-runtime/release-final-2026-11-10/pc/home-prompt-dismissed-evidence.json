@@ -1,0 +1,97 @@
+{
+  "atUtc": "2026-11-10T05:24:53.010041+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/home-prompt-dismissed.png",
+  "screenshotSha256": "ab1ba6781830c072a16347b829f3bcc908b055c6f89dacd819fd538b0281b183",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "传感器观测",
+      "bounds": "[612,298][764,334]",
+      "type": "Text"
+    },
+    {
+      "text": "SENSOR / LOCAL",
+      "bounds": "[553,644][794,671]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[553,686][857,757]",
+      "type": "Text"
+    },
+    {
+      "text": "本机 · 前台采集 · 数据不上传",
+      "bounds": "[553,772][901,803]",
+      "type": "Text"
+    },
+    {
+      "text": "观测这台设备",
+      "bounds": "[1423,887][1697,940]",
+      "type": "Text"
+    },
+    {
+      "text": "仅展示公开 API 的真实回调。样本只保存在内存，退到后台即停止采集；健康数据暂不采集。",
+      "bounds": "[1014,967][2106,998]",
+      "type": "Text"
+    },
+    {
+      "text": "开始观测",
+      "bounds": "[1477,1024][1644,1108]",
+      "type": "Button"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[1437,1191][1684,1275]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[1400,1321][1720,1375]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2512,1991][2565,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2779,1991][2832,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2855,1999][2894,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "1:24 PM",
+      "bounds": "[2901,1987][2998,2019]",
+      "type": "Text"
+    },
+    {
+      "text": "Nov 10",
+      "bounds": "[2910,2019][2998,2051]",
+      "type": "Text"
+    }
+  ]
+}

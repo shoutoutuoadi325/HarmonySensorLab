@@ -1,0 +1,82 @@
+{
+  "atUtc": "2026-11-10T05:43:05.767383+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:35:51.202366+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12003",
+    "device": "tablet",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "tablet",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E16R1P1)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/home-verified.png",
+  "screenshotSha256": "f4b2e794840fbaeeb8808736c11dfd1fc2d45a31a187e3ba57f68b3174675582",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "Browser",
+      "bounds": "[544,514][657,544]",
+      "type": "Text"
+    },
+    {
+      "text": "Calendar",
+      "bounds": "[779,514][902,544]",
+      "type": "Text"
+    },
+    {
+      "text": "Files",
+      "bounds": "[1045,514][1115,544]",
+      "type": "Text"
+    },
+    {
+      "text": "Settings",
+      "bounds": "[1503,514][1617,544]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[1247,514][1394,544]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 43",
+      "bounds": "[32,15][113,63]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[32,22][68,57]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[68,25][77,55]",
+      "type": "Text"
+    },
+    {
+      "text": "43",
+      "bounds": "[77,22][113,57]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[2797,27][2837,53]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[2797,27][2837,53]",
+      "type": "Text"
+    }
+  ]
+}

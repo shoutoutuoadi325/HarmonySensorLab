@@ -1,0 +1,5 @@
+{
+  "atUtc": "2026-11-10T05:54:48.171374+00:00",
+  "server": "127.0.0.1:8710",
+  "output": "127.0.0.1:12002\t\tTCP\tOffline\tlocalhost\thdc\n127.0.0.1:12003\t\tTCP\tConnected\tlocalhost\thdc\n127.0.0.1:12004\t\tTCP\tConnected\tlocalhost\thdc\n127.0.0.1:5555\t\tTCP\tOffline\tlocalhost\thdc\n"
+}

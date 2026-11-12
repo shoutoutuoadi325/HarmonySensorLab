@@ -26,8 +26,7 @@ def passwords_in(value):
 
 
 signing_passwords = passwords_in(signing_configs)
-private_signing = root / '.signing/deveco-signing.json'
-if private_signing.is_file():
+for private_signing in sorted((root / '.signing').rglob('*.json')):
     signing_passwords.extend(passwords_in(json.loads(private_signing.read_text())))
 # Quoted short passwords avoid mistaking download byte counts for credentials.
 signing_tokens = {json.dumps(password, ensure_ascii=False).encode('utf-8') for password in signing_passwords}
@@ -69,6 +68,10 @@ delivery_files.extend((f, 'docs/' + str(f.relative_to(root / 'docs')))
                       for f in sorted((root / 'docs').rglob('*')) if exportable(f))
 delivery_files.extend((f, 'reports/' + str(f.relative_to(root / 'reports')))
                       for f in sorted((root / 'reports').rglob('*')) if exportable(f))
+first_release_assets = root / 'dist/store-submission-first'
+if first_release_assets.is_dir():
+    delivery_files.extend((f, 'store-submission-first/' + str(f.relative_to(first_release_assets)))
+                          for f in sorted(first_release_assets.rglob('*')) if exportable(f))
 for file in {root / name for name in files} | {f for f, _ in delivery_files} | {root / 'dist/README.md'}:
     check_export_file(file)
 with ZipFile(source, 'w', ZIP_DEFLATED) as archive:

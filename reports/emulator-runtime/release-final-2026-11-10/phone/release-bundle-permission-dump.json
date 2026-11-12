@@ -1,0 +1,19 @@
+{
+  "atUtc": "2026-11-10T05:39:49.341838+00:00",
+  "command": [
+    "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/hdc",
+    "-p",
+    "-s",
+    "127.0.0.1:8710",
+    "-t",
+    "127.0.0.1:5555",
+    "shell",
+    "bm",
+    "dump",
+    "-n",
+    "com.personal.harmonysensorlab"
+  ],
+  "exitCode": 0,
+  "stdout": "[Fail][E001005] Device not found or connected\n[Fail]ExecuteCommand need connect-key? please confirm a device by help info\n",
+  "stderr": ""
+}

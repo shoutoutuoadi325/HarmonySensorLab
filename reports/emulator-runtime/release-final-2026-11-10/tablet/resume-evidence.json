@@ -1,0 +1,407 @@
+{
+  "atUtc": "2026-11-10T05:42:40.810492+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:35:51.202366+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12003",
+    "device": "tablet",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "tablet",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E16R1P1)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/resume.png",
+  "screenshotSha256": "daf1cf167557fba41386ee93aaf8f8e1fcbf99b41573408309204c91e14509ad",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "暂停采集",
+      "bounds": "[40,86][217,174]",
+      "type": "Button"
+    },
+    {
+      "text": "5 Hz · 默认",
+      "bounds": "[237,86][467,174]",
+      "type": "Select"
+    },
+    {
+      "text": "刷新设备",
+      "bounds": "[487,86][664,174]",
+      "type": "Button"
+    },
+    {
+      "text": "清空曲线",
+      "bounds": "[684,86][861,174]",
+      "type": "Button"
+    },
+    {
+      "text": "频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，最多240点，时间跨度不超过60秒；暂停时保留曲线。",
+      "bounds": "[40,242][2840,275]",
+      "type": "Text"
+    },
+    {
+      "text": "本机硬件 · 9 项",
+      "bounds": "[40,344][2663,391]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件详情",
+      "bounds": "[2663,323][2840,411]",
+      "type": "Button"
+    },
+    {
+      "text": "加速度",
+      "bounds": "[82,501][837,548]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[853,508][910,541]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[82,568][910,601]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,621][98,649]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[82,655][205,711]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[237,621][252,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[237,655][360,711]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[392,621][406,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[392,655][515,711]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,743][218,823]",
+      "type": "Select"
+    },
+    {
+      "text": "本机 API 实时样本",
+      "bounds": "[82,1111][910,1144]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 0 秒前",
+      "bounds": "[82,1164][910,1192]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[82,1230][826,1263]",
+      "type": "Text"
+    },
+    {
+      "text": "角速度",
+      "bounds": "[1026,501][1781,548]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[1797,508][1854,541]",
+      "type": "Text"
+    },
+    {
+      "text": "rad/s",
+      "bounds": "[1026,568][1854,601]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1026,621][1042,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1026,655][1149,711]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[1181,621][1196,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1181,655][1304,711]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[1336,621][1350,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1336,655][1459,711]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1026,743][1162,823]",
+      "type": "Select"
+    },
+    {
+      "text": "本机 API 实时样本",
+      "bounds": "[1026,1111][1854,1144]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 0 秒前",
+      "bounds": "[1026,1164][1854,1192]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1026,1230][1770,1263]",
+      "type": "Text"
+    },
+    {
+      "text": "环境光",
+      "bounds": "[1970,501][2725,548]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[2741,508][2798,541]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[1970,568][2798,601]",
+      "type": "Text"
+    },
+    {
+      "text": "照度 (lx)",
+      "bounds": "[1970,621][2059,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1970,655][2093,711]",
+      "type": "Text"
+    },
+    {
+      "text": "色温 (K，支持未核实)",
+      "bounds": "[2125,621][2357,649]",
+      "type": "Text"
+    },
+    {
+      "text": "4000.000",
+      "bounds": "[2125,655][2332,711]",
+      "type": "Text"
+    },
+    {
+      "text": "红外 (cd/m²，支持未核实)",
+      "bounds": "[2389,621][2667,649]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[2389,655][2512,711]",
+      "type": "Text"
+    },
+    {
+      "text": "照度 (lx)",
+      "bounds": "[1970,743][2161,823]",
+      "type": "Select"
+    },
+    {
+      "text": "附加光照字段可能是驱动占位值，应核实硬件支持",
+      "bounds": "[1970,1111][2798,1144]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 0 秒前",
+      "bounds": "[1970,1164][2798,1192]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1970,1230][2714,1263]",
+      "type": "Text"
+    },
+    {
+      "text": "磁场",
+      "bounds": "[82,1396][837,1443]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[853,1403][910,1436]",
+      "type": "Text"
+    },
+    {
+      "text": "μT",
+      "bounds": "[82,1463][910,1496]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,1516][98,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[82,1550][205,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[237,1516][252,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[237,1550][360,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[392,1516][406,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[392,1550][515,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,1638][218,1718]",
+      "type": "Select"
+    },
+    {
+      "text": "霍尔状态",
+      "bounds": "[1026,1396][1781,1443]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[1797,1403][1854,1436]",
+      "type": "Text"
+    },
+    {
+      "text": "状态码",
+      "bounds": "[1026,1463][1854,1496]",
+      "type": "Text"
+    },
+    {
+      "text": "状态",
+      "bounds": "[1026,1516][1074,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0",
+      "bounds": "[1026,1550][1054,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "方向",
+      "bounds": "[1970,1396][2725,1443]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[2741,1403][2798,1436]",
+      "type": "Text"
+    },
+    {
+      "text": "°",
+      "bounds": "[1970,1463][2798,1496]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[1970,1516][2064,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[1970,1550][2093,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "俯仰角 β",
+      "bounds": "[2125,1516][2218,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[2125,1550][2248,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "翻滚角 γ",
+      "bounds": "[2280,1516][2371,1544]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[2280,1550][2403,1606]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[1970,1638][2166,1718]",
+      "type": "Select"
+    },
+    {
+      "text": "01, :, 42",
+      "bounds": "[32,15][113,63]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[32,22][68,57]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[68,25][77,55]",
+      "type": "Text"
+    },
+    {
+      "text": "42",
+      "bounds": "[77,22][113,57]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[2797,27][2837,53]",
+      "type": "Text"
+    }
+  ]
+}

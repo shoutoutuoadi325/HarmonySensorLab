@@ -1,0 +1,19 @@
+{
+  "atUtc": "2026-11-10T05:48:35.711185+00:00",
+  "command": [
+    "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/hdc",
+    "-p",
+    "-s",
+    "127.0.0.1:8710",
+    "-t",
+    "127.0.0.1:12004",
+    "shell",
+    "aa",
+    "force-stop",
+    "com.personal.harmonysensorlab"
+  ],
+  "exitCode": 0,
+  "stdout": "force stop process successfully.\n",
+  "stderr": "",
+  "purpose": "Intentionally end this local emulator test app process; relaunch to verify session resets and access initial-page policy"
+}

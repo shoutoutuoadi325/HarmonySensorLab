@@ -1,39 +1,39 @@
-> hvigor [32mFinished :entry:tv@PreBuild... after 68 ms [39m
+> hvigor [32mFinished :entry:tv@PreBuild... after 55 ms [39m
 > hvigor [32mFinished :entry:tv@CreateModuleInfo... after 1 ms [39m
-> hvigor [32mFinished :entry:tv@GenerateMetadata... after 4 ms [39m
+> hvigor [32mUP-TO-DATE :entry:tv@GenerateMetadata...  [39m
 > hvigor [32mFinished :entry:tv@ConfigureCmake... after 1 ms [39m
-> hvigor [32mFinished :entry:tv@MergeProfile... after 16 ms [39m
-> hvigor [32mFinished :entry:tv@CreateBuildProfile... after 2 ms [39m
+> hvigor [32mFinished :entry:tv@MergeProfile... after 17 ms [39m
+> hvigor [32mFinished :entry:tv@CreateBuildProfile... after 3 ms [39m
 > hvigor [32mFinished :entry:tv@PreCheckSyscap... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:tv@GeneratePkgContextInfo...  [39m
 > hvigor [32mFinished :entry:tv@GeneratePkgSdkInfo... after 1 ms [39m
 > hvigor [32mFinished :entry:tv@ProcessIntegratedHsp... after 1 ms [39m
 > hvigor [32mFinished :entry:tv@BuildNativeWithCmake... after 1 ms [39m
-> hvigor [32mFinished :entry:tv@MakePackInfo... after 2 ms [39m
-> hvigor [32mFinished :entry:tv@SyscapTransform... after 7 ms [39m
-> hvigor [32mFinished :entry:tv@ProcessProfile... after 115 ms [39m
+> hvigor [32mFinished :entry:tv@MakePackInfo... after 3 ms [39m
+> hvigor [32mFinished :entry:tv@SyscapTransform... after 6 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessProfile... after 95 ms [39m
 > hvigor [32mUP-TO-DATE :entry:tv@ProcessRouterMap...  [39m
 > hvigor [32mUP-TO-DATE :entry:tv@ProcessShareConfig...  [39m
-> hvigor [32mFinished :entry:tv@ProcessStartupConfig... after 3 ms [39m
-> hvigor [32mFinished :entry:tv@BuildNativeWithNinja... after 2 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessStartupConfig... after 1 ms [39m
+> hvigor [32mFinished :entry:tv@BuildNativeWithNinja... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:tv@ProcessResource...  [39m
 > hvigor [32mUP-TO-DATE :entry:tv@GenerateLoaderJson...  [39m
-> hvigor [32mFinished :entry:tv@ProcessLibs... after 6 ms [39m
-> hvigor [32mFinished :entry:tv@CompileResource... after 127 ms [39m
+> hvigor [32mFinished :entry:tv@ProcessLibs... after 3 ms [39m
+> hvigor [32mFinished :entry:tv@CompileResource... after 152 ms [39m
 > hvigor [32mUP-TO-DATE :entry:tv@DoNativeStrip...  [39m
-> hvigor [32mFinished :entry:tv@BuildJS... after 3 ms [39m
+> hvigor [32mFinished :entry:tv@BuildJS... after 1 ms [39m
 > hvigor [32mUP-TO-DATE :entry:tv@CacheNativeLibs...  [39m
-> hvigor [32mFinished :entry:tv@CompileArkTS... after 3 s 39 ms [39m
-> hvigor [32mFinished :entry:tv@GeneratePkgModuleJson... after 2 ms [39m
+> hvigor [32mFinished :entry:tv@CompileArkTS... after 1 s 898 ms [39m
+> hvigor [32mFinished :entry:tv@GeneratePkgModuleJson... after 3 ms [39m
 > hvigor [32mFinished :entry:tv@ProcessCompiledResources... after 1 ms [39m
-> hvigor [32mFinished :entry:tv@PackageHap... after 299 ms [39m
-> hvigor [32mFinished :entry:tv@PackingCheck... after 17 ms [39m
-> hvigor [32mFinished :entry:tv@SignHap... after 928 ms [39m
+> hvigor [32mFinished :entry:tv@PackageHap... after 216 ms [39m
+> hvigor [32mFinished :entry:tv@PackingCheck... after 3 ms [39m
+> hvigor [32mFinished :entry:tv@SignHap... after 1 s 104 ms [39m
 > hvigor [32mFinished :entry:tv@CollectDebugSymbol... after 1 ms [39m
 > hvigor [32mFinished :entry:assembleHap... after 1 ms [39m
-> hvigor [32mBUILD SUCCESSFUL in 9 s 796 ms [39m
+> hvigor [32mBUILD SUCCESSFUL in 7 s 39 ms [39m
 
-33 tasks in total: 26 executed, 7 up-to-date
+33 tasks in total: 25 executed, 8 up-to-date
 > hvigor [33mWARN: [33mWARN: [33m[33mArkTS:WARN File: /Users/I783203/PersonalDevelop/HarmonySensorLab/entry/src/main/ets/services/NativeSensorAdapter.ets:17:12
  The 'on' API is supported since SDK version 22. However, the current compatible SDK version is 5.1.1(19).
  It is recommended to use apiAvailable to safeguard API compatibility.

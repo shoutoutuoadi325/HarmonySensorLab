@@ -57,12 +57,11 @@ python3 scripts/export-delivery.py
 device-status.py 可用受控 hdc 前台服务查询在线目标，复用现有服务并只清理自己创建的进程。verify-packages.py 使用官方签名工具校验调试签名及未签名包，并核对权限、设备类型和 APP 内 HAP。export-delivery.py 在内存中移除源码 ZIP 的签名配置和产品引用，保留本地工作配置，同时归档模拟器证据；私钥、密码和 .signing/ 不随源码交付。
 
 - [验证报告](reports/validation-report.md)
-- [隐私政策草稿](docs/privacy-policy-draft.md)
-- [发布材料](docs/release-materials.md)
+- [隐私政策](docs/privacy-policy.md)
 - [设备验收计划](docs/device-verification-plan.md)
 - [签名与安装](docs/signing-and-installation.md)
-- dist/packages/：四个官方 Debug 签名 HAP，以及各产品 Debug/Release 未签名 HAP、Release 未签名 APP 容器。
+- `dist/packages/` 保存各产品的未签名 HAP 和 APP 构建基线。
 
-用户已登录 DevEco Studio，官方调试签名已在本地生成。Debug 签名包仅用于其 Profile 许可的调试设备；模拟器接受 unsigned Debug 包也不证明真机安装资格。全部 Release HAP/APP 仍未签名，尚未提交上架审核。真机调试授权、发布签名、个人账号类目及备案仍需完成。
+签名包、交付 ZIP 和商店后台材料保存在本地。调试签名包仅用于其 Profile 许可的设备。
 
 核心：services/SensorController.ets 管理生命周期和权限；NativeSensorAdapter.ets 仅封装公开回调；model/ 存放类型、能力与历史规则；components/ 独立更新数值卡片与曲线；EntryAbility 绑定前后台。

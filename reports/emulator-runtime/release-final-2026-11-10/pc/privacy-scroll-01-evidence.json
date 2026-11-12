@@ -1,0 +1,227 @@
+{
+  "atUtc": "2026-11-10T05:30:26.761223+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/privacy-scroll-01.png",
+  "screenshotSha256": "7aa19d028220f1499b16c4d5db80498f5cde7a4f4dd460e3c2aeab920e8ca6cd",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "传感器观测",
+      "bounds": "[612,298][764,334]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[592,351][1506,367]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：accelerometer\n厂商：STMicroelectronics\n类型 / 实例：1:0\n请求间隔：200.0 ms",
+      "bounds": "[592,386][1506,510]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[592,547][1425,578]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[1614,351][2528,367]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：gyroscope\n厂商：huawei\n类型 / 实例：2:0\n请求间隔：200.0 ms",
+      "bounds": "[1614,386][2528,510]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1614,547][2447,578]",
+      "type": "Text"
+    },
+    {
+      "text": "环境光",
+      "bounds": "[592,703][1411,748]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[1426,710][1506,741]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[592,767][1506,798]",
+      "type": "Text"
+    },
+    {
+      "text": "照度 (lx)",
+      "bounds": "[592,817][677,844]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[592,850][709,903]",
+      "type": "Text"
+    },
+    {
+      "text": "色温 (K，支持未核实)",
+      "bounds": "[739,817][959,844]",
+      "type": "Text"
+    },
+    {
+      "text": "4000.000",
+      "bounds": "[739,850][936,903]",
+      "type": "Text"
+    },
+    {
+      "text": "红外 (cd/m²，支持未核实)",
+      "bounds": "[989,817][1253,844]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[989,850][1106,903]",
+      "type": "Text"
+    },
+    {
+      "text": "照度 (lx)",
+      "bounds": "[592,933][773,1009]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[592,1282][1506,1313]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[592,1332][1506,1359]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：light\n厂商：Taos\n类型 / 实例：5:0\n请求间隔：200.0 ms",
+      "bounds": "[592,1378][1506,1502]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[592,1539][1425,1570]",
+      "type": "Text"
+    },
+    {
+      "text": "磁场",
+      "bounds": "[1614,703][2433,748]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[2448,710][2528,741]",
+      "type": "Text"
+    },
+    {
+      "text": "μT",
+      "bounds": "[1614,767][2528,798]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1614,817][1630,844]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[1614,850][1731,903]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[1761,817][1776,844]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[1761,850][1878,903]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[1908,817][1922,844]",
+      "type": "Text"
+    },
+    {
+      "text": "0.063",
+      "bounds": "[1908,850][2025,903]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[1614,933][1743,1009]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1614,1282][2528,1313]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 63 秒前",
+      "bounds": "[1614,1332][2528,1359]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件：magnetic field\n厂商：huawei\n类型 / 实例：6:0\n请求间隔：200.0 ms",
+      "bounds": "[1614,1378][2528,1502]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1614,1539][2447,1570]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2512,1991][2565,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2779,1991][2832,2044]",
+      "type": "Text"
+    },
+    {
+      "text": "  ",
+      "bounds": "[2855,1999][2894,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "1:30 PM",
+      "bounds": "[2901,1987][2998,2019]",
+      "type": "Text"
+    },
+    {
+      "text": "Nov 10",
+      "bounds": "[2910,2019][2998,2051]",
+      "type": "Text"
+    }
+  ]
+}

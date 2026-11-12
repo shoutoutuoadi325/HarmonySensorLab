@@ -1,0 +1,297 @@
+{
+  "atUtc": "2026-11-10T05:41:43.913503+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:35:51.202366+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12003",
+    "device": "tablet",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "tablet",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E16R1P1)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/return-from-online-policy.png",
+  "screenshotSha256": "002ef10f67dcb4f577d642ca52265c8253cdd473cfd8c5b4107e3b87ef77db97",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "X",
+      "bounds": "[82,78][218,134]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[82,422][910,455]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 182 秒前",
+      "bounds": "[82,475][910,503]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[82,541][826,574]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1026,322][1854,355]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 181 秒前",
+      "bounds": "[1026,375][1854,403]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1026,441][1770,474]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[1970,78][2166,134]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1970,422][2798,455]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 181 秒前",
+      "bounds": "[1970,475][2798,503]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1970,541][2714,574]",
+      "type": "Text"
+    },
+    {
+      "text": "重力",
+      "bounds": "[82,707][809,754]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[825,714][910,747]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[82,774][910,807]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,827][98,855]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[82,861][205,917]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[237,827][252,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[237,861][360,917]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[392,827][406,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[392,861][515,917]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[82,949][218,1029]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[82,1317][910,1350]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 181 秒前",
+      "bounds": "[82,1370][910,1398]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[82,1436][826,1469]",
+      "type": "Text"
+    },
+    {
+      "text": "旋转矢量",
+      "bounds": "[1026,707][1753,754]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[1769,714][1854,747]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[1026,774][1854,807]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[1026,827][1137,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1026,861][1149,917]",
+      "type": "Text"
+    },
+    {
+      "text": "Y (无量纲)",
+      "bounds": "[1181,827][1291,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1181,861][1304,917]",
+      "type": "Text"
+    },
+    {
+      "text": "Z (无量纲)",
+      "bounds": "[1336,827][1445,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1336,861][1459,917]",
+      "type": "Text"
+    },
+    {
+      "text": "W (rad)",
+      "bounds": "[1491,827][1573,855]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[1491,861][1614,917]",
+      "type": "Text"
+    },
+    {
+      "text": "X (无量纲)",
+      "bounds": "[1026,949][1243,1029]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1026,1317][1854,1350]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 181 秒前",
+      "bounds": "[1026,1370][1854,1398]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1026,1436][1770,1469]",
+      "type": "Text"
+    },
+    {
+      "text": "显著运动",
+      "bounds": "[1970,707][2697,754]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[2713,714][2798,747]",
+      "type": "Text"
+    },
+    {
+      "text": "事件值",
+      "bounds": "[1970,774][2798,807]",
+      "type": "Text"
+    },
+    {
+      "text": "运动事件",
+      "bounds": "[1970,827][2066,855]",
+      "type": "Text"
+    },
+    {
+      "text": "1",
+      "bounds": "[1970,861][1998,917]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[1970,1217][2798,1250]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 181 秒前",
+      "bounds": "[1970,1270][2798,1298]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[1970,1336][2714,1369]",
+      "type": "Text"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[1310,1608][1571,1696]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[1272,1744][1608,1800]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 41",
+      "bounds": "[32,15][113,63]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[32,22][68,57]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[68,25][77,55]",
+      "type": "Text"
+    },
+    {
+      "text": "41",
+      "bounds": "[77,22][113,57]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[2797,27][2837,53]",
+      "type": "Text"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "atUtc": "2026-11-10T05:40:41.896790+00:00",
+  "target": "127.0.0.1:12004",
+  "package": "dist/packages/sensor-wearable-release-signed.hap",
+  "packageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-wearable-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+  "successful": true
+}

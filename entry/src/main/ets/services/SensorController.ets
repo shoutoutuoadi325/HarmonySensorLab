@@ -217,7 +217,7 @@ export class SensorController {
     } else if (binding.unsupportedReason.length > 0) {
       row.status = 'unsupported';
       row.message = binding.unsupportedReason;
-    } else if (binding.stop !== undefined) {
+    } else if (binding.stop !== undefined || this.hasPendingStop(row.key)) {
       row.status = 'error';
       row.message = '原生订阅尚未成功停止；已屏蔽回调，可刷新重试清理';
     } else if (!row.enabled) {
@@ -239,7 +239,8 @@ export class SensorController {
   }
 
   private startBinding(binding: SensorBinding): void {
-    if (binding.stop !== undefined || !this.foreground || this.paused || !binding.row.enabled || binding.unsupportedReason.length > 0 ||
+    if (binding.stop !== undefined || this.hasPendingStop(binding.row.key) || !this.foreground || this.paused ||
+      !binding.row.enabled || binding.unsupportedReason.length > 0 ||
       binding.definition === undefined || binding.definition.qualification || !this.hasPermission(binding)) {
       return;
     }
@@ -343,6 +344,11 @@ export class SensorController {
       binding.row.status = 'error';
       binding.row.message = '停止订阅失败：' + this.describeError(error as BusinessError);
     }
+  }
+
+  private hasPendingStop(key: string): boolean {
+    // Refresh replaces row objects; an older native subscription still belongs to the same instance key.
+    return this.stoppedBindings.some((binding: SensorBinding) => binding.row.key === key && binding.stop !== undefined);
   }
 
   private stopAll(): void {

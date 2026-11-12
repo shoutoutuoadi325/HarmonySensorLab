@@ -1,0 +1,8 @@
+{
+  "atUtc": "2026-11-10T05:20:03.125748+00:00",
+  "target": "127.0.0.1:5555",
+  "package": "dist/packages/sensor-default-release-signed.hap",
+  "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-default-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+  "successful": true
+}

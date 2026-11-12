@@ -1,0 +1,92 @@
+{
+  "atUtc": "2026-11-10T05:20:32.362747+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/initial.png",
+  "screenshotSha256": "c675e7b11027563ab01491802561403da0a0c1d6760d360f96fd5fa90a76c541",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "SENSOR / LOCAL",
+      "bounds": "[70,699][513,748]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[70,776][630,907]",
+      "type": "Text"
+    },
+    {
+      "text": "本机 · 前台采集 · 数据不上传",
+      "bounds": "[70,935][711,992]",
+      "type": "Text"
+    },
+    {
+      "text": "观测这台设备",
+      "bounds": "[388,1146][893,1244]",
+      "type": "Text"
+    },
+    {
+      "text": "仅展示公开 API 的真实回调。样本只保存在内存，退到后台即停止采集；健康数据暂不采集。",
+      "bounds": "[149,1293][1132,1464]",
+      "type": "Text"
+    },
+    {
+      "text": "开始观测",
+      "bounds": "[486,1513][795,1667]",
+      "type": "Button"
+    },
+    {
+      "text": "本机数据与隐私",
+      "bounds": "[412,1821][868,1975]",
+      "type": "Button"
+    },
+    {
+      "text": "手机 / 平板 / PC / 智能手表\n各设备以实际公开硬件能力为准",
+      "bounds": "[346,2059][935,2157]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 20",
+      "bounds": "[56,26][195,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[56,37][118,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[118,42][133,95]",
+      "type": "Text"
+    },
+    {
+      "text": "20",
+      "bounds": "[133,37][195,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "officialEmulator": "/Applications/DevEco-Studio.app/Contents/tools/emulator/Emulator",
+  "instancePath": "/Users/I783203/.Huawei/Emulator/deployed",
+  "imageRoot": "/Users/I783203/Library/Huawei/Sdk",
+  "pcStoppedSuccessfully": true,
+  "tablet": {
+    "instance": "HarmonySensorLab_Tablet",
+    "sessionId": 50999,
+    "pid": 21090,
+    "port": 12003,
+    "portListeningVerified": true,
+    "hdcIdentityVerified": true,
+    "hdcDeviceType": "tablet"
+  },
+  "allowedAgentWork": "Use official headless Emulator CLI to start/stop test instances within existing simulator-test authorization. No native desktop or Safari UI. Reuse HDC server 127.0.0.1:8710. After finishing phone, stop it and start HarmonySensorLab_Wearable with -noWindow -hdcPort 12004. Verify actual port, HDC identity, then install current Release HAP.",
+  "phoneStoppedSuccessfully": true,
+  "watch": {
+    "instance": "HarmonySensorLab_Wearable",
+    "sessionId": 6574,
+    "pid": 23685,
+    "port": 12004,
+    "portListeningVerified": true,
+    "hdcDeviceType": "wearable"
+  },
+  "watchScreenshotRequirement": "4-8 square screenshots; suggestion840x840; PNG <=2MB"
+}

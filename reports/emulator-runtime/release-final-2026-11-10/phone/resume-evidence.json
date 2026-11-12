@@ -1,0 +1,162 @@
+{
+  "atUtc": "2026-11-10T05:22:00.085048+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/resume.png",
+  "screenshotSha256": "d8e494b74c231a7152091e1d4f120f14324c7eb15bd8678057792f53219fe1a1",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "SENSOR / LOCAL",
+      "bounds": "[70,234][513,283]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[70,311][630,442]",
+      "type": "Text"
+    },
+    {
+      "text": "本机 · 前台采集 · 数据不上传",
+      "bounds": "[70,470][711,527]",
+      "type": "Text"
+    },
+    {
+      "text": "暂停采集",
+      "bounds": "[70,611][379,765]",
+      "type": "Button"
+    },
+    {
+      "text": "5 Hz · 默认",
+      "bounds": "[414,611][815,765]",
+      "type": "Select"
+    },
+    {
+      "text": "刷新设备",
+      "bounds": "[850,611][1159,765]",
+      "type": "Button"
+    },
+    {
+      "text": "清空曲线",
+      "bounds": "[70,800][379,954]",
+      "type": "Button"
+    },
+    {
+      "text": "授权运动",
+      "bounds": "[414,800][723,954]",
+      "type": "Button"
+    },
+    {
+      "text": "频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，最多240点，时间跨度不超过60秒；暂停时保留曲线。",
+      "bounds": "[70,1073][1210,1244]",
+      "type": "Text"
+    },
+    {
+      "text": "本机硬件 · 9 项",
+      "bounds": "[70,1364][901,1446]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件详情",
+      "bounds": "[901,1328][1210,1482]",
+      "type": "Button"
+    },
+    {
+      "text": "加速度",
+      "bounds": "[143,1639][1010,1721]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[1038,1652][1137,1709]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[143,1756][1137,1813]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,1848][171,1897]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[143,1908][359,2006]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[415,1848][441,1897]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[415,1908][631,2006]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[687,1848][712,1897]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[687,1908][903,2006]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,2062][381,2202]",
+      "type": "Select"
+    },
+    {
+      "text": "本机 API 实时样本",
+      "bounds": "[143,2706][1137,2734]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 21",
+      "bounds": "[56,26][195,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[56,37][118,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[118,42][133,95]",
+      "type": "Text"
+    },
+    {
+      "text": "21",
+      "bounds": "[133,37][195,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

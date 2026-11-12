@@ -1,0 +1,87 @@
+{
+  "atUtc": "2026-11-10T05:44:39.055690+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:40:01.433717+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12004",
+    "device": "watch",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "wearable",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "installedPackage": "dist/packages/sensor-wearable-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/sensor-scroll-01.png",
+  "screenshotSha256": "fdfc002c3b02905144985bd2b33ea8fb4aa74545b15adf3a70e51d2f107a3c2c",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "本机硬件 · 9 项",
+      "bounds": "[48,0][258,42]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件详情",
+      "bounds": "[258,0][418,48]",
+      "type": "Button"
+    },
+    {
+      "text": "加速度",
+      "bounds": "[78,110][324,152]",
+      "type": "Text"
+    },
+    {
+      "text": "实时",
+      "bounds": "[340,117][388,145]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[78,172][388,200]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[78,220][93,246]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[78,252][176,297]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[208,220][222,246]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[208,252][306,297]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[78,309][91,335]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[78,341][176,386]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[78,418][214,466]",
+      "type": "Select"
+    }
+  ]
+}

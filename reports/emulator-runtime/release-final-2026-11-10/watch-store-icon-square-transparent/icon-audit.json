@@ -1,0 +1,92 @@
+{
+  "sourceSvg": "/Users/I783203/PersonalDevelop/HarmonySensorLab/AppScope/resources/base/media/app_icon.svg",
+  "sourceSha256": "f92782adc50114936a3e6687aefccd04ff3ab37b64a364c8a3b136a9ca545a1d",
+  "entrySvgSha256": "f92782adc50114936a3e6687aefccd04ff3ab37b64a364c8a3b136a9ca545a1d",
+  "derivedSvg": "/Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/release-final-2026-11-10/watch-store-icon-square-transparent/watch-icon-1024-square-transparent.svg",
+  "derivedSvgSha256": "c1ac6dc120d3abd524dba122f8c5dc5b286b620c09a87572dda3b451441747eb",
+  "changes": [
+    "Original dark plate rx=44 changed to rx=0; no rounded rectangle remains.",
+    "Original circle and sensor waveform attributes preserved exactly.",
+    "Full 192x192 design scaled uniformly to 896x896 and centered with a 64px transparent margin on the 1024x1024 canvas."
+  ],
+  "plateBounds": [
+    64,
+    64,
+    960,
+    960
+  ],
+  "cornerGeometry": "Canvas corners transparent; retained dark plate corners square.",
+  "atUtc": "2026-11-10T06:44:20.097009+00:00",
+  "png": "/Users/I783203/PersonalDevelop/HarmonySensorLab/reports/emulator-runtime/release-final-2026-11-10/watch-store-icon-square-transparent/watch-icon-1024-square-transparent.png",
+  "pngSha256": "9f93597f1e793c18055edd4757afcf0806b8b9e41d13f4d80384ec42cd924f9e",
+  "pngByteSize": 49064,
+  "pngFormat": "PNG",
+  "size": [
+    1024,
+    1024
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "alphaTransparentPixelCount": 245760,
+  "alphaOpaquePixelCount": 802816,
+  "alphaPartialPixelCount": 0,
+  "four64pxCornerBlocksAlphaExtrema": {
+    "topLeft": [
+      0,
+      0
+    ],
+    "topRight": [
+      0,
+      0
+    ],
+    "bottomLeft": [
+      0,
+      0
+    ],
+    "bottomRight": [
+      0,
+      0
+    ]
+  },
+  "nonTransparentBoundingBox": [
+    64,
+    64,
+    960,
+    960
+  ],
+  "squarePlateCornerPixels": {
+    "(64, 64)": [
+      16,
+      44,
+      65,
+      255
+    ],
+    "(959, 64)": [
+      16,
+      44,
+      65,
+      255
+    ],
+    "(64, 959)": [
+      16,
+      44,
+      65,
+      255
+    ],
+    "(959, 959)": [
+      16,
+      44,
+      65,
+      255
+    ]
+  },
+  "derivedRectRadius": 0,
+  "sourceSvgHashesUnchanged": true,
+  "existingUploadAssetsModified": false,
+  "appOrPackageModifiedByThisTask": false,
+  "renderer": "sharp 0.35.5 / librsvg 2.63.2 / libvips 8.18.7",
+  "verification": "passed"
+}

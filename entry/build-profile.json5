@@ -40,6 +40,17 @@
           "tv"
         ]
       }
+    },
+    {
+      "name": "multidevice",
+      "config": {
+        "deviceType": [
+          "phone",
+          "tablet",
+          "2in1",
+          "wearable"
+        ]
+      }
     }
   ]
 }

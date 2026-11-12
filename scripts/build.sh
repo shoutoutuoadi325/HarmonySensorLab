@@ -9,6 +9,9 @@ product=default
 mode=debug
 if [ "$#" -gt 0 ]; then product="$1"; fi
 if [ "$#" -gt 1 ]; then mode="$2"; fi
+if [ "$mode" = release ] && [ "${HARMONY_UNSIGNED_PREVIEW:-0}" != 1 ]; then
+  python3 scripts/preflight-release-privacy.py
+fi
 if [ "${3:-hap}" = app ]; then
   exec "$DEVECO_ROOT/tools/hvigor/bin/hvigorw" --mode project -p product="$product" -p buildMode="$mode" assembleApp --no-daemon
 fi

@@ -1,0 +1,57 @@
+{
+  "atUtc": "2026-11-10T05:24:14.728043+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:22:52.153004+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12002",
+    "device": "pc",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "2in1",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+  "installedPackage": "dist/packages/sensor-pc-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/initial.png",
+  "screenshotSha256": "b190a62d564f4deea2703320ccc9db141708e2e6e524d5d677d652af4c46461c",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "Add to home screen?",
+      "bounds": "[1371,901][1750,946]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测 will be added to your home screen.",
+      "bounds": "[1234,976][1886,1012]",
+      "type": "Text"
+    },
+    {
+      "text": "notRemindCheckBox",
+      "bounds": "[1225,1035][1271,1081]",
+      "type": "Checkbox"
+    },
+    {
+      "text": "Don't show again",
+      "bounds": "[1299,1042][1508,1073]",
+      "type": "Text"
+    },
+    {
+      "text": "Never add",
+      "bounds": "[1305,1124][1450,1161]",
+      "type": "Text"
+    },
+    {
+      "text": "Add",
+      "bounds": "[1714,1124][1771,1161]",
+      "type": "Text"
+    }
+  ]
+}

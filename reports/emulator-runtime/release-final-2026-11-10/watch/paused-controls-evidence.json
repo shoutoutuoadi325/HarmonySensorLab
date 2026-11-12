@@ -1,0 +1,62 @@
+{
+  "atUtc": "2026-11-10T05:47:14.141442+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:40:01.433717+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12004",
+    "device": "watch",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "wearable",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "installedPackage": "dist/packages/sensor-wearable-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/paused-controls.png",
+  "screenshotSha256": "515eb9478666f56bd4a090de852961874bb8c5e21187cd318474634aff8433cf",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "SENSOR / LOCAL",
+      "bounds": "[123,53][344,76]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[128,92][339,141]",
+      "type": "Text"
+    },
+    {
+      "text": "本机 · 前台采集 · 数据不上传",
+      "bounds": "[76,157][390,185]",
+      "type": "Text"
+    },
+    {
+      "text": "继续采集",
+      "bounds": "[48,217][208,305]",
+      "type": "Button"
+    },
+    {
+      "text": "5 Hz · 默认",
+      "bounds": "[48,325][260,413]",
+      "type": "Select"
+    },
+    {
+      "text": "刷新设备",
+      "bounds": "[48,433][208,466]",
+      "type": "Button"
+    },
+    {
+      "text": "清空曲线",
+      "bounds": "[228,433][388,466]",
+      "type": "Button"
+    }
+  ]
+}

@@ -13,3 +13,14 @@ local.properties
 __pycache__/
 *.pyc
 .DS_Store
+
+# Local delivery, signing profiles and store submission records
+/dist/archives/
+/dist/README.md
+/dist/store-assets/
+/dist/store-submission-*/
+/dist/packages/*-signed.*
+/reports/store-submission/
+/docs/release-materials.md
+/docs/store-policy-verification-2026-11-09.md
+/scripts/run-release-backend-worker.py

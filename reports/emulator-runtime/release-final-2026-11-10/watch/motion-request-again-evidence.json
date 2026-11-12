@@ -1,0 +1,62 @@
+{
+  "atUtc": "2026-11-10T05:44:22.910369+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:40:01.433717+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:12004",
+    "device": "watch",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "wearable",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+  "installedPackage": "dist/packages/sensor-wearable-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/motion-request-again.png",
+  "screenshotSha256": "f2701f62240aff3cf37e1b9554a2fcd43bd442a89f8786a585eb2d3083264f3f",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "5 Hz · 默认",
+      "bounds": "[48,0][260,2]",
+      "type": "Select"
+    },
+    {
+      "text": "刷新设备",
+      "bounds": "[48,22][208,110]",
+      "type": "Button"
+    },
+    {
+      "text": "清空曲线",
+      "bounds": "[228,22][388,110]",
+      "type": "Button"
+    },
+    {
+      "text": "授权运动",
+      "bounds": "[48,130][208,218]",
+      "type": "Button"
+    },
+    {
+      "text": "频率为请求值；事件型传感器仅在变化时上报。曲线按接收时间绘制，最多240点，时间跨度不超过60秒；暂停时保留曲线。",
+      "bounds": "[48,270][418,382]",
+      "type": "Text"
+    },
+    {
+      "text": "本机硬件 · 9 项",
+      "bounds": "[48,420][258,466]",
+      "type": "Text"
+    },
+    {
+      "text": "硬件详情",
+      "bounds": "[258,414][418,466]",
+      "type": "Button"
+    }
+  ]
+}

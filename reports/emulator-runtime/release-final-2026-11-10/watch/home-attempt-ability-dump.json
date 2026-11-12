@@ -1,0 +1,18 @@
+{
+  "atUtc": "2026-11-10T05:46:12.024102+00:00",
+  "command": [
+    "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/hdc",
+    "-p",
+    "-s",
+    "127.0.0.1:8710",
+    "-t",
+    "127.0.0.1:12004",
+    "shell",
+    "aa",
+    "dump",
+    "-a"
+  ],
+  "exitCode": 0,
+  "stdout": "User ID #100\n  current mission lists:{\n    Mission ID #19  mission name #[#com.personal.harmonysensorlab:entry:EntryAbility]  lockedState #0  mission affinity #[]\n      AbilityRecord ID #23\n        app name [com.personal.harmonysensorlab]\n        main name [EntryAbility]\n        bundle name [com.personal.harmonysensorlab]\n        ability type [PAGE]\n        state #FOREGROUND  start time [120455]\n        app state #FOREGROUND\n        ready #1  window attached #0  launcher #0\n        callee connections: \n        isKeepAlive: false\n }\n  ExtensionRecords:\n    uri [/com.ohos.sceneboard/watch_sceneboard/HybridServiceAbility]\n      AbilityRecord ID #12   state #ACTIVE   start time [23740]\n      main name [HybridServiceAbility]\n      bundle name [com.ohos.sceneboard]\n      ability type [SERVICE]\n      app state #BACKGROUND\n        isKeepAlive: true\n      Connections: 0\n    uri [/com.ohos.sceneboard/watch_sceneboard/com.ohos.sceneboard.MainAbility]\n      AbilityRecord ID #1   state #ACTIVE   start time [18905]\n      main name [com.ohos.sceneboard.MainAbility]\n      bundle name [com.ohos.sceneboard]\n      ability type [SERVICE]\n      app state #BACKGROUND\n        isKeepAlive: true\n      Connections: 0\n    PendingWantRecords:\n        PendWantRecord ID #1  type #4\n        bundle name []\n        result who []\n        request code #0  flags #134217728\n        resolved type []\n        Wants:\n          uri [///]\n          resolved types []\n  AppRunningRecords:\n    AppRunningRecord ID #0\n      process name [com.ohos.sceneboard]\n      pid #1460  uid #20020010\n      state #BACKGROUND\n    AppRunningRecord ID #1\n      process name [com.ohos.formrenderservice]\n      pid #1970  uid #20003\n      state #READY\n    AppRunningRecord ID #2\n      process name [com.huawei.hms.pushservice]\n      pid #2310  uid #20002\n      state #READY\n    AppRunningRecord ID #3\n      process name [com.personal.harmonysensorlab]\n      pid #3249  uid #20020028\n      state #FOREGROUND\n",
+  "stderr": ""
+}

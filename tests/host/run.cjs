@@ -312,6 +312,21 @@ test('failed native cleanup rejects late data and does not overwrite its stop ca
   h.controller.dispose(); assert.equal(h.state.subscriptions.size, 0);
 });
 
+test('refresh cannot create another subscription while the previous instance still needs cleanup', async () => {
+  const h = harness(26, [metadata(5)]); await h.controller.refresh(); h.controller.setForeground(true);
+  const original = h.state.subscriptions.get('5:0'); h.emit(5, { intensity: 5 });
+  h.state.offError = { code: 14500101 };
+  await h.controller.refresh();
+  assert.equal(h.state.onCalls.length, 1, 'refresh must not duplicate a failed native subscription');
+  assert.equal(h.row(5).status, 'error');
+  original({ intensity: 999 }); assert.equal(h.row(5).values.length, 0);
+  h.controller.setIntervalMs(100); assert.equal(h.state.onCalls.length, 1);
+  h.state.offError = undefined; await h.controller.refresh();
+  assert.equal(h.state.onCalls.length, 2); h.emit(5, { intensity: 7 });
+  assert.equal(h.row(5).values[0], 7); h.controller.dispose();
+  assert.equal(h.state.subscriptions.size, 0);
+});
+
 (async () => {
   let failures = 0;
   for (const c of cases) {

@@ -1,0 +1,167 @@
+{
+  "atUtc": "2026-11-10T05:29:57.139896+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-scroll-01.png",
+  "screenshotSha256": "9d1db588d5dc5bf259c126039d82087b7f1e3e1c4d0d03428802e72c82131dca",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[143,437][1137,494]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 26 秒前",
+      "bounds": "[143,529][1137,578]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[143,634][999,691]",
+      "type": "Text"
+    },
+    {
+      "text": "角速度",
+      "bounds": "[143,913][961,995]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[989,926][1137,983]",
+      "type": "Text"
+    },
+    {
+      "text": "rad/s",
+      "bounds": "[143,1030][1137,1087]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,1122][171,1171]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[143,1182][359,1280]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[415,1122][441,1171]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[415,1182][631,1280]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[687,1122][712,1171]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[687,1182][903,1280]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,1336][381,1476]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[143,1980][1137,2037]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 26 秒前",
+      "bounds": "[143,2072][1137,2121]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[143,2177][999,2234]",
+      "type": "Text"
+    },
+    {
+      "text": "环境光",
+      "bounds": "[143,2455][961,2537]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[989,2468][1137,2525]",
+      "type": "Text"
+    },
+    {
+      "text": "见分量",
+      "bounds": "[143,2572][1137,2629]",
+      "type": "Text"
+    },
+    {
+      "text": "照度 (lx)",
+      "bounds": "[143,2664][299,2713]",
+      "type": "Text"
+    },
+    {
+      "text": "100.000",
+      "bounds": "[143,2724][456,2734]",
+      "type": "Text"
+    },
+    {
+      "text": "色温 (K，支持未核实)",
+      "bounds": "[512,2664][917,2713]",
+      "type": "Text"
+    },
+    {
+      "text": "4000.000",
+      "bounds": "[512,2724][874,2734]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 29",
+      "bounds": "[56,26][195,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[56,37][118,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[118,42][133,95]",
+      "type": "Text"
+    },
+    {
+      "text": "29",
+      "bounds": "[133,37][195,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

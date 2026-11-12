@@ -1,0 +1,172 @@
+{
+  "atUtc": "2026-11-10T05:32:12.876962+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-scroll-04.png",
+  "screenshotSha256": "13c7fab394082cebbd81e99532fbfbca3a82e3af6ad8f2f463ee9cd4619e07ee",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "采集已开启",
+      "bounds": "[143,137][999,189]",
+      "type": "Text"
+    },
+    {
+      "text": "方向",
+      "bounds": "[143,410][961,492]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[989,423][1137,480]",
+      "type": "Text"
+    },
+    {
+      "text": "°",
+      "bounds": "[143,527][1137,584]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[143,619][307,668]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[143,679][359,777]",
+      "type": "Text"
+    },
+    {
+      "text": "俯仰角 β",
+      "bounds": "[415,619][578,668]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[415,679][631,777]",
+      "type": "Text"
+    },
+    {
+      "text": "翻滚角 γ",
+      "bounds": "[687,619][846,668]",
+      "type": "Text"
+    },
+    {
+      "text": "0.010",
+      "bounds": "[687,679][903,777]",
+      "type": "Text"
+    },
+    {
+      "text": "方位角 α",
+      "bounds": "[143,833][484,973]",
+      "type": "Select"
+    },
+    {
+      "text": "已暂停；保留的是暂停前的数值",
+      "bounds": "[143,1477][1137,1534]",
+      "type": "Text"
+    },
+    {
+      "text": "最后接收 26 秒前",
+      "bounds": "[143,1569][1137,1618]",
+      "type": "Text"
+    },
+    {
+      "text": "采集已开启",
+      "bounds": "[143,1674][999,1731]",
+      "type": "Text"
+    },
+    {
+      "text": "重力",
+      "bounds": "[143,1953][961,2035]",
+      "type": "Text"
+    },
+    {
+      "text": "已暂停",
+      "bounds": "[989,1966][1137,2023]",
+      "type": "Text"
+    },
+    {
+      "text": "m/s²",
+      "bounds": "[143,2070][1137,2127]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,2162][171,2211]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[143,2222][359,2320]",
+      "type": "Text"
+    },
+    {
+      "text": "Y",
+      "bounds": "[415,2162][441,2211]",
+      "type": "Text"
+    },
+    {
+      "text": "9.800",
+      "bounds": "[415,2222][631,2320]",
+      "type": "Text"
+    },
+    {
+      "text": "Z",
+      "bounds": "[687,2162][712,2211]",
+      "type": "Text"
+    },
+    {
+      "text": "0.000",
+      "bounds": "[687,2222][903,2320]",
+      "type": "Text"
+    },
+    {
+      "text": "X",
+      "bounds": "[143,2376][381,2516]",
+      "type": "Select"
+    },
+    {
+      "text": "01, :, 32",
+      "bounds": "[56,26][195,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[56,37][118,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[118,42][133,95]",
+      "type": "Text"
+    },
+    {
+      "text": "32",
+      "bounds": "[133,37][195,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    }
+  ]
+}

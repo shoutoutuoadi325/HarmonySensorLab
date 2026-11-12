@@ -1,0 +1,67 @@
+{
+  "atUtc": "2026-11-10T05:36:01.803469+00:00",
+  "identity": {
+    "atUtc": "2026-11-10T05:19:30.058368+00:00",
+    "server": "127.0.0.1:8710",
+    "target": "127.0.0.1:5555",
+    "device": "phone",
+    "testEmulator": true,
+    "declaredByCaller": true,
+    "properties": {
+      "const.product.devicetype": "phone",
+      "const.product.model": "emulator",
+      "const.product.name": "emulator",
+      "const.ohos.apiversion": "26",
+      "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+      "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+    }
+  },
+  "installedPackageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+  "installedPackage": "dist/packages/sensor-default-release-signed.hap",
+  "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/online-policy-result.png",
+  "screenshotSha256": "2df8c67ae74e0d3bc9efbb1c7e93bc7adb1c6c552b26756753c10b70b0fa2753",
+  "pixelTransformation": "None; original official emulator screenshot",
+  "provenance": "Official HarmonyOS emulator; virtual sensor callbacks are not physical hardware evidence",
+  "visibleText": [
+    {
+      "text": "传感器观测",
+      "bounds": "[98,40][309,96]",
+      "type": "Text"
+    },
+    {
+      "text": "01, :, 35",
+      "bounds": "[280,26][419,110]",
+      "type": "Row"
+    },
+    {
+      "text": "01",
+      "bounds": "[280,37][342,99]",
+      "type": "Text"
+    },
+    {
+      "text": ":",
+      "bounds": "[342,42][357,95]",
+      "type": "Text"
+    },
+    {
+      "text": "35",
+      "bounds": "[357,37][419,99]",
+      "type": "Text"
+    },
+    {
+      "text": "100",
+      "bounds": "[1135,46][1205,91]",
+      "type": "Text"
+    },
+    {
+      "text": "Contacts",
+      "bounds": "[149,586][325,630]",
+      "type": "Text"
+    },
+    {
+      "text": "传感器观测",
+      "bounds": "[400,586][611,630]",
+      "type": "Text"
+    }
+  ]
+}

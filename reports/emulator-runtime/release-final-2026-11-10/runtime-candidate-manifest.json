@@ -1,0 +1,517 @@
+{
+  "atUtc": "2026-11-10T05:55:04.737085+00:00",
+  "scope": "Actual signed Release on official API 26 emulators. Virtual callbacks do not validate physical sensors.",
+  "storeApprovalEvidence": false,
+  "devices": {
+    "phone": {
+      "status": "Current verified Release installed; actual live, pause-control and local-policy originals recorded",
+      "testResults": {
+        "liveCallbacks": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/live-evidence.json"
+          ]
+        },
+        "pause": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/paused-evidence.json"
+          ]
+        },
+        "resume": {
+          "status": "passed; explicit paused/resume UI evidence",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/resume-evidence.json"
+          ]
+        },
+        "returnFromBackgroundPaused": {
+          "status": "passed; explicit paused/resume UI evidence",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/return-from-background-evidence.json"
+          ]
+        },
+        "localPolicy": {
+          "status": "passed; complete text/contact in actual dialog layout and scrollable message",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-evidence.json"
+          ]
+        },
+        "onlinePolicyPage": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/online-policy-settled-evidence.json"
+          ]
+        },
+        "returnFromOnlinePolicyPaused": {
+          "status": "passed; retained readings and paused labels after browser return",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/return-from-online-policy-evidence.json"
+          ]
+        },
+        "localPolicyDismissal": {
+          "status": "passed; clicked 知道了 and dialog closed while readings remain paused",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-dismissed-evidence.json"
+          ]
+        }
+      },
+      "screenshotCandidates": [
+        {
+          "state": "live",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/live.png",
+          "width": 1280,
+          "height": 2832,
+          "screenshotSha256": "5bb4b7f9d0087d09660c51bfd90c38e02819aff23cc24166645d25527c11b7ed",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/phone/live-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "paused",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/paused.png",
+          "width": 1280,
+          "height": 2832,
+          "screenshotSha256": "700301d06d218d649c68bbc729ee15c8bc315d52062062cdebd482672f60cc7f",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/phone/paused-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "privacy",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/phone/privacy.png",
+          "width": 1280,
+          "height": 2832,
+          "screenshotSha256": "1a1251bc858b5d632cd685ec7455169d8feb77d7c8ee868456cedbfda66e4876",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/phone/privacy-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        }
+      ],
+      "identity": {
+        "atUtc": "2026-11-10T05:19:30.058368+00:00",
+        "server": "127.0.0.1:8710",
+        "target": "127.0.0.1:5555",
+        "device": "phone",
+        "testEmulator": true,
+        "declaredByCaller": true,
+        "properties": {
+          "const.product.devicetype": "phone",
+          "const.product.model": "emulator",
+          "const.product.name": "emulator",
+          "const.ohos.apiversion": "26",
+          "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E999R4P11)",
+          "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+        }
+      },
+      "installation": {
+        "atUtc": "2026-11-10T05:20:03.125748+00:00",
+        "target": "127.0.0.1:5555",
+        "package": "dist/packages/sensor-default-release-signed.hap",
+        "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+        "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-default-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+        "successful": true
+      },
+      "testedVirtualSensorInstances": 9,
+      "permissionRuntimePrompt": "not yet verified for Release; do not claim granted/refused from policy text",
+      "untestedLimitations": [
+        "Physical sensor behavior and real-device motion/permissions",
+        "Wearable crown / hardware interactions"
+      ]
+    },
+    "pc": {
+      "status": "Current verified Release installed; actual live, pause-control and local-policy originals recorded",
+      "testResults": {
+        "liveCallbacks": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/pc/live-evidence.json"
+          ]
+        },
+        "pause": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/pc/paused-evidence.json"
+          ]
+        },
+        "resume": {
+          "status": "not yet tested",
+          "evidence": []
+        },
+        "returnFromBackgroundPaused": {
+          "status": "not yet tested",
+          "evidence": []
+        },
+        "localPolicy": {
+          "status": "passed; complete text/contact in actual dialog layout and scrollable message",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/pc/privacy-evidence.json"
+          ]
+        },
+        "onlinePolicyPage": {
+          "status": "passed; genuine app / browser layout and screenshot",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/pc/online-policy-settled-evidence.json"
+          ]
+        },
+        "returnFromOnlinePolicyPaused": {
+          "status": "not tested; PC offline before follow-up",
+          "evidence": []
+        }
+      },
+      "screenshotCandidates": [
+        {
+          "state": "live",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/live.png",
+          "width": 3120,
+          "height": 2080,
+          "screenshotSha256": "67cf042f876a8d543c3fca67ce7c73bf9bbbaa2a5b53f0d6448e36b04184688b",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/pc/live-evidence.json",
+          "packageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "paused",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/paused.png",
+          "width": 3120,
+          "height": 2080,
+          "screenshotSha256": "b524031104bbed2f030a1182d6b7a0e0ddfc022fbf5d8e80601db548c603a34c",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/pc/paused-evidence.json",
+          "packageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "privacy",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/pc/privacy.png",
+          "width": 3120,
+          "height": 2080,
+          "screenshotSha256": "69e85eb9acd3948edb21c0a3edce531bb52ea21e0035fcd2e711b13cd600d947",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/pc/privacy-evidence.json",
+          "packageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+          "pixelTransformation": "None; original official emulator screenshot"
+        }
+      ],
+      "identity": {
+        "atUtc": "2026-11-10T05:22:52.153004+00:00",
+        "server": "127.0.0.1:8710",
+        "target": "127.0.0.1:12002",
+        "device": "pc",
+        "testEmulator": true,
+        "declaredByCaller": true,
+        "properties": {
+          "const.product.devicetype": "2in1",
+          "const.product.model": "emulator",
+          "const.product.name": "emulator",
+          "const.ohos.apiversion": "26",
+          "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E47R1P3)",
+          "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+        }
+      },
+      "installation": {
+        "atUtc": "2026-11-10T05:23:16.396158+00:00",
+        "target": "127.0.0.1:12002",
+        "package": "dist/packages/sensor-pc-release-signed.hap",
+        "packageSha256": "27711ea7c708579278f5f83d815ec7b8ab101e9e4b675327074d271aa91ff562",
+        "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-pc-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+        "successful": true
+      },
+      "testedVirtualSensorInstances": 7,
+      "permissionRuntimePrompt": "not yet verified for Release; do not claim granted/refused from policy text",
+      "untestedLimitations": [
+        "Physical sensor behavior and real-device motion/permissions",
+        "Wearable crown / hardware interactions"
+      ]
+    },
+    "tablet": {
+      "status": "Current verified Release installed; actual live, pause-control and local-policy originals recorded",
+      "testResults": {
+        "liveCallbacks": {
+          "status": "passed; actual Release app layout and original PNG",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/live-evidence.json"
+          ]
+        },
+        "pause": {
+          "status": "passed; actual Release app layout and original PNG",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/paused-evidence.json"
+          ]
+        },
+        "resume": {
+          "status": "passed; explicit UI evidence after resume / Home / relaunch",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/resume-evidence.json"
+          ]
+        },
+        "returnFromBackgroundPaused": {
+          "status": "passed; explicit UI evidence after resume / Home / relaunch",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/return-from-background-evidence.json"
+          ]
+        },
+        "localPolicy": {
+          "status": "passed; complete text/contact in actual dialog layout and scrollable message",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/privacy-evidence.json"
+          ]
+        },
+        "onlinePolicyPage": {
+          "status": "passed; system browser actual URL and policy heading/content",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/online-policy-settled-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/online-policy-ability-dump.json"
+          ]
+        },
+        "returnFromOnlinePolicyPaused": {
+          "status": "passed; retained readings and paused labels after browser return",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/tablet/return-from-online-policy-evidence.json"
+          ]
+        }
+      },
+      "screenshotCandidates": [
+        {
+          "state": "live",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/live.png",
+          "width": 2880,
+          "height": 1920,
+          "screenshotSha256": "0c27aca5f79b0ee79906aa42b812c1f45d38c169712c247eca4a43af01bfadb0",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/tablet/live-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "paused",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/paused.png",
+          "width": 2880,
+          "height": 1920,
+          "screenshotSha256": "ea83692731a47017e2100795a07b309db829094b1bd2a9f2614ec8df2251a9d5",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/tablet/paused-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "privacy",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/tablet/privacy.png",
+          "width": 2880,
+          "height": 1920,
+          "screenshotSha256": "ca14103042105cfdfcc0a7fcf2e61b2fc867d654cc77b844a6da165b36e1fd46",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/tablet/privacy-evidence.json",
+          "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+          "pixelTransformation": "None; original official emulator screenshot"
+        }
+      ],
+      "identity": {
+        "atUtc": "2026-11-10T05:35:51.202366+00:00",
+        "server": "127.0.0.1:8710",
+        "target": "127.0.0.1:12003",
+        "device": "tablet",
+        "testEmulator": true,
+        "declaredByCaller": true,
+        "properties": {
+          "const.product.devicetype": "tablet",
+          "const.product.model": "emulator",
+          "const.product.name": "emulator",
+          "const.ohos.apiversion": "26",
+          "const.product.software.version": "emulator 7.0.0.107(SP8DEVC00E16R1P1)",
+          "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+        }
+      },
+      "installation": {
+        "atUtc": "2026-11-10T05:37:03.332076+00:00",
+        "target": "127.0.0.1:12003",
+        "package": "dist/packages/sensor-default-release-signed.hap",
+        "packageSha256": "5b51c3e763d9dabb52f7defa5564061e6a5916b6f18c764d07b523319f07a2ee",
+        "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-default-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+        "successful": true
+      },
+      "testedVirtualSensorInstances": 9,
+      "permissionRuntimePrompt": "not tested; only bundle state ACTIVITY_MOTION=-1 recorded",
+      "permissionBundleEvidence": "reports/emulator-runtime/release-final-2026-11-10/tablet/release-bundle-dump.json"
+    },
+    "watch": {
+      "status": "Current verified Release installed; actual live, pause-control and local-policy originals recorded",
+      "testResults": {
+        "liveCallbacks": {
+          "status": "passed; ordinary accelerometer callback remains live after motion permission refusal",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/live-evidence.json"
+          ]
+        },
+        "pause": {
+          "status": "passed; explicit pause button changes to 继续采集; retained values not separately rechecked at this state",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/paused-controls-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/paused-evidence.json"
+          ]
+        },
+        "resume": {
+          "status": "passed; Continue clicked and Pause appears again",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/resume-evidence.json"
+          ]
+        },
+        "returnFromBackgroundPaused": {
+          "status": "not verified; documented Home key returned No Error but app remained foreground; crown/real lifecycle remains untested",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/home-verified-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/home-attempt-ability-dump.json"
+          ]
+        },
+        "localPolicy": {
+          "status": "passed; complete text/contact in actual dialog layout and scrollable message",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-evidence.json"
+          ]
+        },
+        "onlinePolicyPage": {
+          "status": "not verified; online button closes local dialog, settled app screenshot and aa show no browser mission; no error dialog observed",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/online-policy-result-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/online-policy-settled-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/online-policy-ability-dump.json"
+          ]
+        },
+        "returnFromOnlinePolicyPaused": {
+          "status": "not yet tested",
+          "evidence": []
+        },
+        "motionPermissionDenied": {
+          "status": "passed; system prompt Deny clicked, bm ACTIVITY_MOTION state -1, ordinary sensor live",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/motion-request-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/motion-request-bottom-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/motion-denied-evidence.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/motion-denied-bundle-dump.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/live-evidence.json"
+          ]
+        },
+        "motionPermissionGranted": {
+          "status": "not tested; a second authorization click after Deny did not present a new prompt",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/motion-request-again-evidence.json"
+          ]
+        },
+        "localPolicyAfterOnlineAttempt": {
+          "status": "passed; local policy reopens after online attempt",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-reopened-evidence.json"
+          ]
+        },
+        "processSessionReset": {
+          "status": "passed; intentional local test-process force-stop succeeded, relaunch shows fresh Start page",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/force-stop-test-process.json",
+            "reports/emulator-runtime/release-final-2026-11-10/watch/session-reset-evidence.json"
+          ]
+        },
+        "localPolicyScroll": {
+          "status": "passed; actual message swipe reveals later developer/contact lines; original privacy PNG preserved",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-message-scroll-evidence.json"
+          ]
+        },
+        "policyDismissal": {
+          "status": "passed; 知道了 closes dialog and Start/privacy page remains usable",
+          "evidence": [
+            "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-dismissed-evidence.json"
+          ]
+        }
+      },
+      "screenshotCandidates": [
+        {
+          "state": "live",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/live.png",
+          "width": 466,
+          "height": 466,
+          "screenshotSha256": "fdfc002c3b02905144985bd2b33ea8fb4aa74545b15adf3a70e51d2f107a3c2c",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/watch/live-evidence.json",
+          "packageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "paused",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/paused.png",
+          "width": 466,
+          "height": 466,
+          "screenshotSha256": "515eb9478666f56bd4a090de852961874bb8c5e21187cd318474634aff8433cf",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/watch/paused-evidence.json",
+          "packageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+          "pixelTransformation": "None; original official emulator screenshot"
+        },
+        {
+          "state": "privacy",
+          "screenshot": "reports/emulator-runtime/release-final-2026-11-10/watch/privacy.png",
+          "width": 466,
+          "height": 466,
+          "screenshotSha256": "7586225d9258b3d10f21fb927e8a0c5f12e12afa9d7fded2a9d2bc1968feaed1",
+          "evidence": "reports/emulator-runtime/release-final-2026-11-10/watch/privacy-evidence.json",
+          "packageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+          "pixelTransformation": "None; original official emulator screenshot"
+        }
+      ],
+      "identity": {
+        "atUtc": "2026-11-10T05:40:01.433717+00:00",
+        "server": "127.0.0.1:8710",
+        "target": "127.0.0.1:12004",
+        "device": "watch",
+        "testEmulator": true,
+        "declaredByCaller": true,
+        "properties": {
+          "const.product.devicetype": "wearable",
+          "const.product.model": "emulator",
+          "const.product.name": "emulator",
+          "const.ohos.apiversion": "26",
+          "const.product.software.version": "emulator 7.0.0.105(SP5DEVC00E1R1P1log)",
+          "const.product.hardware": "Get parameter \"const.product.hardware\" fail! errNum is:106!"
+        }
+      },
+      "installation": {
+        "atUtc": "2026-11-10T05:40:41.896790+00:00",
+        "target": "127.0.0.1:12004",
+        "package": "dist/packages/sensor-wearable-release-signed.hap",
+        "packageSha256": "522b75ca70d6946c7b8ea39e244e96a5d1a066320d92dc3fd62e84d68448bf4f",
+        "output": "[Info]App install path:/Users/I783203/PersonalDevelop/HarmonySensorLab/dist/packages/sensor-wearable-release-signed.hap msg:install bundle successfully. \nAppMod finish\n",
+        "successful": true
+      },
+      "testedVirtualSensorInstances": 9
+    }
+  },
+  "status": "Four current signed Release installations; 12 genuine original app screenshot candidates ready",
+  "packageVersion": {
+    "bundleName": "com.personal.harmonysensorlab",
+    "moduleName": "entry",
+    "versionName": "1.0.0",
+    "versionCode": 1000000,
+    "targetAPIVersion": 260000026
+  },
+  "packageMetadataEvidence": [
+    "reports/store-submission/release-build-2026-11-10.json",
+    "reports/store-submission/release-independent-verification-2026-11-10.json"
+  ],
+  "emulatorBundleMetadataObservation": {
+    "detail": "Tablet/wearable bm debug=false, appProvisionType=debug and empty fingerprint; official independent signature/Profile verification reports Release. Preserve these separate observations.",
+    "evidence": [
+      "reports/emulator-runtime/release-final-2026-11-10/tablet/release-bundle-dump.json",
+      "reports/emulator-runtime/release-final-2026-11-10/watch/motion-denied-bundle-dump.json"
+    ]
+  },
+  "candidateVerification": "All 12 PNG hashes and current installed HAP associations verified; no pixel edits",
+  "limitations": [
+    "Official virtual callbacks do not prove physical sensor accuracy or wearable crown behavior.",
+    "No backend save/upload/review submission/approval represented here.",
+    "Phone/PC currently offline; completed evidence retained.",
+    "Motion grant path not verified; only watch Deny path actually exercised.",
+    "Store formatting remains a separate root task; raw originals preserved."
+  ],
+  "handoff": {
+    "hdcServer": "127.0.0.1:8710",
+    "reuseServerPid": 11387,
+    "connectedTargets": {
+      "tablet": "127.0.0.1:12003",
+      "watch": "127.0.0.1:12004"
+    },
+    "pendingCaptureSessions": [],
+    "watchCurrentState": "fresh Start page; local policy dismissed; motion permission denied",
+    "tabletLastVerifiedState": "paused after Home/relaunch"
+  }
+}
