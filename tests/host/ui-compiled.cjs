@@ -10,6 +10,7 @@ const root = path.resolve(__dirname, '../..');
 const buildMode = process.env.HARMONY_UI_BUILD_MODE || 'debug';
 assert.ok(['debug', 'release'].includes(buildMode), 'UI test build mode must be debug or release');
 const compiled = path.join(root, 'entry/build/default/cache/default/default@CompileArkTS/esmodule', buildMode, 'entry/src/main/ets');
+const tr = zh => zh;
 function source(name) { return ts.createSourceFile(name, fs.readFileSync(path.join(compiled, name), 'utf8'), ts.ScriptTarget.Latest, true); }
 function find(node, predicate) {
   if (predicate(node)) return node;
@@ -24,7 +25,7 @@ function runnable(text, globals = {}) {
 function pageMethod(name) {
   const method = find(index, n => ts.isMethodDeclaration(n) && n.name.getText(index) === name);
   assert.ok(method, 'rebuild the entry page before testing ' + name);
-  return runnable('(function ' + method.getText(index).replace(/^private\s+/, '') + ')');
+  return runnable('(function ' + method.getText(index).replace(/^private\s+/, '') + ')', { tr });
 }
 let count = 0;
 function test(label, callback) { callback(); count++; console.log('PASS ' + label); }
@@ -32,7 +33,7 @@ const index = source('pages/Index.ts');
 const binding = find(index, n => ts.isArrowFunction(n) && n.parameters.length === 2 &&
   ts.isBlock(n.body) && ts.isIfStatement(n.body.statements[0]) &&
   n.body.statements[0].expression.getText(index) === n.parameters[1].name.getText(index) &&
-  n.getText(index).includes('new SensorCardView('));
+  n.getText(index).includes('new SensorCardView(') && n.getText(index).includes('this.currentRow('));
 assert.ok(binding, 'compile with scripts/build.sh before testing generated UI');
 const rowArgument = find(binding, n => ts.isCallExpression(n) && ts.isPropertyAccessExpression(n.expression) &&
   n.expression.name.getText(index) === 'currentRow').arguments[0];
@@ -55,7 +56,7 @@ test('stable hardware key update reads newest snapshot and retains card componen
 });
 const chart = source('components/SensorChart.ts');
 const drawMethod = find(chart, n => ts.isMethodDeclaration(n) && n.name.getText(chart) === 'draw');
-const draw = runnable('(function ' + drawMethod.getText(chart) + ')');
+const draw = runnable('(function ' + drawMethod.getText(chart) + ')', { tr });
 function plot(history, additions = {}) {
   const commands = [];
   const context = new Proxy({}, { get(target, name) { return (...args) => { commands.push([name, ...args]); }; },
@@ -100,7 +101,7 @@ function selectUpdate(tree) {
   assert.ok(node);
   const commands = [];
   const Select = new Proxy({}, { get(_target, name) { return (...args) => commands.push([name, ...args]); } });
-  return { update: runnable('(function(' + node.parameters.map(p => p.getText(tree)).join(',') + ') ' + node.body.getText(tree) + ')', { Select }), commands };
+  return { update: runnable('(function(' + node.parameters.map(p => p.getText(tree)).join(',') + ') ' + node.body.getText(tree) + ')', { Select, tr }), commands };
 }
 test('frequency menu update avoids live sensor snapshot dependency', () => {
   const { update, commands } = selectUpdate(index);
@@ -128,31 +129,33 @@ test('TV activation consumes supported key down once and preserves other keys', 
   assert.equal(activate.call({ television: false }, { type: 0, keyCode: 2054 }, () => calls++), false);
   assert.equal(calls, 3);
 });
-test('hidden cached page pauses and returns without restarting collection', () => {
+test('hidden cached page pauses until explicitly restarted', () => {
   const controller = { paused: false, foreground: true, onChange: undefined,
     snapshot() { return { paused: this.paused, intervalMs: 200 }; },
     setPaused(value) { this.paused = value; this.onChange?.(); },
+    refresh() { this.refreshed = true; },
     setForeground() { throw Error('page lifecycle must not assert ability foreground'); } };
-  const view = { controller, pageActive: false, selectedIntervalMs: 200, started: true, focusForTv() {} };
+  const view = { controller, selectedIntervalMs: 200, started: true, privacyDecision: 'accepted',
+    loadPrivacyDecision() {}, updateSnapshot: pageMethod('updateSnapshot'), focusForTv() {} };
   pageMethod('aboutToAppear').call(view);
   assert.equal(controller.paused, false);
   pageMethod('onPageHide').call(view);
-  assert.equal(controller.paused, true); assert.equal(view.snapshot.paused, true); assert.equal(view.pageActive, false);
-  pageMethod('onPageShow').call(view);
-  assert.equal(view.pageActive, true); assert.equal(controller.paused, true);
-  pageMethod('startObservation').call(view); assert.equal(controller.paused, false);
+  assert.equal(controller.paused, true); assert.equal(view.snapshot.paused, true);
+  assert.equal(controller.refreshed, undefined);
+  pageMethod('startObservation').call(view);
+  assert.equal(controller.paused, false); assert.equal(controller.refreshed, true);
 });
 test('destroyed page removes its listener before pausing the collector', () => {
   const controller = { paused: false, onChange: undefined, snapshot() { return { paused: this.paused, intervalMs: 200 }; },
     setPaused(value) { this.paused = value; this.onChange?.(); },
     setForeground() { throw Error('page lifecycle must not assert ability foreground'); } };
   let closing = false; let snapshot;
-  const view = { controller, pageActive: false, selectedIntervalMs: 200 };
+  const view = { controller, selectedIntervalMs: 200, loadPrivacyDecision() {}, updateSnapshot: pageMethod('updateSnapshot') };
   Object.defineProperty(view, 'snapshot', { get: () => snapshot, set(value) {
     assert.equal(closing, false, 'destroyed page must not receive state updates'); snapshot = value; } });
   pageMethod('aboutToAppear').call(view); closing = true;
   pageMethod('aboutToDisappear').call(view);
-  assert.equal(controller.paused, true); assert.equal(controller.onChange, undefined); assert.equal(view.pageActive, false);
+  assert.equal(controller.paused, true); assert.equal(controller.onChange, undefined); assert.equal(view.mounted, false);
 });
 test('first release footer excludes TV while preserving the deferred TV branch', () => {
   const summary = pageMethod('deviceSummary');

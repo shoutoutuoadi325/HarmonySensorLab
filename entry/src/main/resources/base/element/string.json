@@ -2,11 +2,11 @@
   "string": [
     {
       "name": "ability_desc",
-      "value": "展示本机公开传感器数据与实时曲线"
+      "value": "Displays local sensor readings and live charts"
     },
     {
       "name": "motion_reason",
-      "value": "仅在你启用运动传感器时，在本机前台展示计步和运动状态。"
+      "value": "Allow motion access to display step counts and motion events on this device while the app is open."
     }
   ]
 }

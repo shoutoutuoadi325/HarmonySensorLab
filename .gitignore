@@ -10,6 +10,7 @@ local.properties
 *.cer
 *.keystore
 .signing/
+/HarmonySensorLab_old_local/
 __pycache__/
 *.pyc
 .DS_Store

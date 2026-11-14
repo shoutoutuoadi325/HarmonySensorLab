@@ -1,5 +1,3 @@
 # Harmony Sensor Lab privacy policy
 
-Static Chinese and English policy pages prepared for compliant website hosting.
-Official Huawei FAQ lists Github, blogs, Weibo and cloud notes as restricted policy-link destinations. Do not assume GitHub Pages is approved; prefer eligible Huawei privacy hosting or an independent static HTML site that meets the current requirements.
-This directory contains only public policy text and the authorized developer contact. No site has been deployed.
+This directory contains the Simplified Chinese and English policy pages for version 1.0.1. The app opens the policy at [the Netlify site](https://harmonysensorlab-privacy.netlify.app/). Deploy both HTML files together and verify the live content before resubmitting the app. The upload archive contains the same two HTML files at its root.

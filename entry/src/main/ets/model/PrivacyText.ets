@@ -1,1 +1,50 @@
-export const PRIVACY_TEXT: string = "传感器观测隐私政策\n\n版本：1.0.0。更新日期：2026-11-10。本政策自应用首次公开发布之日起生效。\n开发者：张之麒。联系邮箱：zhiqizhangg@gmail.com。\n应用包名：com.personal.harmonysensorlab。\n\n本应用用于查看当前设备公开传感器接口实际提供的数值与近期曲线。各设备的硬件和系统能力不同，可能只提供少量传感器或没有可用数据。\n\n数据和用途\n\n应用读取本机传感器列表、传感器名称和能力，以及采集时系统返回的运动、磁场、方向、光照、气压、接近等普通传感器数值和回调接收时间，仅用于在当前设备绘制数值与曲线。您主动开启计步并给予运动权限后，应用可读取设备系统提供的计步值。累计口径由系统决定，本应用不将它标为当天步数。\n\n首版不读取心率、血氧、心电、皮温或其他健康测量，不访问华为运动健康数据库，不通过手机获取外部手表的健康或运动传感器。应用不申请位置、相机、麦克风、通讯录或网络访问权限，不收集账号、广告标识符或设备序列号。\n\n位置、期限和共享\n\n每条曲线最多保留 240 个样本，样本时间跨度不超过 60 秒；高频时实际覆盖时间可能更短。暂停或没有新回调时，已有曲线仍保留在本机内存中，直到清空曲线、刷新设备或进程结束。读数和曲线仅在本机内存中处理，不写入文件、数据库或云端，不传输给开发者、第三方或其他设备。采集默认在前台进行；暂停、退入后台或离开页面时停止订阅。清空曲线或退出可清除当前内存记录，操作系统终止进程后记录也会消失。频率和状态按当前实现保留在运行会话中。\n\n应用没有账号、广告、第三方统计或云同步组件，不出售或共享数据。开发工具可显示不含原始传感器读数的技术错误信息；系统日志按操作系统自身规则处理。\n\n权限和选择\n\n权限：ohos.permission.ACCELEROMETER\n用途：本机公开加速度相关传感器\n控制：系统安装授权；可暂停采集。\n\n权限：ohos.permission.GYROSCOPE\n用途：本机公开陀螺仪相关传感器\n控制：系统安装授权；可暂停采集。\n\n权限：ohos.permission.ACTIVITY_MOTION\n用途：主动启用计步后读取系统计步\n控制：运行时请求授权；拒绝或撤销后该项停止，其他普通功能可使用。\n\n您可暂停、变更刷新频率、清空曲线或退出，在系统设置中管理运动权限。本机不支持、未授权或无回调时应用显示对应状态，不把未获取的值当作真实零读数。开发者服务器不接收数据，因此无法远程查询或删除本机记录。\n\n在线隐私政策\n\n当您主动点击“在线隐私政策”时，应用将通过系统浏览器打开本应用的政策托管网站。访问该网站所需的网络请求由系统浏览器处理，网站和操作系统按各自的规则处理正常访问产生的信息。本应用不会在政策链接中附加传感器读数、回调时间或用户、设备标识。此操作不改变传感器数据仅在本机内存中处理的方式；如设备无法打开系统浏览器，您仍可在应用内阅读完整政策。\n\n安全和变更\n\n应用采用本地处理和最少权限。读数用于观察设备接口输出，不能用于医疗诊断、健康测量结论或安全关键决策。未成年人使用时建议监护人了解本政策与权限用途。新增健康数据、保存、导出、网络服务或第三方组件时，会更新政策，在功能使用前说明用途并获取适用授权。疑问或隐私投诉请联系上面的开发者邮箱。隐私投诉将在收到后不超过 15 个工作日内受理处理。\n";
+import { isChinese } from './Locale';
+
+const POLICY_ZH: string[] = [
+  "传感器观测隐私政策",
+  "版本：1.0.1。更新日期：2026-11-14。本政策随 1.0.1 版本生效。\n开发者：张之麒。联系邮箱：zhiqizhangg@gmail.com。\n应用包名：com.personal.harmonysensorlab。",
+  "本应用用于查看当前设备公开传感器接口实际提供的数值与近期曲线。各设备的硬件和系统能力不同，可能只提供少量传感器或没有可用数据。",
+  "数据和用途",
+  "您同意本政策并开始观测后，应用通过系统传感器接口查询本机传感器的名称和能力，并在前台订阅设备支持的传感器。应用读取三轴加速度、陀螺仪角速度、三轴重力分量，以及设备提供的磁场、方向、光照、气压、接近、佩戴等读数或事件和回调接收时间，用于在本机展示数值及绘制近期曲线。重力传感器返回沿设备 X、Y、Z 轴的重力分量，无需单独的运行时权限。",
+  "系统授予运动权限后，应用可在观测期间读取累计步数和步行检测事件。应用仅在您主动选择“授权运动”时请求这项权限。累计周期由系统决定。",
+  "应用不读取心率、血氧、心电、皮温或其他健康测量，不访问华为运动健康数据库，不通过手机获取外部手表的健康或运动传感器。应用不申请位置、相机、麦克风、通讯录或网络访问权限，不收集账号、广告标识符或设备序列号。",
+  "位置、期限和共享",
+  "每条曲线最多保留 240 个样本，样本时间跨度不超过 60 秒。读数和曲线仅保存在当前进程的本机内存中，不写入文件、数据库或云端，不传输给开发者、第三方或其他设备。暂停、退入后台或离开观测页面会停止采集。清空曲线、刷新设备、撤回同意或进程结束会清除曲线历史。采集频率和观测状态仅在当前会话保留。应用在本机保存您对当前版本隐私政策的选择，以便下次启动时遵循您的选择。",
+  "应用没有账号、广告、第三方统计或云同步组件，不出售或共享数据。开发工具可显示不含原始传感器读数的技术错误信息；系统日志按操作系统自身规则处理。",
+  "权限和选择",
+  "ohos.permission.ACCELEROMETER\n本机公开加速度相关传感器\n系统安装授权；可暂停采集。",
+  "ohos.permission.GYROSCOPE\n本机公开陀螺仪相关传感器\n系统安装授权；可暂停采集。",
+  "ohos.permission.ACTIVITY_MOTION\n读取用户运动状态，用于显示累计步数和步行检测事件\n由您主动触发授权请求；拒绝或撤销后停止读取这两项，其他普通传感器仍可观测。",
+  "您可以在首次提示时拒绝隐私政策，或进入“本机数据与隐私”选择“撤回同意”。拒绝或撤回后，应用仍可阅读政策，传感器观测保持关闭。撤回会停止采集、清除本机内存中的观测记录，并阻止应用再次请求运动权限，直至您重新同意。您也可在系统设置中管理运动权限。开发者服务器不接收数据，因此无法远程查询或删除本机记录。",
+  "在线隐私政策",
+  "当您主动点击“在线隐私政策”时，应用将通过系统浏览器打开本应用的政策托管网站。访问该网站所需的网络请求由系统浏览器处理，网站和操作系统按各自的规则处理正常访问产生的信息。本应用不会在政策链接中附加传感器读数、回调时间或用户、设备标识。此操作不改变传感器数据仅在本机内存中处理的方式；如设备无法打开系统浏览器，您仍可在应用内阅读完整政策。",
+  "安全和变更",
+  "应用采用本地处理和最少权限。读数用于观察设备接口输出，不能用于医疗诊断、健康测量结论或安全关键决策。未成年人使用时建议监护人了解本政策与权限用途。新增健康数据、保存、导出、网络服务或第三方组件时，会更新政策，在功能使用前说明用途并获取适用授权。疑问或隐私投诉请联系上面的开发者邮箱。隐私投诉将在收到后不超过 15 个工作日内受理处理。",
+];
+
+const POLICY_EN: string[] = [
+  "Harmony Sensor Lab Privacy Policy",
+  "Version: 1.0.1. Last updated: November 14, 2026. This policy takes effect with app version 1.0.1.\nDeveloper: 张之麒 (Zhiqi Zhang). Contact: zhiqizhangg@gmail.com.\nBundle name: com.personal.harmonysensorlab.",
+  "Harmony Sensor Lab displays values and recent charts provided by public sensor APIs on your current device. Available sensors and data depend on the hardware, operating system and permissions.",
+  "Data and purposes",
+  "After you agree to this policy and start observation, the app uses system sensor APIs to list local sensor names and capabilities and subscribe to supported sensors in the foreground. It reads three-axis acceleration, gyroscope angular velocity and three-axis gravity components, plus supported readings or events such as magnetic field, orientation, light, pressure, proximity and wear detection, and their receipt times. The app uses them to display values and draw recent charts on your device. The gravity sensor reports gravity along the device's X, Y and Z axes and requires no separate runtime permission.",
+  "The app can read cumulative step count and step detection events during observation after the system grants motion permission. The app requests this permission only when you select “Allow motion.” The system defines the period covered by the cumulative count.",
+  "This version does not collect heart rate, blood oxygen, ECG, skin temperature or other health measurements, and does not access Huawei Health databases. It does not obtain external watch sensor data through a phone. It does not request location, camera, microphone, contacts or Internet access, and does not collect accounts, advertising identifiers or device serial numbers.",
+  "Storage, retention and sharing",
+  "Each chart retains up to 240 samples spanning up to 60 seconds. Readings and charts remain in the app process memory on your device. They are never written to files, databases or cloud storage, or sent to the developer, third parties or another device. Pausing, moving the app into the background or leaving the observation page stops collection. Clearing charts, refreshing sensors, withdrawing consent or ending the process clears chart history. The frequency and observation state last for the current session. The app stores your choice for the current privacy policy version on your device so that it can honor your choice the next time it starts.",
+  "The app contains no account service, advertising, analytics SDK or cloud synchronization. It does not sell or share data. Development tools may display technical error information without raw sensor readings. Operating-system logs are governed by the operating system's own rules.",
+  "Permissions and choices",
+  "ohos.permission.ACCELEROMETER: public local accelerometer-related sensors; granted by the system at installation. You may pause collection.",
+  "ohos.permission.GYROSCOPE: public local gyroscope-related sensors; granted by the system at installation. You may pause collection.",
+  "ohos.permission.ACTIVITY_MOTION: reads your motion state to display cumulative step count and step detection events. The app requests permission when you choose to grant it. Denying or revoking it stops these readings while other available ordinary sensors remain usable.",
+  "You can decline the privacy policy at the first prompt or select “Withdraw consent” in “On-device privacy.” After you decline or withdraw, you can still read the policy, and observation stays off. Withdrawing stops collection, clears observation records from device memory and prevents the app from requesting motion permission until you agree again. You can also manage motion permission in system settings. The developer receives no data and cannot remotely inspect or delete local records.",
+  "Online privacy policy",
+  "When you choose “Online privacy policy”, the app opens this app’s policy-hosting website in the system browser. The system browser handles the network requests required to visit that website; the website and operating system process normal website-access information under their own rules. The app does not append sensor readings, callback receipt times, or user or device identifiers to the policy URL. Opening the policy does not change the local, in-memory processing of sensor data. If your device cannot open the system browser, the full policy remains available inside the app.",
+  "Safety and policy changes",
+  "Readings are intended for observing device API output. They must not be used for medical diagnosis, health conclusions or safety-critical decisions. Parents or guardians should understand this policy and permission use when minors use the app. If future versions add health collection, storage, export, networking or third-party components, the policy will be updated and applicable permission obtained before those features are used.",
+  "Contact zhiqizhangg@gmail.com with privacy questions or complaints. Privacy complaints will be handled within 15 working days of receipt.",
+];
+
+export function privacyPolicyParagraphs(): string[] {
+  return isChinese() ? POLICY_ZH : POLICY_EN;
+}

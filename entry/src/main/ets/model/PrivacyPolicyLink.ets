@@ -1,6 +1,6 @@
 import { common, Want } from '@kit.AbilityKit';
 
-// Configure only after the published policy has been verified against PRIVACY_TEXT.
+// Keep the published policy aligned with the in-app policy in PrivacyText.ets.
 // An empty value is intentional for local previews and must fail release preflight.
 export const PRIVACY_POLICY_URL: string = 'https://harmonysensorlab-privacy.netlify.app/';
 

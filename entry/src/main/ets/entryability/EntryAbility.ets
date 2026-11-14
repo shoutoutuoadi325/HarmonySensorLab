@@ -10,7 +10,6 @@ export default class EntryAbility extends UIAbility {
   onWindowStageCreate(stage: window.WindowStage): void {
     stage.loadContent('pages/Index', (error: BusinessError) => {
       if (error.code) { SensorController.shared().setForeground(false); return; }
-      SensorController.shared().refresh();
     });
   }
   onForeground(): void { SensorController.shared().setForeground(true); }

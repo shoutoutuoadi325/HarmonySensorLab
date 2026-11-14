@@ -33,7 +33,8 @@ function metadata(sensorId, additions = {}) {
     maxSamplePeriod: 1000000000, precision: 0.01, power: 0.1, ...additions };
 }
 
-function harness(api = 26, sensors = [metadata(1), metadata(2), metadata(5), metadata(266), metadata(278)]) {
+function harness(api = 26, sensors = [metadata(1), metadata(2), metadata(5), metadata(266), metadata(278)],
+  systemLanguage = 'zh-Hans', preferredLanguage = 'default', privacyConsent = true) {
   const state = { now: 100000, timers: new Map(), timerId: 0, sensors, requests: 0, localQueries: [],
     granted: new Set(), subscriptions: new Map(), onCalls: [], offCalls: [],
     onError: undefined, offError: undefined, enumerationError: undefined, request: undefined };
@@ -74,6 +75,9 @@ function harness(api = 26, sensors = [metadata(1), metadata(2), metadata(5), met
   const kits = {
     '@kit.SensorServiceKit': { sensor },
     '@kit.BasicServicesKit': { deviceInfo: { sdkApiVersion: api } },
+    '@kit.LocalizationKit': { i18n: { System: {
+      getSystemLanguage: () => systemLanguage, getAppPreferredLanguage: () => preferredLanguage
+    } } },
     '@kit.AbilityKit': { abilityAccessCtrl: { createAtManager: () => manager,
       GrantStatus: { PERMISSION_GRANTED: 0 } } }
   };
@@ -109,6 +113,7 @@ function harness(api = 26, sensors = [metadata(1), metadata(2), metadata(5), met
   const { SensorController } = load(path.join(root, 'entry/src/main/ets/services/SensorController.ets'));
   const controller = new SensorController();
   controller.attach({ applicationInfo: { accessTokenId: 42 } });
+  if (privacyConsent) controller.setPrivacyConsent(true);
   const math = load(path.join(root, 'entry/src/main/ets/model/SensorMath.ets'));
   function emit(id, values, index = 0) {
     const callback = state.subscriptions.get(id + ':' + index);
@@ -143,7 +148,62 @@ test('SDK26 apiAvailable lowering runs on old objects with no native apiAvailabl
   assert.equal(vm.runInContext('__mockApiAvailable(deviceInfo, 23)', sandbox), false);
 });
 
-test('launch enumerates local hardware but neither prompts nor subscribes before foreground', async () => {
+test('sensor inventory uses the app language and falls back to English for other locales', async () => {
+  for (const [systemLanguage, preferredLanguage, title] of [
+    ['zh-Hans', 'default', '重力'],
+    ['zh-Hant-HK', '', '重力'],
+    ['zh-Hans', 'en-GB', 'Gravity'],
+    ['fr-FR', 'default', 'Gravity']
+  ]) {
+    const h = harness(26, [metadata(257)], systemLanguage, preferredLanguage);
+    await h.controller.refresh();
+    assert.equal(h.row(257).title, title);
+  }
+});
+
+test('first-run and declined states never enumerate, request permission, or subscribe', async () => {
+  const h = harness(26, [metadata(1), metadata(2), metadata(257), metadata(266)], undefined, undefined, false);
+  h.controller.setForeground(true);
+  h.controller.setPaused(false);
+  await h.controller.refresh();
+  await h.controller.authorizeMotion();
+  assert.deepEqual(h.state.localQueries, []);
+  assert.equal(h.state.requests, 0);
+  assert.equal(h.state.onCalls.length, 0);
+  assert.equal(h.controller.snapshot().rows.length, 0);
+
+  h.controller.setPrivacyConsent(true);
+  assert.deepEqual(h.state.localQueries, []);
+  await h.controller.refresh();
+  assert.deepEqual(h.state.localQueries, [-1]);
+  assert.equal(h.state.requests, 0);
+  assert.ok(h.state.subscriptions.has('257:0'));
+});
+
+test('withdrawal stops and clears readings even when a motion permission prompt returns later', async () => {
+  const h = harness(26, [metadata(257), metadata(266)]);
+  h.controller.setForeground(true);
+  await h.controller.refresh();
+  h.emit(257, { x: 1, y: 2, z: 3 });
+  assert.equal(h.row(257).history.length, 1);
+  const lateSample = h.state.subscriptions.get('257:0');
+  let finish;
+  h.state.request = () => new Promise(resolve => { finish = resolve; });
+  const pending = h.controller.authorizeMotion();
+  h.controller.setPrivacyConsent(false);
+  lateSample({ x: 4, y: 5, z: 6 });
+  h.state.granted.add('ohos.permission.ACTIVITY_MOTION');
+  finish({ authResults: [0] });
+  await pending;
+  await h.controller.refresh();
+  await h.controller.authorizeMotion();
+  assert.equal(h.state.requests, 1);
+  assert.equal(h.state.subscriptions.size, 0);
+  assert.equal(h.controller.snapshot().rows.length, 0);
+  assert.deepEqual(h.state.localQueries, [-1]);
+});
+
+test('refresh after consent neither prompts nor subscribes before foreground', async () => {
   const h = harness(); await h.controller.refresh();
   assert.equal(h.state.requests, 0); assert.equal(h.state.onCalls.length, 0);
   assert.deepEqual(h.state.localQueries, [-1]);
@@ -275,7 +335,12 @@ test('API19 indexes are addressed independently; mock, remote and duplicate meta
     metadata(8, { isMockSensor: true }), metadata(5, { sensorIndex: 1 }), metadata(999)]);
   await h.controller.refresh(); h.controller.setForeground(true);
   assert.equal(h.controller.snapshot().excludedCount, 3); assert.equal(h.controller.snapshot().rows.length, 3);
-  assert.equal(h.row(999).status, 'unsupported'); h.emit(5, { intensity: 1 }, 0); h.emit(5, { intensity: 2 }, 1);
+  assert.equal(h.row(999).status, 'unsupported');
+  assert.equal(h.row(999).title, 'Test hardware 999');
+  assert.match(h.row(999).message, /仅展示硬件信息/);
+  assert.equal(h.row(999).labels.length, 0);
+  assert.equal(h.state.onCalls.some(call => call.id === 999), false);
+  h.emit(5, { intensity: 1 }, 0); h.emit(5, { intensity: 2 }, 1);
   assert.equal(h.row(5, 0).values[0], 1); assert.equal(h.row(5, 1).values[0], 2);
   h.controller.setForeground(false); assert.equal(h.state.subscriptions.size, 0);
 });

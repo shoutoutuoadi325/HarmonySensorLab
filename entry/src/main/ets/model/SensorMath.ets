@@ -45,13 +45,13 @@ export function readingStatus(row: SensorRow, nowMs: number, startedMs: number, 
   return receivedThisSession ? 'live' : 'waiting';
 }
 
-export function copyRow(row: SensorRow): SensorRow {
+export function copyRow(row: SensorRow, includeHistory: boolean = true): SensorRow {
   return {
     key: row.key, id: row.id, title: row.title, sensorName: row.sensorName,
     vendor: row.vendor, unit: row.unit, labels: row.labels.slice(), values: row.values.slice(),
-    history: row.history.map((point: SamplePoint): SamplePoint => {
+    history: includeHistory ? row.history.map((point: SamplePoint): SamplePoint => {
       return { timeMs: point.timeMs, values: point.values.slice() };
-    }),
+    }) : [],
     status: row.status, message: row.message, enabled: row.enabled,
     lastReceivedMs: row.lastReceivedMs, requestedIntervalNs: row.requestedIntervalNs, eventDriven: row.eventDriven
   };

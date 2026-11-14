@@ -3,6 +3,7 @@ import { BusinessError, deviceInfo } from '@kit.BasicServicesKit';
 import { sensor } from '@kit.SensorServiceKit';
 import { SensorDefinition, SensorRow, SensorSnapshot } from '../model/SensorModels';
 import { definitionFor } from '../model/SensorCatalog';
+import { tr } from '../model/Locale';
 import { appendHistory, clampIntervalNs, copyRow, finiteValues, readingStatus } from '../model/SensorMath';
 import { subscribeNative, StopSubscription } from './NativeSensorAdapter';
 
@@ -23,11 +24,12 @@ class SensorBinding {
   }
 }
 
-// Singleton per UIAbility process. No storage, network, distributed sensors, or background task.
+// Singleton per UIAbility process. Sensor readings stay in memory.
 export class SensorController {
   private static instance: SensorController | undefined = undefined;
   onChange: (() => void) | undefined = undefined;
   private context: common.UIAbilityContext | undefined = undefined;
+  private privacyConsent: boolean = false;
   private bindings: SensorBinding[] = [];
   private paused: boolean = false;
   private foreground: boolean = false;
@@ -36,8 +38,11 @@ export class SensorController {
   private refreshing: boolean = false;
   private excludedCount: number = 0;
   private revision: number = 0;
+  private refreshGeneration: number = 0;
   private timer: number = -1;
   private notifyTimer: number = -1;
+  private startTimer: number = -1;
+  private wearable: boolean = deviceInfo.deviceType === 'wearable';
   private permissionRequestPending: boolean = false;
   private stoppedBindings: SensorBinding[] = [];
 
@@ -52,12 +57,40 @@ export class SensorController {
     this.context = context;
   }
 
-  snapshot(): SensorSnapshot {
+  setPrivacyConsent(accepted: boolean): void {
+    if (this.privacyConsent === accepted) {
+      return;
+    }
+    this.privacyConsent = accepted;
+    if (!accepted) {
+      this.refreshGeneration++;
+      this.paused = true;
+      this.revision++;
+      this.stopAll();
+      this.stoppedBindings.forEach((binding: SensorBinding) => {
+        binding.row.values = [];
+        binding.row.history = [];
+        binding.row.lastReceivedMs = 0;
+      });
+      this.bindings = [];
+      this.enumerationError = '';
+      this.refreshing = false;
+      this.excludedCount = 0;
+    }
+    this.restart();
+  }
+
+  snapshot(includeHistory: boolean = true): SensorSnapshot {
     return {
-      rows: this.bindings.map((binding: SensorBinding): SensorRow => copyRow(binding.row)),
+      rows: this.bindings.map((binding: SensorBinding): SensorRow => copyRow(binding.row, includeHistory)),
       paused: this.paused, foreground: this.foreground, intervalMs: this.intervalMs,
       enumerationError: this.enumerationError, refreshing: this.refreshing, excludedCount: this.excludedCount
     };
+  }
+
+  snapshotRow(key: string): SensorRow | undefined {
+    const binding: SensorBinding | undefined = this.bindings.find((item: SensorBinding) => item.row.key === key);
+    return binding === undefined ? undefined : copyRow(binding.row);
   }
 
   setForeground(foreground: boolean): void {
@@ -103,11 +136,20 @@ export class SensorController {
   }
 
   async refresh(): Promise<void> {
+    if (!this.privacyConsent) {
+      return;
+    }
+    const generation: number = ++this.refreshGeneration;
     this.revision++;
     this.stopAll();
     this.refreshing = true;
     this.enumerationError = '';
     this.notifyNow();
+    if (this.wearable) {
+      // Give the watch a frame to paint the dashboard and its loading state before native enumeration.
+      await new Promise<void>((resolve: () => void) => { setTimeout(resolve, 16); });
+      if (generation !== this.refreshGeneration) { return; }
+    }
     try {
       // API19 explicitly queries device -1 (local); older getSensorListSync is local-only.
       let metadata: sensor.Sensor[];
@@ -134,21 +176,24 @@ export class SensorController {
           return;
         }
         const old: SensorBinding | undefined = previous.find((binding: SensorBinding) => binding.row.key === key);
+        const hardwareTitle: string = item.sensorName?.trim() || tr('传感器 ', 'Sensor ') + item.sensorId;
         const row: SensorRow = {
-          key: key, id: item.sensorId, title: definition === undefined ? '未适配传感器 ' + item.sensorId : definition.title,
+          key: key, id: item.sensorId, title: definition === undefined ? hardwareTitle : definition.title,
           sensorName: item.sensorName, vendor: item.vendorName,
           unit: definition === undefined ? '' : definition.unit,
           labels: definition === undefined ? [] : definition.labels.slice(),
-          values: [], history: [], status: 'waiting', message: '等待本机样本',
+          values: [], history: [], status: 'waiting', message: tr('等待本机样本', 'Waiting for a local sample'),
           enabled: old === undefined ? true : old.row.enabled, lastReceivedMs: 0,
           requestedIntervalNs: clampIntervalNs(this.intervalMs, item.minSamplePeriod, item.maxSamplePeriod),
           eventDriven: definition === undefined ? false : definition.eventDriven
         };
         const binding: SensorBinding = new SensorBinding(row, item, definition);
         if (definition === undefined) {
-          binding.unsupportedReason = '已枚举此硬件，尚无已核验的公开数据适配器';
+          binding.unsupportedReason = tr('系统可识别此传感器。此版本仅展示硬件信息。',
+            'The system detects this sensor. This version shows hardware details only.');
         } else if (deviceInfo.sdkApiVersion < definition.minApi) {
-          binding.unsupportedReason = '此接口需要 API ' + definition.minApi.toString() + ' 或更高版本';
+          binding.unsupportedReason = tr('此接口需要 API ' + definition.minApi + ' 或更高版本',
+            'Readings require API ' + definition.minApi + ' or later.');
         }
         next.push(binding);
       });
@@ -164,7 +209,7 @@ export class SensorController {
 
   // Invoked only from an explicit user action. A late permission result cannot restart collection in the background.
   async authorizeMotion(): Promise<void> {
-    if (this.context === undefined || !this.foreground || this.permissionRequestPending) {
+    if (!this.privacyConsent || this.context === undefined || !this.foreground || this.permissionRequestPending) {
       return;
     }
     this.permissionRequestPending = true;
@@ -186,7 +231,9 @@ export class SensorController {
   }
 
   dispose(): void {
+    this.privacyConsent = false;
     this.foreground = false;
+    this.refreshGeneration++;
     this.revision++;
     this.stopAll();
     this.bindings = [];
@@ -202,44 +249,64 @@ export class SensorController {
     this.revision++;
     this.stopAll();
     this.bindings.forEach((binding: SensorBinding) => this.updateIdleStatus(binding));
-    if (this.foreground && !this.paused && !this.refreshing) {
-      this.bindings.forEach((binding: SensorBinding) => this.startBinding(binding));
+    if (this.privacyConsent && this.foreground && !this.paused && !this.refreshing) {
+      if (this.wearable) {
+        this.startWatchBindings(0, this.revision);
+      } else {
+        this.bindings.forEach((binding: SensorBinding) => this.startBinding(binding));
+      }
       this.timer = setInterval(() => this.tick(), 1000);
     }
     this.notifyNow();
+  }
+
+  private startWatchBindings(index: number, revision: number): void {
+    if (index >= this.bindings.length) { return; }
+    this.startTimer = setTimeout(() => {
+      this.startTimer = -1;
+      if (revision !== this.revision) { return; }
+      const end: number = Math.min(index + 2, this.bindings.length);
+      for (let current: number = index; current < end; current++) {
+        this.startBinding(this.bindings[current]);
+      }
+      this.notifyLater();
+      this.startWatchBindings(end, revision);
+    }, 16);
   }
 
   private updateIdleStatus(binding: SensorBinding): void {
     const row: SensorRow = binding.row;
     if (binding.definition !== undefined && binding.definition.qualification) {
       row.status = 'qualification';
-      row.message = '健康功能单独核验中；首版不采集心率';
+      row.message = tr('健康功能单独核验中；此版本不采集心率', 'Heart rate collection is unavailable in this version.');
     } else if (binding.unsupportedReason.length > 0) {
       row.status = 'unsupported';
       row.message = binding.unsupportedReason;
     } else if (binding.stop !== undefined || this.hasPendingStop(row.key)) {
       row.status = 'error';
-      row.message = '原生订阅尚未成功停止；已屏蔽回调，可刷新重试清理';
+      row.message = tr('原生订阅尚未成功停止；已屏蔽回调，可刷新重试清理',
+        'The sensor could not be stopped. Readings are ignored. Refresh to retry.');
     } else if (!row.enabled) {
       row.status = 'disabled';
-      row.message = '此传感器已关闭';
+      row.message = tr('此传感器已关闭', 'This sensor is off.');
     } else if (!this.foreground) {
       row.status = 'background';
-      row.message = '应用在后台，已停止采集';
+      row.message = tr('应用在后台，已停止采集', 'Collection stopped while the app is in the background.');
     } else if (this.paused) {
       row.status = 'paused';
-      row.message = '已暂停；保留的是暂停前的数值';
+      row.message = tr('已暂停；保留的是暂停前的数值', 'Paused. Showing readings from before the pause.');
     } else if (!this.hasPermission(binding)) {
       row.status = 'permission';
       row.message = this.permissionMessage(binding);
     } else {
       row.status = 'waiting';
-      row.message = row.eventDriven ? '等待事件；静止时可能不回调' : '等待本机新样本';
+      row.message = row.eventDriven ? tr('等待事件；静止时可能不回调', 'Waiting for an event. The sensor may only report changes.') :
+        tr('等待本机新样本', 'Waiting for a new local sample.');
     }
   }
 
   private startBinding(binding: SensorBinding): void {
-    if (binding.stop !== undefined || this.hasPendingStop(binding.row.key) || !this.foreground || this.paused ||
+    if (!this.privacyConsent || binding.stop !== undefined || this.hasPendingStop(binding.row.key) || !this.foreground || this.paused ||
       !binding.row.enabled || binding.unsupportedReason.length > 0 ||
       binding.definition === undefined || binding.definition.qualification || !this.hasPermission(binding)) {
       return;
@@ -256,7 +323,7 @@ export class SensorController {
     }
     try {
       binding.stop = subscribeNative(binding.row, options, (values: number[], labels?: string[]) => {
-        if (revision !== this.revision || generation !== binding.generation || !this.foreground || this.paused ||
+        if (!this.privacyConsent || revision !== this.revision || generation !== binding.generation || !this.foreground || this.paused ||
           !binding.row.enabled) {
           return;
         }
@@ -270,7 +337,8 @@ export class SensorController {
         const expected: number = labels === undefined ? binding.row.labels.length : labels.length;
         if (!finiteValues(values, expected)) {
           binding.row.status = 'error';
-          binding.row.message = '设备返回了缺失或非有限数值；该样本未显示';
+          binding.row.message = tr('设备返回了缺失或非有限数值；该样本未显示',
+            'The device returned an incomplete or invalid sample. It was skipped.');
           this.notifyNow();
           return;
         }
@@ -286,16 +354,17 @@ export class SensorController {
             binding.row.history = [];
           }
           binding.row.labels = labels.slice();
-          binding.row.unit = labels.length > 1 ? '见分量' : 'lx';
+          binding.row.unit = labels.length > 1 ? tr('见分量', 'See components') : 'lx';
         }
         binding.receivedThisSession = true;
         binding.row.values = values.slice();
         binding.row.lastReceivedMs = nowMs;
         binding.row.history = appendHistory(binding.row.history, nowMs, values);
         binding.row.status = 'live';
-        binding.row.message = binding.row.eventDriven ? '按事件上报；频率由硬件决定' :
+        binding.row.message = binding.row.eventDriven ? tr('按事件上报；频率由硬件决定', 'The hardware reports events as they occur.') :
           binding.row.id === sensor.SensorId.AMBIENT_LIGHT && values.length > 1 ?
-          '附加光照字段可能是驱动占位值，应核实硬件支持' : '本机 API 实时样本';
+          tr('附加光照字段可能是驱动占位值，应核实硬件支持',
+            'Extra light fields may be placeholders. Check hardware support.') : tr('本机 API 实时样本', 'Live reading from the device.');
         this.notifyLater();
       });
     } catch (error) {
@@ -325,7 +394,8 @@ export class SensorController {
 
   private permissionMessage(binding: SensorBinding): string {
     return binding.definition !== undefined && binding.definition.permission === 'ohos.permission.ACTIVITY_MOTION' ?
-      '需要运动权限；点击“授权运动”后可启用' : '必要的系统权限未获授予，无法采集';
+      tr('需要运动权限；点击“授权运动”后可启用', 'Select “Allow motion” to enable this sensor.') :
+      tr('必要的系统权限未获授予，无法采集', 'Collection requires system permission.');
   }
 
   private stopBinding(binding: SensorBinding): void {
@@ -342,7 +412,7 @@ export class SensorController {
         this.stoppedBindings.push(binding);
       }
       binding.row.status = 'error';
-      binding.row.message = '停止订阅失败：' + this.describeError(error as BusinessError);
+      binding.row.message = tr('停止订阅失败：', 'Could not stop the sensor: ') + this.describeError(error as BusinessError);
     }
   }
 
@@ -352,6 +422,10 @@ export class SensorController {
   }
 
   private stopAll(): void {
+    if (this.startTimer !== -1) {
+      clearTimeout(this.startTimer);
+      this.startTimer = -1;
+    }
     if (this.timer !== -1) {
       clearInterval(this.timer);
       this.timer = -1;
@@ -363,7 +437,7 @@ export class SensorController {
   }
 
   private tick(): void {
-    if (!this.foreground || this.paused) {
+    if (!this.privacyConsent || !this.foreground || this.paused) {
       return;
     }
     this.bindings.forEach((binding: SensorBinding) => {
@@ -382,7 +456,8 @@ export class SensorController {
       const status: string = readingStatus(binding.row, Date.now(), binding.startedMs, binding.receivedThisSession);
       binding.row.status = status;
       if (status === 'stale') {
-        binding.row.message = '暂未收到新样本；可能由硬件频率或按变化上报造成，可刷新重试';
+        binding.row.message = tr('暂未收到新样本；可能由硬件频率或按变化上报造成，可刷新重试',
+          'No new readings yet. The sensor may report slowly or only when values change. Refresh to retry.');
       }
     });
     this.notifyNow();
@@ -390,13 +465,14 @@ export class SensorController {
 
   private describeError(error: BusinessError): string {
     switch (error.code) {
-      case 201: return '必要权限未获授予或已撤销 (201)';
-      case 202: return '此功能需要系统应用资格，普通应用不可调用 (202)';
-      case 401: return '传感器参数或频率不被设备接受 (401)';
-      case 801: return '此设备不支持该系统能力 (801)';
-      case 14500101: return '传感器服务异常，可刷新重试 (14500101)';
-      case 14500102: return '该设备不支持此传感器 (14500102)';
-      default: return '传感器操作失败' + (error.code === undefined ? '' : ' (' + error.code.toString() + ')');
+      case 201: return tr('必要权限未获授予或已撤销 (201)', 'Permission was denied or revoked (201).');
+      case 202: return tr('此功能需要系统应用资格，普通应用不可调用 (202)', 'Only system apps can use this sensor (202).');
+      case 401: return tr('传感器参数或频率不被设备接受 (401)', 'The device rejected the sensor settings (401).');
+      case 801: return tr('此设备不支持该系统能力 (801)', 'This device lacks the required capability (801).');
+      case 14500101: return tr('传感器服务异常，可刷新重试 (14500101)', 'Sensor service error. Refresh to retry (14500101).');
+      case 14500102: return tr('该设备不支持此传感器 (14500102)', 'This sensor is unavailable on this device (14500102).');
+      default: return tr('传感器操作失败', 'Sensor operation failed') +
+        (error.code === undefined ? '' : ' (' + error.code.toString() + ')');
     }
   }
 
@@ -407,7 +483,7 @@ export class SensorController {
     this.notifyTimer = setTimeout(() => {
       this.notifyTimer = -1;
       this.notifyNow();
-    }, Math.min(this.intervalMs, 200));
+    }, this.wearable ? 250 : Math.min(this.intervalMs, 200));
   }
 
   private notifyNow(): void {

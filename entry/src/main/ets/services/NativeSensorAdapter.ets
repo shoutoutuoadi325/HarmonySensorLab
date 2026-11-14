@@ -1,4 +1,5 @@
 import { sensor } from '@kit.SensorServiceKit';
+import { tr } from '../model/Locale';
 import { deviceInfo } from '@kit.BasicServicesKit';
 import { SensorRow } from '../model/SensorModels';
 
@@ -51,15 +52,15 @@ export function subscribeNative(row: SensorRow, options: sensor.Options,
     case sensor.SensorId.AMBIENT_LIGHT: {
       const callback = (response: sensor.LightResponse): void => {
         const values: number[] = [response.intensity];
-        const labels: string[] = ['照度 (lx)'];
+        const labels: string[] = [tr('照度 (lx)', 'Illuminance (lx)')];
         // These optional SDK fields may be driver placeholders; displaying returned values is not support verification.
         if (typeof response.colorTemperature === 'number' && Number.isFinite(response.colorTemperature)) {
           values.push(response.colorTemperature);
-          labels.push('色温 (K，支持未核实)');
+          labels.push(tr('色温 (K，支持未核实)', 'Color temp. (K, unverified)'));
         }
         if (typeof response.infraredLuminance === 'number' && Number.isFinite(response.infraredLuminance)) {
           values.push(response.infraredLuminance);
-          labels.push('红外 (cd/m²，支持未核实)');
+          labels.push(tr('红外 (cd/m²，支持未核实)', 'Infrared (cd/m², unverified)'));
         }
         receive(values, labels);
       };
@@ -294,6 +295,6 @@ export function subscribeNative(row: SensorRow, options: sensor.Options,
       };
     }
     default:
-      throw new Error('此传感器没有已核验的公开订阅适配器');
+      throw new Error(tr('此传感器没有已核验的公开订阅适配器', 'This sensor has no verified public adapter.'));
   }
 }

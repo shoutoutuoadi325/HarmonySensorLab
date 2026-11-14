@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "ability_desc",
+      "value": "Displays local sensor readings and live charts"
+    },
+    {
+      "name": "motion_reason",
+      "value": "Allow motion access to display step counts and motion events on this device while the app is open."
+    }
+  ]
+}
