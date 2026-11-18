@@ -1,67 +1,98 @@
 # 传感器观测 / Harmony Sensor Lab
 
-使用 ArkTS、ArkUI Stage 模型与 DevEco Studio 开发的本机传感器观测应用。已建立五类设备的工程适配，构建四产品 Debug 签名 HAP，并开展官方模拟器运行验证。具体测试覆盖见验证报告；真机硬件、功耗和上架资格仍须单独验收。
+一款使用 ArkTS 和 ArkUI 开发的鸿蒙本机传感器观测工具。查看当前设备实际提供的传感器、实时数值和近期曲线，了解不同设备的传感器能力。
 
-## 使用
+已上架华为应用市场，当前版本为 **1.0.1**。本仓库提供应用源码、构建脚本和测试。
 
-启动后点击“开始观测”。应用枚举本机公开传感器，显示必要权限已授予的实际回调、分量数值和单分量曲线。可暂停/继续、刷新设备、选择 1/5/10/20 Hz 请求频率、清空曲线、查看硬件信息和关闭某项。计步/步行检测需主动点击“授权运动”并在系统弹窗中允许。
+**[在华为应用市场下载](https://appgallery.huawei.com/app/detail?id=com.personal.harmonysensorlab)** · [隐私政策](https://harmonysensorlab-privacy.netlify.app/) · [反馈问题](https://github.com/shoutoutuoadi325/HarmonySensorLab/issues)
 
-曲线按本机回调接收时间绘制，最多保存最近 60 秒和 240 个真实样本，实际覆盖时长也受频率与点数限制。事件传感器绘制事件点，不生成连续值。高频回调按选定显示频率抽取真实样本；硬件间隔按 SDK 纳秒范围钳制。后台取消订阅，回来后保持手动暂停选择。进程结束后丢弃内存数据，不持久化、不上传。
+## 支持设备
 
-已适配公开类型：加速度/未校准加速度、陀螺仪/未校准陀螺仪、光照及公开可选字段、磁场/未校准磁场、气压、霍尔、接近、湿度、方向、重力、线性加速度、旋转矢量、环境温度、显著运动、步行检测、累计步数、佩戴检测；API22+ 融合压力单独守卫。实际列表由设备枚举决定。缺失值、NaN/Infinity、异常与过期状态均有处理，不把未获取的数据显示为零。
+应用市场当前列出的设备为 **手机、平板、电脑和智能手表**。应用在各端观测所在设备的传感器，数据不在设备间同步，也不通过手机读取外部手表数据。能否安装以对应设备上的应用市场为准。
 
-本机心率可枚举但当前版不订阅、不申请健康权限；健康发布审核待个人账号核验。轻量穿戴和车机未加入安装范围。详见 [资格复核](docs/qualification-review.md)。
+源码还包含智慧屏适配和独立的 `tv` 构建产品；智慧屏目前未列入上述商店页面的设备范围。轻量穿戴设备和车机不在当前支持范围内。
 
-## 工程与构建
+## 功能
 
-本机已用 DevEco Studio 26.0.0 Release、HarmonyOS SDK 26.0.0.105、Hvigor 6.26.9、随 IDE 提供的 Node 24.14.1 构建。运行应用无第三方依赖。
+- **传感器列表与硬件信息**：枚举本机公开传感器，查看名称、能力和可用状态。
+- **实时数值与曲线**：显示传感器分量，选择需要观察的曲线分量；事件型传感器显示事件点。
+- **采集控制**：暂停或继续、刷新传感器列表、清空曲线、关闭单项采集，选择 1 / 5 / 10 / 20 Hz 请求频率。
+- **计步与步行检测**：主动授权运动权限后，显示系统提供的累计步数和步行检测事件，累计口径以系统为准。
+- **多端界面**：手机、折叠屏和平板按窗口宽度调整布局，PC 支持键盘焦点，智能手表采用适合小屏的单列布局。界面支持中文和英文。
 
-在 DevEco Studio 打开本目录；CLI 可执行：
+可观测类型包括加速度、陀螺仪、光照、磁场、气压、接近、方向、重力、线性加速度、旋转矢量，以及设备提供的温湿度、霍尔、显著运动、计步和佩戴检测等。实际列表和可用读数取决于设备硬件、系统与权限；未支持、未授权或没有回调的项目会显示相应状态。当前版本不采集心率、血氧等健康测量数据。
+
+曲线按应用接收到回调的时间绘制，每条曲线最多保留 240 个样本，时间跨度不超过 60 秒；频率较高时覆盖时长可能更短。所选频率是请求值，实际回调频率由设备决定。读数用于观察设备接口输出，不用于医疗诊断或安全关键决策。
+
+## 开始使用
+
+1. 从应用市场安装应用，首次启动时阅读并选择是否同意隐私政策。
+2. 同意后点击“开始观测”，查看设备提供的传感器和读数。
+3. 如需计步，点击“授权运动”，在系统弹窗中允许运动权限。
+4. 使用采集控制调整频率、暂停或清空曲线。
+
+退入后台或离开观测页面会停止采集，手动暂停状态会在返回前台后保留。可在“本机数据与隐私”中查看完整政策或撤回同意；撤回后停止采集并清除内存中的观测记录。
+
+应用无账号、广告、第三方统计或云同步。**传感器读数和曲线仅保存在本机进程内存中，不写入文件或数据库，不上传；进程结束后丢弃。** 隐私政策选择会保存在本机，以便下次启动时遵循该选择。完整说明见 [隐私政策](docs/privacy-policy.md)。
+
+## 从源码构建
+
+项目采用 Stage 模型，以 ArkTS 和 ArkUI 实现，无第三方运行依赖。已使用 DevEco Studio 26.0.0 Release、HarmonyOS SDK 26.0.0.105、Hvigor 6.26.9 和 IDE 自带的 Node.js 24.14.1 构建。构建脚本依赖 DevEco Studio 提供的工具链；Python 脚本需 Python 3。
+
+克隆仓库后，在 DevEco Studio 中打开项目，完成工程同步，选择对应产品进行构建和运行。安装到模拟器或真机时，请在 IDE 中配置自己的调试签名。
 
 ~~~sh
+git clone https://github.com/shoutoutuoadi325/HarmonySensorLab.git
+cd HarmonySensorLab
+
+# 手机 / 平板 Debug HAP
 ./scripts/build.sh default debug
-./scripts/build.sh pc release
-./scripts/build.sh wearable release
-./scripts/build.sh tv release
-./scripts/build.sh default release app
-./scripts/build-all.sh
-# 本机已生成官方调试签名材料时，构建四产品 Debug 签名 HAP：
-python3 scripts/build-debug-signed.py
+
+# 多端统一 Release HAP / APP
+./scripts/build.sh multidevice release
+./scripts/build.sh multidevice release app
 ~~~
 
-非默认安装目录可设置 DEVECO_STUDIO_HOME 指向 IDE 的 Contents 目录。local.properties 是本机路径，不纳入版本控制。调试签名材料仅保存在忽略的 .signing/deveco-signing.json；签名脚本临时注入并在结束时恢复工程配置，签名构建期间不要同时运行其他构建。
+构建产品如下；表中的最低 API 是对应源码构建产品的兼容配置，安装还受设备和应用市场要求影响。所有产品的编译与目标 SDK 均为 26.0.0。
 
-| 产品 | 安装设备类型 | 最低 API | 编译与目标 SDK |
-| --- | --- | --- | --- |
-| default | phone、tablet，包括折叠手机 | 12 / 5.0.0(12) | 26.0.0 |
-| pc | 2in1，含 HarmonyOS PC | 13 / 5.0.1(13) | 26.0.0 |
-| wearable | wearable 智能手表 | 18 / 5.1.0(18) | 26.0.0 |
-| tv | tv 智慧屏 | 19 / 5.1.1(19) | 26.0.0 |
+| 产品 | 设备类型 | 最低兼容版本 |
+| --- | --- | --- |
+| `multidevice` | 手机、平板、PC / 2in1、智能手表 | API 18 / 5.1.0(18) |
+| `default` | 手机、平板，包括折叠手机 | API 12 / 5.0.0(12) |
+| `pc` | PC / 2in1 | API 13 / 5.0.1(13) |
+| `wearable` | 智能手表 | API 18 / 5.1.0(18) |
+| `tv` | 智慧屏 | API 19 / 5.1.1(19) |
 
-最低 API 不是系统市场版本号。新 API 通过 apiAvailable 守卫，SDK 编译器生成兼容判断。模块实际打包的 deviceTypes 按产品过滤。
+`build.sh` 的参数为产品、`debug` / `release` 和可选的 `hap` / `app`。默认 IDE 路径为 `/Applications/DevEco-Studio.app/Contents`；其他安装位置可通过 `DEVECO_STUDIO_HOME` 设置。`local.properties` 和签名材料不纳入版本控制。
 
-手机单列，宽窗口 2/3 列，窗口大小改变会重排，折叠屏展开采用双列。PC 支持键盘焦点，TV 放大文字及按钮并实现按键处理，手表单列且留圆屏边距。模拟器布局与交互证据按端记录；TV 遥控、手表旋钮、功耗和真实硬件仍须按验证报告完成验收。
+Release 构建会检查隐私政策链接配置，签名需另行配置。仓库中的 `dist/packages/` 未签名包用于构建参考，安装应用请使用应用市场入口。已有本地正式签名材料时，可使用以下脚本构建并校验统一包：
 
-## 验证和交付
+~~~sh
+python3 scripts/build-release-signed.py --products multidevice
+python3 scripts/verify-release-packages.py --products multidevice
+~~~
+
+## 测试与源码导航
+
+在项目根目录执行宿主机逻辑测试；UI 测试需要先构建 `default debug`：
 
 ~~~sh
 node tests/host/run.cjs
+./scripts/build.sh default debug
 node tests/host/ui-compiled.cjs
-python3 scripts/verify-packages.py
-python3 scripts/device-status.py
-python3 scripts/export-delivery.py
 ~~~
 
-采集测试转译真实生产控制器并注入平台替身；UI 测试执行 SDK 实际生成的响应式更新与 Canvas 绘图函数。UI 测试需先构建 default debug。另有手机、折叠屏、平板、PC、TV、智能手表官方模拟器运行证据，位于 reports/emulator-runtime/；各测试项通过与未验证状态见验证报告。模拟器传感器回调和注入值不代表真实硬件数据。
+测试覆盖采集生命周期、权限、频率与历史样本规则，以及编译后的 UI 更新和曲线绘制。测试使用平台替身；模拟器运行记录中的读数来自虚拟设备，真机硬件、功耗和具体输入设备仍需单独验证。测试说明见 [宿主机逻辑测试](tests/host/README.md)，已有模拟器记录见 [验证报告（历史记录）](reports/validation-report.md) 和 [Release 模拟器运行证据](reports/emulator-runtime/release-final-2026-11-10/)。
 
-device-status.py 可用受控 hdc 前台服务查询在线目标，复用现有服务并只清理自己创建的进程。verify-packages.py 使用官方签名工具校验调试签名及未签名包，并核对权限、设备类型和 APP 内 HAP。export-delivery.py 在内存中移除源码 ZIP 的签名配置和产品引用，保留本地工作配置，同时归档模拟器证据；私钥、密码和 .signing/ 不随源码交付。
+| 路径 | 内容 |
+| --- | --- |
+| [`entry/src/main/ets/pages/`](entry/src/main/ets/pages/) | 应用入口界面、观测控制与隐私页面 |
+| [`entry/src/main/ets/services/`](entry/src/main/ets/services/) | 传感器适配、采集生命周期与权限处理 |
+| [`entry/src/main/ets/model/`](entry/src/main/ets/model/) | 传感器类型、历史样本规则、隐私选择与政策文本 |
+| [`entry/src/main/ets/components/`](entry/src/main/ets/components/) | 传感器卡片与曲线组件 |
+| [`scripts/`](scripts/) | 构建、签名与包校验脚本 |
+| [`tests/host/`](tests/host/) | 宿主机逻辑与 UI 测试 |
 
-- [验证报告](reports/validation-report.md)
-- [隐私政策](docs/privacy-policy.md)
-- [设备验收计划](docs/device-verification-plan.md)
-- [签名与安装](docs/signing-and-installation.md)
-- `dist/packages/` 保存各产品的未签名 HAP 和 APP 构建基线。
+## 问题反馈
 
-签名包、交付 ZIP 和商店后台材料保存在本地。调试签名包仅用于其 Profile 许可的设备。
-
-核心：services/SensorController.ets 管理生命周期和权限；NativeSensorAdapter.ets 仅封装公开回调；model/ 存放类型、能力与历史规则；components/ 独立更新数值卡片与曲线；EntryAbility 绑定前后台。
+欢迎通过 [GitHub Issues](https://github.com/shoutoutuoadi325/HarmonySensorLab/issues) 反馈问题或建议。报告问题时请附设备型号、系统版本、应用版本、复现步骤，以及相关传感器的状态或截图，便于区分应用行为与设备能力差异。
